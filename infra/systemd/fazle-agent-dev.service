@@ -1,0 +1,25 @@
+[Unit]
+Description=Fazle Super Agent — Dev (Batch 3 testing on port 8301)
+After=network-online.target docker.service fazle-core.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=azim
+Group=azim
+WorkingDirectory=/home/azim/fazle-agent-dev
+EnvironmentFile=/home/azim/fazle-agent-dev/.env
+EnvironmentFile=-/home/azim/secure-env-backup/runtime-services.env
+ExecStartPre=/home/azim/scripts/generate_runtime_services_env.sh
+ExecStart=/home/azim/fazle-agent-dev/venv/bin/uvicorn system_agent.main:app --host 127.0.0.1 --port 8301
+Restart=on-failure
+RestartSec=5
+StandardOutput=append:/home/azim/fazle-agent-dev/logs/agent.log
+StandardError=append:/home/azim/fazle-agent-dev/logs/agent-error.log
+
+# Hardening
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

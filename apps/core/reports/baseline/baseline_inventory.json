@@ -1,0 +1,2846 @@
+{
+  "generated_at": "2026-06-24T19:33:11.932721+00:00",
+  "modules": [
+    {
+      "name": "accountant_summary",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": false,
+      "readme": null
+    },
+    {
+      "name": "admin_chat_lab",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": false,
+      "readme": null
+    },
+    {
+      "name": "admin_commands",
+      "files": 8,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "admin_employees",
+      "files": 1,
+      "has_router": true,
+      "router_files": [
+        "modules/admin_employees/__init__.py"
+      ],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "admin_transactions",
+      "files": 1,
+      "has_router": true,
+      "router_files": [
+        "modules/admin_transactions/__init__.py"
+      ],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "ai_readonly_tools",
+      "files": 9,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "attendance",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "attendance_parser",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "backup",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "bridge_poller",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "contact_roles",
+      "files": 2,
+      "has_router": true,
+      "router_files": [
+        "modules/contact_roles/routes.py"
+      ],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "contact_sync",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "conversation_layer",
+      "files": 4,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": false,
+      "readme": null
+    },
+    {
+      "name": "draft_quality",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": false,
+      "readme": null
+    },
+    {
+      "name": "drafts",
+      "files": 2,
+      "has_router": true,
+      "router_files": [
+        "modules/drafts/routes.py"
+      ],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "employee_verification",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "escort",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": "modules/escort/README.md"
+    },
+    {
+      "name": "escort_lifecycle",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": "modules/escort_lifecycle/README.md"
+    },
+    {
+      "name": "escort_roster",
+      "files": 6,
+      "has_router": true,
+      "router_files": [
+        "modules/escort_roster/__init__.py",
+        "modules/escort_roster/routes.py"
+      ],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "escort_slip_extractor",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "fazle_payroll_engine",
+      "files": 18,
+      "has_router": true,
+      "router_files": [
+        "modules/fazle_payroll_engine/routes.py"
+      ],
+      "uses_database": true,
+      "readme": "modules/fazle_payroll_engine/README.md"
+    },
+    {
+      "name": "identity_brain",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "image_hash",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "intent",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": false,
+      "readme": null
+    },
+    {
+      "name": "kb_upload",
+      "files": 3,
+      "has_router": true,
+      "router_files": [
+        "modules/kb_upload/routes.py"
+      ],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "knowledge_base",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "media_normalization",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": false,
+      "readme": null
+    },
+    {
+      "name": "memory_extractor",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "message_archive",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "message_router",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "number_identity",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": false,
+      "readme": null
+    },
+    {
+      "name": "observability",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": false,
+      "readme": null
+    },
+    {
+      "name": "ocr_processor",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": false,
+      "readme": null
+    },
+    {
+      "name": "ollama_memory",
+      "files": 4,
+      "has_router": true,
+      "router_files": [
+        "modules/ollama_memory/memory_api.py"
+      ],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "operations_health",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": false,
+      "readme": null
+    },
+    {
+      "name": "outbound",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "payment",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": false,
+      "readme": null
+    },
+    {
+      "name": "payment_correction",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "payment_ingest",
+      "files": 2,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "payment_workflow",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "payroll",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "payroll_logic",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "phone_normalizer",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": false,
+      "readme": null
+    },
+    {
+      "name": "rag",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "rbac",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "recruitment_ai",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": false,
+      "readme": null
+    },
+    {
+      "name": "recruitment_assistant",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": false,
+      "readme": null
+    },
+    {
+      "name": "recruitment_flow",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "reply_templates",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": false,
+      "readme": null
+    },
+    {
+      "name": "reports",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "reviewed_reply_memory",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "role_classifier",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "scheduler",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "social_auto_reply",
+      "files": 21,
+      "has_router": true,
+      "router_files": [
+        "modules/social_auto_reply/routes.py"
+      ],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "user_role",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": true,
+      "readme": null
+    },
+    {
+      "name": "voice_processor",
+      "files": 1,
+      "has_router": false,
+      "router_files": [],
+      "uses_database": false,
+      "readme": null
+    },
+    {
+      "name": "wa_chat_frontend",
+      "files": 1,
+      "has_router": true,
+      "router_files": [
+        "modules/wa_chat_frontend/__init__.py"
+      ],
+      "uses_database": true,
+      "readme": null
+    }
+  ],
+  "services": [
+    {
+      "service": "Ollama",
+      "referenced_by": [
+        "app/config.py",
+        "app/github_models.py",
+        "app/groq_provider.py",
+        "app/llm.py",
+        "app/main.py",
+        "app/ollama.py",
+        "modules/conversation_layer/recruitment.py",
+        "modules/draft_quality/__init__.py",
+        "modules/fazle_payroll_engine/ai_enhancer.py",
+        "modules/fazle_payroll_engine/parser.py",
+        "modules/knowledge_base/__init__.py",
+        "modules/ollama_memory/__init__.py",
+        "modules/ollama_memory/memory_api.py",
+        "modules/operations_health/__init__.py",
+        "modules/scheduler/__init__.py",
+        "modules/social_auto_reply/intelligent_generator.py",
+        "modules/voice_processor/__init__.py",
+        "scripts/audit_baseline.py",
+        "scripts/generate_certification_reports.py",
+        "scripts/setup_ollama_memory_db.py",
+        "scripts/shadow_recruitment_conversation_layer.py"
+      ]
+    },
+    {
+      "service": "Groq",
+      "referenced_by": [
+        "app/config.py",
+        "app/groq_provider.py",
+        "app/llm.py",
+        "scripts/audit_baseline.py"
+      ]
+    },
+    {
+      "service": "GitHub Models",
+      "referenced_by": [
+        "app/config.py",
+        "app/github_models.py",
+        "app/llm.py",
+        "modules/memory_extractor/__init__.py",
+        "scripts/audit_baseline.py"
+      ]
+    },
+    {
+      "service": "PostgreSQL",
+      "referenced_by": [
+        "app/database.py",
+        "modules/admin_employees/__init__.py",
+        "modules/ai_readonly_tools/__init__.py",
+        "modules/backup/__init__.py",
+        "modules/bridge_poller/__init__.py",
+        "modules/escort_lifecycle/__init__.py",
+        "modules/fazle_payroll_engine/models.py",
+        "modules/fazle_payroll_engine/replay.py",
+        "modules/message_archive/__init__.py",
+        "modules/ollama_memory/__init__.py",
+        "modules/payroll/__init__.py",
+        "modules/recruitment_flow/__init__.py",
+        "scripts/audit_baseline.py",
+        "scripts/import_missing_advance_transactions.py",
+        "scripts/recruitment_lead_recovery_analyzer.py",
+        "scripts/setup_ollama_memory_db.py",
+        "scripts/shadow_recruitment_conversation_layer.py",
+        "scripts/sync_knowledge_base_to_runtime.py"
+      ]
+    },
+    {
+      "service": "Redis",
+      "referenced_by": [
+        "app/config.py",
+        "modules/bridge_poller/__init__.py",
+        "scripts/audit_baseline.py"
+      ]
+    },
+    {
+      "service": "WhatsApp Bridge",
+      "referenced_by": [
+        "app/bridge.py",
+        "app/main.py",
+        "modules/bridge_poller/__init__.py",
+        "modules/contact_sync/__init__.py",
+        "modules/fazle_payroll_engine/diagnostics.py",
+        "modules/fazle_payroll_engine/gap_scan.py",
+        "modules/fazle_payroll_engine/historical_sync.py",
+        "scripts/audit_baseline.py",
+        "scripts/import_missing_advance_transactions.py",
+        "scripts/recruitment_lead_recovery_analyzer.py"
+      ]
+    },
+    {
+      "service": "Meta API",
+      "referenced_by": [
+        "app/main.py",
+        "scripts/audit_baseline.py",
+        "scripts/recruitment_lead_recovery_analyzer.py"
+      ]
+    },
+    {
+      "service": "Media Processor",
+      "referenced_by": [
+        "app/config.py",
+        "modules/fazle_payroll_engine/parser.py",
+        "modules/ocr_processor/__init__.py",
+        "modules/operations_health/__init__.py",
+        "scripts/audit_baseline.py"
+      ]
+    },
+    {
+      "service": "LocationWhere",
+      "referenced_by": [
+        "modules/operations_health/__init__.py",
+        "scripts/audit_baseline.py"
+      ]
+    },
+    {
+      "service": "SMS Gateway",
+      "referenced_by": [
+        "app/main.py",
+        "modules/admin_commands/__init__.py",
+        "modules/payment_ingest/__init__.py",
+        "scripts/audit_baseline.py"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": ""
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": ""
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/"
+    },
+    {
+      "file": "modules/contact_roles/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/"
+    },
+    {
+      "file": "modules/contact_roles/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/active"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/admin/approvals"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/admin/audit"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/admin/audit"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/admin/dlq"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/admin/dlq/{fpe_wa_message_id}/requeue"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/admin/drafts"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/admin/gap-scan/runs"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/admin/gap-scan/trigger"
+    },
+    {
+      "file": "modules/kb_upload/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/admin/kb/delete"
+    },
+    {
+      "file": "modules/kb_upload/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/admin/kb/list"
+    },
+    {
+      "file": "modules/kb_upload/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/admin/kb/stats"
+    },
+    {
+      "file": "modules/kb_upload/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/admin/kb/upload"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/admin/memory/reviewed-replies"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "DELETE",
+      "path": "/admin/memory/reviewed-replies/{entry_id}"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "PATCH",
+      "path": "/admin/memory/reviewed-replies/{entry_id}/toggle"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/admin/needs-review"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/admin/needs-review/{unmatched_id}/dismiss"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/admin/needs-review/{unmatched_id}/promote"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/admin/overview"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/admin/payment-drafts"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/admin/reconcile"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/admin/recruitment"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/admin/review-summary"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/admin/safe-mode"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/admin/users"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/admin/users"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/admin/users/{phone}/apikey"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/admin/users/{phone}/disable"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/admin/users/{phone}/role"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "DELETE",
+      "path": "/admin/users/{phone}/role/{role}"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/api/bridges/diagnostics"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/api/bridges/probe"
+    },
+    {
+      "file": "modules/drafts/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/api/drafts"
+    },
+    {
+      "file": "modules/drafts/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/api/drafts/stats"
+    },
+    {
+      "file": "modules/drafts/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/api/drafts/{draft_id}/approve"
+    },
+    {
+      "file": "modules/drafts/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/api/drafts/{draft_id}/block"
+    },
+    {
+      "file": "modules/drafts/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/api/drafts/{draft_id}/delete"
+    },
+    {
+      "file": "modules/drafts/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/api/drafts/{draft_id}/edit"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/api/frontend/heartbeat"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/api/frontend/sync-stats"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/api/memory/pending"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/api/memory/{memory_id}/dismiss"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/api/memory/{memory_id}/promote"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/api/queue/arbiter-metrics"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/api/queue/dead-letters"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/api/rag/rebuild"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/api/rag/recent-searches"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/api/rag/stats"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/api/runtime/nodes"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/api/self-heal/check"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/api/self-heal/diagnostics"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/api/state-version"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/api/stats/llm"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/api/users/search"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/api/users/{phone}"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "PUT",
+      "path": "/api/users/{phone}"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/api/users/{phone}/memory"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/api/wa/broadcast"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/api/wa/contacts"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/api/wa/contacts/sync"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/api/wa/contacts/sync-status"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "DELETE",
+      "path": "/api/wa/contacts/{phone}"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/api/wa/contacts/{phone}"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "PATCH",
+      "path": "/api/wa/contacts/{phone}"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/api/wa/contacts/{phone}/block"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/api/wa/contacts/{phone}/unblock"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/api/wa/drafts"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/api/wa/drafts/{draft_id}/approve"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/api/wa/drafts/{draft_id}/edit"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/api/wa/drafts/{draft_id}/reject"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/api/wa/groups"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/api/wa/groups"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "DELETE",
+      "path": "/api/wa/groups/{group_id}"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "PATCH",
+      "path": "/api/wa/groups/{group_id}"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/api/wa/groups/{group_id}/send"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/api/wa/messages/{phone}"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/api/wa/send"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/api/wa/settings"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "PATCH",
+      "path": "/api/wa/settings"
+    },
+    {
+      "file": "modules/wa_chat_frontend/__init__.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/api/wa/stream"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/backfill-files"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/backfill-sqlite"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/backup/list"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/backup/rotate"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/backup/run"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/backup/status"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/cash"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/cash/{txn_id}"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/chat-lab"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/chat/memory/history"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/chat/memory/stats"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/chat/message"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/chat/models"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/cleanup-drafts"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/cleanup-empty-drafts"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/cleanup-junk-drafts"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/config"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/config"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/dashboard"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/dashboard/legacy"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/dashboard/wa-chat"
+    },
+    {
+      "file": "modules/admin_employees/__init__.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/debug/auth-check"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/drafts"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/drafts"
+    },
+    {
+      "file": "modules/admin_employees/__init__.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/employees"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/employees"
+    },
+    {
+      "file": "modules/admin_employees/__init__.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/employees"
+    },
+    {
+      "file": "modules/admin_employees/__init__.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/employees/by-phone/{phone}"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/employees/search"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/employees/suggest"
+    },
+    {
+      "file": "modules/admin_employees/__init__.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/employees/{emp_id}"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/employees/{emp_id}"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "PATCH",
+      "path": "/employees/{emp_id}"
+    },
+    {
+      "file": "modules/admin_employees/__init__.py",
+      "decorator": "router",
+      "method": "PUT",
+      "path": "/employees/{emp_id}"
+    },
+    {
+      "file": "modules/admin_employees/__init__.py",
+      "decorator": "router",
+      "method": "PATCH",
+      "path": "/employees/{emp_id}/deactivate"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/employees/{emp_id}/transactions"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/escort-roster"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/escort-slip/extract"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/escort-slip/extractions"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/escort-slip/test-report"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/escort/release"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/export"
+    },
+    {
+      "file": "modules/ollama_memory/memory_api.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/facts/{subject_type}/{subject_key}"
+    },
+    {
+      "file": "modules/social_auto_reply/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/flagged"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/health"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/health"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/health/deep"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/income"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/income/{income_id}"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/ingest"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/kb"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/ledger/{emp_id}"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/match-slip"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/metrics"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/metrics/json"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/normalization/employees/{employee_id}/aliases"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/normalization/employees/{employee_id}/canonical"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/normalization/employees/{employee_id}/inactivate"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/normalization/employees/{employee_id}/link-canonical"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/normalization/review"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/normalization/review/{review_id}/resolve"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/normalization/summary"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/observability/errors"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/observability/summary"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/open-chat"
+    },
+    {
+      "file": "modules/social_auto_reply/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/pause"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/payment/advance-draft"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/payment/escort-draft"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/payment/ingest"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/payroll"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/payroll/compute"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/payroll/run/{run_id}/transition"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/payroll/runs"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/payroll/runs/{run_id}"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/payroll/{tab}"
+    },
+    {
+      "file": "modules/ollama_memory/memory_api.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/questions"
+    },
+    {
+      "file": "modules/social_auto_reply/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/queue"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/rag/answer"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/rag/reindex"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/rag/search"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/rag/stats"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/rebuild-history"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/reconcile"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/reports"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/reports/{name}"
+    },
+    {
+      "file": "modules/social_auto_reply/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/resume"
+    },
+    {
+      "file": "modules/social_auto_reply/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/retry"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/scheduler/run/{job_name}"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/scheduler/status"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/send/mcp1"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/send/mcp2"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/send/meta"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/staging-payments"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/stats"
+    },
+    {
+      "file": "modules/ollama_memory/memory_api.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/stats"
+    },
+    {
+      "file": "modules/social_auto_reply/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/status"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/summary"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/sync-all"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/sync-all"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/sync-history"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/sync/status"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/sync/trigger"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/transactions"
+    },
+    {
+      "file": "modules/admin_transactions/__init__.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/transactions"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/transactions/manual"
+    },
+    {
+      "file": "modules/admin_transactions/__init__.py",
+      "decorator": "router",
+      "method": "DELETE",
+      "path": "/transactions/{txn_id}"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/transactions/{txn_id}"
+    },
+    {
+      "file": "modules/admin_transactions/__init__.py",
+      "decorator": "router",
+      "method": "PUT",
+      "path": "/transactions/{txn_id}"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/transactions/{txn_id}/reverse"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/unmatched"
+    },
+    {
+      "file": "modules/fazle_payroll_engine/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/unmatched/{unmatched_id}/mark-reviewed"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/wa-chat"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/webhook/mcp1"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/webhook/mcp2"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "GET",
+      "path": "/webhook/meta"
+    },
+    {
+      "file": "app/main.py",
+      "decorator": "app",
+      "method": "POST",
+      "path": "/webhook/meta"
+    },
+    {
+      "file": "modules/contact_roles/routes.py",
+      "decorator": "router",
+      "method": "DELETE",
+      "path": "/{phone}"
+    },
+    {
+      "file": "modules/contact_roles/routes.py",
+      "decorator": "router",
+      "method": "PUT",
+      "path": "/{phone}"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "DELETE",
+      "path": "/{program_id}"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "GET",
+      "path": "/{program_id}"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "PATCH",
+      "path": "/{program_id}"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/{program_id}/recalculate"
+    },
+    {
+      "file": "modules/escort_roster/routes.py",
+      "decorator": "router",
+      "method": "POST",
+      "path": "/{program_id}/sync"
+    }
+  ],
+  "database": {
+    "sql_files": [
+      "db/merge_preview.sql",
+      "db/migrations/001_safe_mode_and_escort_extractor.sql",
+      "db/migrations/002_align_tables.sql",
+      "db/migrations/003_kb_schema_fix_and_recruitment.sql",
+      "db/migrations/003b_recruitment_sessions_fix.sql",
+      "db/migrations/003c_schema_align.sql",
+      "db/migrations/004_identity_brain.sql",
+      "db/migrations/005_unified_draft_approval.sql",
+      "db/migrations/006_critical_contact_zero_loss.sql",
+      "db/migrations/007_reviewed_reply_memory.sql",
+      "db/migrations/008_payment_correction.sql",
+      "db/migrations/010_state_version.sql",
+      "db/migrations/011_runtime_nodes.sql",
+      "db/migrations/012_ai_readonly_views.sql",
+      "db/migrations/012_queue_arbiter.sql",
+      "db/migrations/013_social_auto_reply.sql",
+      "db/migrations/014_career_hr_dataset.sql",
+      "db/migrations/015_llm_learning_memory.sql",
+      "db/migrations/016_user_profiles_memory.sql",
+      "db/migrations/017_memory_promotion.sql",
+      "db/migrations/018_atomic_release_and_outbound.sql",
+      "db/migrations/019_central_message_fields.sql",
+      "db/migrations/020_escort_roster_employee_fk.sql",
+      "db/new_tables.sql",
+      "migrations/escort_history_schema.sql",
+      "migrations/escort_roster_schema.sql"
+    ],
+    "declared_tables": [
+      "escort_calculation_config",
+      "escort_order_groups",
+      "escort_order_lighters",
+      "escort_release_matches",
+      "escort_roster_audit_logs",
+      "escort_roster_entries",
+      "escort_shift_logs",
+      "escort_slip_extractions",
+      "fazle_contact_aliases",
+      "fazle_draft_replies",
+      "fazle_knowledge_base",
+      "fazle_payment_correction_log",
+      "fazle_payment_drafts",
+      "fazle_queue_leases",
+      "fazle_recruitment_sessions",
+      "fazle_reviewed_replies",
+      "fazle_runtime_nodes",
+      "fazle_state_version",
+      "llm_learning_memory",
+      "phone_normalization_log",
+      "role_reply_styles",
+      "social_backlog_state",
+      "social_flagged_items",
+      "social_inbox_events",
+      "social_rate_limit_state",
+      "social_reply_queue",
+      "social_retry_queue",
+      "social_sent_log",
+      "social_thread_state",
+      "user_memory",
+      "user_profiles"
+    ],
+    "declared_views": [
+      "ai_read_attendance_summary",
+      "ai_read_contacts",
+      "ai_read_employees",
+      "ai_read_escort_programs",
+      "ai_read_kb_articles",
+      "ai_read_module_bridge_status",
+      "ai_read_payroll_runs",
+      "ai_read_recent_messages",
+      "ai_read_recruitment_leads",
+      "and"
+    ],
+    "code_references": {
+      "recover_from_backup.py": [
+        "wbom_whatsapp_messages"
+      ],
+      "recover_critical_numbers.py": [
+        "fazle_contact_aliases",
+        "fazle_unified_contacts",
+        "wbom_contacts",
+        "wbom_whatsapp_messages"
+      ],
+      "tests/conftest.py": [
+        "fazle_admin_audit",
+        "fazle_admin_roles",
+        "fazle_admins",
+        "fazle_contact_roles",
+        "fazle_db_backups",
+        "fazle_draft_replies",
+        "fazle_knowledge_base",
+        "fazle_payment_correction_log",
+        "fazle_payment_drafts",
+        "fazle_recruitment_sessions",
+        "fazle_report_cache",
+        "fazle_reviewed_reply_memory",
+        "fazle_roles",
+        "fazle_service_heartbeats",
+        "fazle_test",
+        "wbom_attendance",
+        "wbom_cases",
+        "wbom_cash_transactions",
+        "wbom_contacts",
+        "wbom_employee_requests",
+        "wbom_employees",
+        "wbom_escort_programs",
+        "wbom_payroll_approval_log",
+        "wbom_payroll_run_items",
+        "wbom_payroll_runs",
+        "wbom_salary_records",
+        "wbom_staging_payments",
+        "wbom_whatsapp_messages"
+      ],
+      "tests/test_fpe_parser.py": [
+        "fazle_payroll_engine"
+      ],
+      "tests/test_fpe_employee.py": [
+        "fazle_payroll_engine"
+      ],
+      "tests/test_fpe_accounting.py": [
+        "fazle_payroll_engine"
+      ],
+      "tests/e2e/test_dashboard.py": [
+        "fazle_api_key"
+      ],
+      "tests/integration/test_api.py": [
+        "fazle_draft_replies",
+        "wbom_attendance",
+        "wbom_cash_transactions",
+        "wbom_payroll_runs"
+      ],
+      "tests/integration/test_webhooks.py": [
+        "fazle_admins",
+        "fazle_contact_roles",
+        "fazle_draft_replies",
+        "fazle_payment_drafts",
+        "wbom_escort_programs",
+        "wbom_whatsapp_messages"
+      ],
+      "tests/resilience/test_failure_recovery.py": [
+        "fazle_draft_replies",
+        "wbom_whatsapp_messages"
+      ],
+      "tests/db/test_db_consistency.py": [
+        "fazle_payment_drafts",
+        "wbom_attendance",
+        "wbom_cash_transactions",
+        "wbom_employees",
+        "wbom_escort_programs",
+        "wbom_payroll_runs"
+      ],
+      "tests/unit/test_pipeline_phases.py": [
+        "fazle_payroll_engine"
+      ],
+      "tests/unit/test_phase13b_queue_arbiter.py": [
+        "fazle_queue_leases"
+      ],
+      "tests/unit/test_payment_workflow.py": [
+        "fazle_payment_drafts",
+        "wbom_cash_transactions",
+        "wbom_escort_programs"
+      ],
+      "tests/unit/test_escort_lifecycle.py": [
+        "fazle_payment_drafts",
+        "wbom_attendance",
+        "wbom_escort_programs"
+      ],
+      "tests/unit/test_payroll.py": [
+        "wbom_cash_transactions",
+        "wbom_escort_programs",
+        "wbom_payroll_runs"
+      ],
+      "tests/unit/test_rbac.py": [
+        "fazle_admin_audit",
+        "fazle_admin_roles",
+        "fazle_admins"
+      ],
+      "tests/unit/test_phase13a_gateway.py": [
+        "fazle_message_queue",
+        "fazle_runtime_nodes"
+      ],
+      "tests/unit/test_attendance.py": [
+        "fazle_draft_replies",
+        "wbom_attendance",
+        "wbom_employees"
+      ],
+      "tests/unit/test_admin_commands.py": [
+        "fazle_draft_replies",
+        "wbom_cash_transactions"
+      ],
+      "tests/unit/test_accountant_payment_pipeline.py": [
+        "wbom_cash_transactions",
+        "wbom_employees",
+        "wbom_staging_payments"
+      ],
+      "tests/unit/test_identity_brain.py": [
+        "fazle_contact_roles",
+        "wbom_employees"
+      ],
+      "tests/unit/test_backup_pipeline.py": [
+        "fazle_backup",
+        "fazle_db_backup_20260419",
+        "fazle_db_backups",
+        "fazle_pg_",
+        "fazle_pg_20260501_023000",
+        "fazle_pg_20260507_023000",
+        "fazle_pg_20260508_023000",
+        "fazle_pg_YYYYMMDD_HHMMSS"
+      ],
+      "tests/unit/test_escort_module.py": [
+        "fazle_contact_roles"
+      ],
+      "tests/workflows/test_escort_payment_flow.py": [
+        "fazle_admin_audit",
+        "fazle_admin_roles",
+        "fazle_admins",
+        "fazle_contact_roles",
+        "fazle_outbound_queue",
+        "fazle_payment_drafts",
+        "wbom_attendance",
+        "wbom_cash_transactions",
+        "wbom_employees",
+        "wbom_escort_programs",
+        "wbom_payroll_approval_log",
+        "wbom_payroll_run_items",
+        "wbom_payroll_runs",
+        "wbom_whatsapp_messages"
+      ],
+      "tests/workflows/test_full_workflows.py": [
+        "fazle_admin_roles",
+        "fazle_admins",
+        "fazle_contact_roles",
+        "fazle_draft_replies",
+        "fazle_payment_drafts",
+        "fazle_roles",
+        "wbom_attendance",
+        "wbom_cash_transactions",
+        "wbom_escort_programs",
+        "wbom_payroll_runs"
+      ],
+      "modules/recruitment_flow/__init__.py": [
+        "fazle_recruitment_sessions"
+      ],
+      "modules/ollama_memory/__init__.py": [
+        "ai_memory_facts",
+        "ai_memory_questions",
+        "ai_memory_tasks",
+        "fazle_ollama_memory"
+      ],
+      "modules/memory_extractor/__init__.py": [
+        "fazle_knowledge_base"
+      ],
+      "modules/drafts/routes.py": [
+        "fazle_contact_roles",
+        "fazle_draft_replies",
+        "wbom_contacts"
+      ],
+      "modules/identity_brain/__init__.py": [
+        "fazle_contact_roles",
+        "wbom_attendance",
+        "wbom_cash_transactions",
+        "wbom_contacts",
+        "wbom_employees",
+        "wbom_escort_programs",
+        "wbom_relation_types"
+      ],
+      "modules/admin_transactions/__init__.py": [
+        "fazle_payroll_engine"
+      ],
+      "modules/contact_sync/__init__.py": [
+        "fazle_contact_aliases",
+        "fazle_contact_sync_log",
+        "fazle_unified_contacts",
+        "wbom_contacts"
+      ],
+      "modules/admin_commands/__init__.py": [
+        "fazle_draft_replies",
+        "fazle_payment_drafts",
+        "wbom_attendance",
+        "wbom_cash_transactions",
+        "wbom_employees",
+        "wbom_escort_programs"
+      ],
+      "modules/admin_commands/nl_outbound.py": [
+        "fazle_draft_replies"
+      ],
+      "modules/admin_commands/nl_router.py": [
+        "wbom_whatsapp_messages"
+      ],
+      "modules/admin_commands/nl_payments.py": [
+        "wbom_cash_transactions",
+        "wbom_employees"
+      ],
+      "modules/admin_commands/nl_advance_record.py": [
+        "wbom_cash_transactions",
+        "wbom_employees"
+      ],
+      "modules/admin_commands/nl_employee_stats.py": [
+        "wbom_employees"
+      ],
+      "modules/admin_commands/nl_search.py": [
+        "wbom_whatsapp_messages"
+      ],
+      "modules/escort_roster/extractor.py": [
+        "wbom_escort_programs"
+      ],
+      "modules/escort_roster/__init__.py": [
+        "wbom_escort_programs"
+      ],
+      "modules/escort_roster/db.py": [
+        "wbom_employees",
+        "wbom_escort_programs"
+      ],
+      "modules/escort_roster/routes.py": [
+        "wbom_escort_programs"
+      ],
+      "modules/escort_roster/history_sync.py": [
+        "wbom_escort_programs"
+      ],
+      "modules/attendance_parser/__init__.py": [
+        "fazle_draft_replies",
+        "wbom_attendance",
+        "wbom_employees"
+      ],
+      "modules/reports/__init__.py": [
+        "fazle_report_cache",
+        "fazle_report_runs",
+        "wbom_cash_transactions",
+        "wbom_employees",
+        "wbom_escort_programs",
+        "wbom_payroll_runs",
+        "wbom_staging_payments"
+      ],
+      "modules/media_normalization/__init__.py": [
+        "fazle_meta_media_"
+      ],
+      "modules/image_hash/__init__.py": [
+        "wbom_whatsapp_messages"
+      ],
+      "modules/payment_ingest/__init__.py": [
+        "fazle_payment_drafts",
+        "wbom_cash_transactions",
+        "wbom_employees",
+        "wbom_staging_payments"
+      ],
+      "modules/payment_ingest/wbom_fpe_sync.py": [
+        "fazle_payroll_engine",
+        "wbom_cash_transactions",
+        "wbom_emp",
+        "wbom_employees",
+        "wbom_fpe_sync",
+        "wbom_txn",
+        "wbom_txn_id"
+      ],
+      "modules/social_auto_reply/daemon_worker.py": [
+        "fazle_service_heartbeats"
+      ],
+      "modules/social_auto_reply/employee_lookup.py": [
+        "wbom_cash_transactions",
+        "wbom_employees",
+        "wbom_escort_programs"
+      ],
+      "modules/rbac/__init__.py": [
+        "fazle_admin_audit",
+        "fazle_admin_roles",
+        "fazle_admins",
+        "fazle_roles"
+      ],
+      "modules/payment_workflow/__init__.py": [
+        "fazle_payment_drafts",
+        "wbom_cash_transactions",
+        "wbom_employees",
+        "wbom_escort_programs"
+      ],
+      "modules/wa_chat_frontend/__init__.py": [
+        "fazle_draft_replies",
+        "fazle_runtime_settings",
+        "wbom_contacts",
+        "wbom_whatsapp_messages"
+      ],
+      "modules/admin_employees/__init__.py": [
+        "fazle_payroll_engine",
+        "wbom_attendance",
+        "wbom_cash_transactions",
+        "wbom_employees",
+        "wbom_escort_programs",
+        "wbom_salary_records"
+      ],
+      "modules/escort/__init__.py": [
+        "wbom_contacts",
+        "wbom_employees",
+        "wbom_escort_programs"
+      ],
+      "modules/contact_roles/routes.py": [
+        "fazle_contact_roles"
+      ],
+      "modules/payroll_logic/__init__.py": [
+        "wbom_cash_transactions",
+        "wbom_employees",
+        "wbom_escort_programs",
+        "wbom_salary_records"
+      ],
+      "modules/payroll/__init__.py": [
+        "wbom_cash_transactions",
+        "wbom_employees",
+        "wbom_escort_programs",
+        "wbom_payroll_approval_log",
+        "wbom_payroll_run_items",
+        "wbom_payroll_runs"
+      ],
+      "modules/knowledge_base/__init__.py": [
+        "fazle_knowledge_base"
+      ],
+      "modules/accountant_summary/__init__.py": [
+        "wbom_cash_transactions"
+      ],
+      "modules/ai_readonly_tools/__init__.py": [
+        "ai_read_attendance_summary",
+        "ai_read_contacts",
+        "ai_read_employees",
+        "ai_read_escort_programs",
+        "ai_read_kb_articles",
+        "ai_read_module_bridge_status",
+        "ai_read_payroll_runs",
+        "ai_read_recent_messages",
+        "ai_read_recruitment_leads",
+        "fazle_ai_reader"
+      ],
+      "modules/observability/__init__.py": [
+        "fazle_uptime_seconds"
+      ],
+      "modules/employee_verification/__init__.py": [
+        "fazle_draft_replies",
+        "wbom_employees",
+        "wbom_escort_programs"
+      ],
+      "modules/scheduler/__init__.py": [
+        "fazle_payment_drafts",
+        "fazle_reconciliation_log",
+        "fazle_reminders_sent",
+        "fazle_scheduled_jobs",
+        "fazle_service_heartbeats",
+        "wbom_employees",
+        "wbom_escort_programs",
+        "wbom_staging_payments",
+        "wbom_whatsapp_messages"
+      ],
+      "modules/message_router/__init__.py": [
+        "fazle_contact_roles",
+        "fazle_draft_replies",
+        "wbom_contacts",
+        "wbom_employees",
+        "wbom_relation_types",
+        "wbom_whatsapp_messages"
+      ],
+      "modules/outbound/__init__.py": [
+        "fazle_outbound_queue"
+      ],
+      "modules/user_role/__init__.py": [
+        "wbom_contacts",
+        "wbom_employees",
+        "wbom_relation_types"
+      ],
+      "modules/rag/__init__.py": [
+        "fazle_knowledge_base",
+        "fazle_rag_chunks"
+      ],
+      "modules/draft_quality/__init__.py": [
+        "fazle_draft_replies"
+      ],
+      "modules/kb_upload/routes.py": [
+        "fazle_knowledge_base"
+      ],
+      "modules/fazle_payroll_engine/__init__.py": [
+        "fazle_payroll_engine"
+      ],
+      "modules/fazle_payroll_engine/employee.py": [
+        "wbom_employees",
+        "wbom_phone_match",
+        "wbom_row"
+      ],
+      "modules/fazle_payroll_engine/diagnostics.py": [
+        "fazle_bridge_heartbeats",
+        "fazle_payroll_engine"
+      ],
+      "modules/fazle_payroll_engine/routes.py": [
+        "fazle_payroll_engine",
+        "wbom_employees",
+        "wbom_staging_payments"
+      ],
+      "modules/fazle_payroll_engine/workers.py": [
+        "fazle_payment_drafts",
+        "wbom_escort_programs"
+      ],
+      "modules/fazle_payroll_engine/replay.py": [
+        "fazle_payroll_engine",
+        "wbom_whatsapp_messages"
+      ],
+      "modules/escort_lifecycle/__init__.py": [
+        "fazle_draft_replies",
+        "fazle_payment_drafts",
+        "wbom_attendance",
+        "wbom_employees",
+        "wbom_escort_programs"
+      ],
+      "modules/attendance/__init__.py": [
+        "fazle_draft_replies",
+        "wbom_attendance",
+        "wbom_employees"
+      ],
+      "modules/conversation_layer/recruitment.py": [
+        "fazle_recruitment_sessions"
+      ],
+      "modules/backup/__init__.py": [
+        "fazle_db_backups",
+        "fazle_pg_"
+      ],
+      "modules/message_archive/__init__.py": [
+        "wbom_contacts",
+        "wbom_whatsapp_messages"
+      ],
+      "modules/payment_correction/__init__.py": [
+        "fazle_payment_correction_log",
+        "fazle_payment_drafts",
+        "wbom_cash_transactions"
+      ],
+      "modules/reviewed_reply_memory/__init__.py": [
+        "fazle_reviewed_replies"
+      ],
+      "modules/bridge_poller/__init__.py": [
+        "fazle_bridge_heartbeats",
+        "fazle_draft_replies",
+        "fazle_service_heartbeats",
+        "wbom_whatsapp_messages"
+      ],
+      "tools/repair_fpe_transactions.py": [
+        "wbom_bkash",
+        "wbom_col",
+        "wbom_employee_id",
+        "wbom_employees",
+        "wbom_mobile",
+        "wbom_nagad",
+        "wbom_row"
+      ],
+      "resources/recruitment.py": [
+        "wbom_candidate_conversations",
+        "wbom_candidates",
+        "wbom_recruitment_reminders"
+      ],
+      "resources/message_processor.py": [
+        "wbom_cases",
+        "wbom_complaints",
+        "wbom_contacts",
+        "wbom_extracted_data",
+        "wbom_whatsapp_messages"
+      ],
+      "scripts/import_missing_advance_transactions.py": [
+        "wbom_cash_transactions",
+        "wbom_employees"
+      ],
+      "scripts/shadow_recruitment_conversation_layer.py": [
+        "fazle_message_archive",
+        "wbom_inbound_messages",
+        "wbom_whatsapp_messages"
+      ],
+      "scripts/test_batch15_resilience.py": [
+        "fazle_error_log",
+        "fazle_outbound_queue",
+        "fazle_service_heartbeats"
+      ],
+      "scripts/test_batch16_scheduler.py": [
+        "fazle_outbound_queue",
+        "fazle_reconciliation_log",
+        "fazle_reminders_sent",
+        "fazle_scheduled_jobs",
+        "wbom_employees",
+        "wbom_escort_programs",
+        "wbom_staging_payments"
+      ],
+      "scripts/sync_knowledge_base_to_runtime.py": [
+        "fazle_knowledge_base"
+      ],
+      "scripts/test_batch19_rbac.py": [
+        "fazle_admin_audit",
+        "fazle_admin_roles",
+        "fazle_admins"
+      ],
+      "scripts/test_batch22_observability.py": [
+        "fazle_uptime_seconds"
+      ],
+      "scripts/test_batch18_backup.py": [
+        "fazle_db_backups",
+        "fazle_pg_",
+        "fazle_pg_20200101_000000"
+      ],
+      "scripts/test_batch13_escort_lifecycle.py": [
+        "fazle_payment_drafts",
+        "wbom_attendance",
+        "wbom_employees",
+        "wbom_escort_programs"
+      ],
+      "scripts/rebuild_qdrant.py": [
+        "fazle_knowledge_base",
+        "fazle_rag_chunks"
+      ],
+      "scripts/test_batch14_payroll.py": [
+        "wbom_employees",
+        "wbom_payroll_approval_log",
+        "wbom_payroll_run_items",
+        "wbom_payroll_runs"
+      ],
+      "scripts/test_batch17_reports.py": [
+        "fazle_outbound_queue",
+        "fazle_report_cache",
+        "fazle_report_runs"
+      ],
+      "scripts/setup_ollama_memory_db.py": [
+        "ai_memory_facts",
+        "ai_memory_questions",
+        "ai_memory_tasks",
+        "fazle_ai_reader",
+        "fazle_ollama_memory"
+      ],
+      "scripts/recruitment_lead_recovery_analyzer.py": [
+        "wbom_whatsapp_messages"
+      ],
+      "scripts/test_batch11_recruitment_gate.py": [
+        "fazle_recruitment_sessions"
+      ],
+      "scripts/test_batch12_payment_ingest.py": [
+        "fazle_payment_drafts",
+        "wbom_cash_transactions",
+        "wbom_employees",
+        "wbom_staging_payments"
+      ],
+      "archive/deprecated/20260602_gap_detector/__init__.py": [
+        "fazle_payroll_engine",
+        "wbom_whatsapp_messages"
+      ],
+      "archive/deprecated/20260602_gap_actions/__init__.py": [
+        "fazle_draft_replies",
+        "wbom_whatsapp_messages"
+      ],
+      "archive/deprecated/employee_utils/__init__.py": [
+        "wbom_employees"
+      ],
+      "archive/deprecated/csv_import/__init__.py": [
+        "wbom_attendance",
+        "wbom_cash_transactions",
+        "wbom_employees"
+      ],
+      "app/main.py": [
+        "fazle_admin_audit",
+        "fazle_admins",
+        "fazle_backup",
+        "fazle_draft_replies",
+        "fazle_error_log",
+        "fazle_http_request_duration_ms",
+        "fazle_http_requests_total",
+        "fazle_knowledge_base",
+        "fazle_message_queue",
+        "fazle_payment_drafts",
+        "fazle_payroll_engine",
+        "fazle_recruitment_sessions",
+        "fazle_reports",
+        "fazle_reviewed_replies",
+        "fazle_scheduler",
+        "fazle_service_heartbeats",
+        "wbom_contacts",
+        "wbom_employees",
+        "wbom_escort_programs",
+        "wbom_payroll_run_items",
+        "wbom_whatsapp_messages"
+      ],
+      "app/config.py": [
+        "fazle_draft_replies"
+      ],
+      "app/error_log.py": [
+        "fazle_error_log"
+      ],
+      "shared/state_version.py": [
+        "fazle_state_version"
+      ],
+      "shared/self_heal.py": [
+        "fazle_processing_locks"
+      ],
+      "shared/write_router.py": [
+        "fazle_write_queue",
+        "wbom_employees"
+      ],
+      "shared/draft_reply.py": [
+        "fazle_draft_replies"
+      ],
+      "shared/runtime_gateway.py": [
+        "fazle_message_queue",
+        "fazle_runtime_nodes"
+      ],
+      "shared/frontend_sync.py": [
+        "fazle_message_queue",
+        "fazle_sid"
+      ],
+      "shared/draft.py": [
+        "fazle_payment_drafts"
+      ],
+      "shared/identity_map.py": [
+        "wbom_cash_transactions",
+        "wbom_employees",
+        "wbom_escort_programs"
+      ],
+      "shared/queue_arbiter.py": [
+        "fazle_message_queue",
+        "fazle_queue_leases"
+      ],
+      "shared/locks.py": [
+        "fazle_processing_locks"
+      ],
+      "shared/consistency.py": [
+        "wbom_employees"
+      ],
+      "shared/queue.py": [
+        "fazle_bridge_heartbeats",
+        "fazle_message_queue"
+      ],
+      "shared/phone.py": [
+        "fazle_payroll_engine"
+      ]
+    }
+  },
+  "kb": {
+    "markdown_files": [
+      "knowledge_base/00_governance/README.md",
+      "knowledge_base/00_governance/active_development_plan.md",
+      "knowledge_base/00_governance/claude_session3_audit_report.md",
+      "knowledge_base/00_governance/final_management_directive.md",
+      "knowledge_base/00_governance/kb_certification.md",
+      "knowledge_base/00_governance/kb_enrichment_plan_v2.md",
+      "knowledge_base/00_governance/kb_policy.md",
+      "knowledge_base/00_governance/management_decisions.md",
+      "knowledge_base/00_governance/master_execution_plan_v2.md",
+      "knowledge_base/00_governance/module_alignment_report.md",
+      "knowledge_base/00_governance/organizational_brain_gap_report.md",
+      "knowledge_base/00_governance/phase1_5_hybrid_rag_design.md",
+      "knowledge_base/00_governance/phase1_rag_analysis.md",
+      "knowledge_base/00_governance/project_context.md",
+      "knowledge_base/00_governance/session4_audit_report_2026_06_23.md",
+      "knowledge_base/01_employee_knowledge/attendance_policy.md",
+      "knowledge_base/01_employee_knowledge/company_identity.md",
+      "knowledge_base/01_employee_knowledge/faq_employee.md",
+      "knowledge_base/01_employee_knowledge/leave_policy.md",
+      "knowledge_base/01_employee_knowledge/recruitment_policy.md",
+      "knowledge_base/01_employee_knowledge/release_slip.md",
+      "knowledge_base/01_employee_knowledge/salary_policy.md",
+      "knowledge_base/01_employee_knowledge/transport_allowance.md",
+      "knowledge_base/02_admin_knowledge/admin_attendance_handling.md",
+      "knowledge_base/02_admin_knowledge/admin_operations_overview.md",
+      "knowledge_base/02_admin_knowledge/admin_payment_handling.md",
+      "knowledge_base/02_admin_knowledge/admin_role_management.md",
+      "knowledge_base/02_admin_knowledge/admin_transactions_rules.md",
+      "knowledge_base/02_admin_system/admin_business_rules.md",
+      "knowledge_base/02_admin_system/attendance_workflow.md",
+      "knowledge_base/02_admin_system/escort_workflow.md",
+      "knowledge_base/02_admin_system/payment_workflow.md",
+      "knowledge_base/02_admin_system/payroll_rules.md",
+      "knowledge_base/02_admin_system/release_slip_workflow.md",
+      "knowledge_base/03_ai_identity/accountant_identity.md",
+      "knowledge_base/03_ai_identity/admin_identity.md",
+      "knowledge_base/03_ai_identity/candidate_identity.md",
+      "knowledge_base/03_ai_identity/employee_identity.md",
+      "knowledge_base/03_ai_identity/escort_identity.md",
+      "knowledge_base/03_ai_identity/family_identity.md",
+      "knowledge_base/03_ai_identity/identity_overview.md",
+      "knowledge_base/03_ai_identity/permission_matrix.md",
+      "knowledge_base/03_ai_identity/response_rules.md",
+      "knowledge_base/03_ai_identity/vip_identity.md",
+      "knowledge_base/03_developer_system/ai_system_prompt.md",
+      "knowledge_base/03_developer_system/identity_brain.md",
+      "knowledge_base/03_developer_system/ocr_pipeline.md",
+      "knowledge_base/03_developer_system/parser_logic.md",
+      "knowledge_base/03_developer_system/rag_rules.md",
+      "knowledge_base/03_developer_system/security_rules.md",
+      "knowledge_base/03_developer_system/workflow_engine.md",
+      "knowledge_base/04_business_rules/ai_response_rules.md",
+      "knowledge_base/04_business_rules/attendance_business_rules.md",
+      "knowledge_base/04_business_rules/cash_business_rules.md",
+      "knowledge_base/04_business_rules/escort_business_rules.md",
+      "knowledge_base/04_business_rules/joining_business_rules.md",
+      "knowledge_base/04_business_rules/payment_business_rules.md",
+      "knowledge_base/04_business_rules/recruitment_business_rules.md",
+      "knowledge_base/04_business_rules/salary_business_rules.md",
+      "knowledge_base/04_business_rules/salary_policy.md",
+      "knowledge_base/05_workflows/attendance_workflow.md",
+      "knowledge_base/05_workflows/cash_workflow.md",
+      "knowledge_base/05_workflows/client_order_workflow.md",
+      "knowledge_base/05_workflows/escort_workflow.md",
+      "knowledge_base/05_workflows/payment_workflow.md",
+      "knowledge_base/05_workflows/recruitment_workflow.md",
+      "knowledge_base/05_workflows/release_slip_workflow.md",
+      "knowledge_base/05_workflows/salary_workflow.md",
+      "knowledge_base/06_developer_system/accountant_summary.md",
+      "knowledge_base/06_developer_system/admin_commands_detail.md",
+      "knowledge_base/06_developer_system/admin_ui.md",
+      "knowledge_base/06_developer_system/ai_readonly_data_access.md",
+      "knowledge_base/06_developer_system/attendance_parser.md",
+      "knowledge_base/06_developer_system/automation_pipeline.md",
+      "knowledge_base/06_developer_system/bridge_poller.md",
+      "knowledge_base/06_developer_system/contact_sync.md",
+      "knowledge_base/06_developer_system/conversation_parser.md",
+      "knowledge_base/06_developer_system/database_rules.md",
+      "knowledge_base/06_developer_system/developer_notes.md",
+      "knowledge_base/06_developer_system/distributed_architecture.md",
+      "knowledge_base/06_developer_system/escort_roster_system.md",
+      "knowledge_base/06_developer_system/escort_slip_extractor.md",
+      "knowledge_base/06_developer_system/event_pipeline.md",
+      "knowledge_base/06_developer_system/fpe_overview.md",
+      "knowledge_base/06_developer_system/hybrid_search.md",
+      "knowledge_base/06_developer_system/identity_brain.md",
+      "knowledge_base/06_developer_system/identity_integration.md",
+      "knowledge_base/06_developer_system/intent_classifier.md",
+      "knowledge_base/06_developer_system/ocr_engine.md",
+      "knowledge_base/06_developer_system/ollama_memory.md",
+      "knowledge_base/06_developer_system/outbound_delivery.md",
+      "knowledge_base/06_developer_system/parser_engine.md",
+      "knowledge_base/06_developer_system/payroll_module.md",
+      "knowledge_base/06_developer_system/phone_normalizer.md",
+      "knowledge_base/06_developer_system/rag_strategy.md",
+      "knowledge_base/06_developer_system/recruitment_ai_detail.md",
+      "knowledge_base/06_developer_system/recruitment_flow_system.md",
+      "knowledge_base/06_developer_system/reviewed_reply_memory.md",
+      "knowledge_base/06_developer_system/role_permissions.md",
+      "knowledge_base/06_developer_system/runtime_gateway_flags.md",
+      "knowledge_base/06_developer_system/security_rules.md",
+      "knowledge_base/06_developer_system/social_auto_reply_system.md",
+      "knowledge_base/06_developer_system/system_prompt.md",
+      "knowledge_base/06_developer_system/visibility_rules.md",
+      "knowledge_base/06_developer_system/workflow_engine.md",
+      "knowledge_base/07_archived/final_kb_completion_report_20260622.md",
+      "knowledge_base/07_archived/kb_v1_governance_record.md",
+      "knowledge_base/07_archived/legacy_structure_notes/old_structure_mapping.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/01_production_knowledge_coverage_matrix.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/02_module_coverage_report.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/03_workflow_coverage_report.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/04_business_rule_coverage_report.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/05_parser_coverage_report.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/06_database_behavior_coverage_report.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/07_scheduler_coverage_report.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/08_ai_behavior_coverage_report.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/09_state_machine_coverage_report.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/10_hidden_rule_coverage_report.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/11_identity_coverage_report.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/12_command_coverage_report.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/13_knowledge_gap_matrix.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/14_missing_knowledge_inventory.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/15_knowledge_extraction_tracker.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/16_existing_article_enrichment_plan.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/17_new_article_justification.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/18_production_traceability_matrix.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/19_coverage_score.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/20_management_summary.md",
+      "knowledge_base/07_archived/pkca_reports_20260622/wave1_changes.md",
+      "knowledge_base/07_archived/pkca_reports_20260623/01_pkca_v2_coverage_matrix.md",
+      "knowledge_base/07_archived/pkca_reports_20260623/02_pkca_v3_coverage_matrix.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/01_knowledge_maturity_summary.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/02_maturity_matrix.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/03_domain_maturity_report.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/04_knowledge_governance_report.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/05_authority_readiness_report.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/06_traceability_maturity.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/07_quality_assessment.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/08_risk_assessment.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/09_heatmap.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/10_business_rule_maturity.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/11_workflow_maturity.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/12_state_machine_maturity.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/13_parser_maturity.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/14_scheduler_maturity.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/15_ai_maturity.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/16_identity_maturity.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/17_database_maturity.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/18_developer_system_maturity.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/19_organizational_brain_readiness.md",
+      "knowledge_base/07_archived/pkma_reports_20260622/20_final_pkma_assessment.md",
+      "knowledge_base/07_archived/pkma_reports_20260623/01_pkma_v2_maturity_matrix.md",
+      "knowledge_base/07_archived/pkma_reports_20260623/02_pkma_v3_maturity_matrix.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/01_executive_validation_summary.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/02_knowledge_coverage_report.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/03_knowledge_completeness_report.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/04_workflow_validation_report.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/05_business_rule_validation_report.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/06_parser_validation_report.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/07_database_behaviour_validation_report.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/08_ai_behaviour_validation_report.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/09_identity_validation_report.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/10_notification_validation_report.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/11_scheduler_validation_report.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/12_command_validation_report.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/13_state_machine_validation_report.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/14_traceability_report.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/15_duplicate_validation_report.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/16_conflict_validation_report.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/17_missing_knowledge_validation_report.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/18_knowledge_quality_score.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/19_certification_readiness_report.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/20_management_decision_register.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/21_management_decisions_and_directives_20260621.md",
+      "knowledge_base/07_archived/pkvc_reports_20260621/22_pending_dup_evidence_20260621.md",
+      "knowledge_base/07_archived/pkvc_reports_20260622/01_fpe_overview_pkvc.md",
+      "knowledge_base/07_archived/pkvc_reports_20260622/02_social_auto_reply_pkvc.md",
+      "knowledge_base/07_archived/pkvc_reports_20260622/03_database_rules_pkvc.md",
+      "knowledge_base/07_archived/pkvc_reports_20260622/04_automation_pipeline_pkvc.md",
+      "knowledge_base/07_archived/pkvc_reports_20260622/05_rag_strategy_pkvc.md",
+      "knowledge_base/07_archived/pkvc_reports_20260622/06_ocr_engine_pkvc.md",
+      "knowledge_base/07_archived/pkvc_reports_20260622/07_developer_notes_pkvc.md",
+      "knowledge_base/07_archived/pkvc_reports_20260622/08_identity_brain_pkvc.md",
+      "knowledge_base/07_archived/pkvc_reports_20260622/certification_index.md",
+      "knowledge_base/07_archived/pkvc_reports_20260622/freeze_readiness.md",
+      "knowledge_base/07_archived/pkvc_reports_20260623/01_pkvc_v2_conflict_verification.md",
+      "knowledge_base/07_archived/source_rewrites/clean_admin_system_knowledge.md",
+      "knowledge_base/07_archived/source_rewrites/clean_fazle_system_operations.md",
+      "knowledge_base/07_archived/source_rewrites/clean_hr_identity_candidate.md",
+      "knowledge_base/KBTI_v1_PreExecution_Deliverables_20260621.md",
+      "knowledge_base/PKM_KE_KBG_Program_v2_Analysis_2026-06-21.md",
+      "knowledge_base/PKM_KE_KBG_Program_v2_Analysis_2026-06-21_BOARD_READY.md",
+      "knowledge_base/PKM_KE_KBG_Program_v2_Analysis_2026-06-21_DETAILED.md",
+      "knowledge_base/PKVC_Program_v1_Analysis_2026-06-21.md",
+      "knowledge_base/README.md",
+      "knowledge_base/ai_access_matrix.md",
+      "knowledge_base/conflict_resolution_record.md",
+      "knowledge_base/duplicate_report.md",
+      "knowledge_base/enrichment_report.md",
+      "knowledge_base/gap_report.md",
+      "knowledge_base/knowledge_inventory.md",
+      "knowledge_base/missing_report.md",
+      "knowledge_base/production_knowledge_report.md"
+    ],
+    "markdown_count": 203,
+    "by_folder": {
+      "00_governance": 15,
+      "01_employee_knowledge": 8,
+      "02_admin_knowledge": 5,
+      "02_admin_system": 6,
+      "03_ai_identity": 10,
+      "03_developer_system": 7,
+      "04_business_rules": 9,
+      "05_workflows": 8,
+      "06_developer_system": 37,
+      "07_archived": 84,
+      "KBTI_v1_PreExecution_Deliverables_20260621.md": 1,
+      "PKM_KE_KBG_Program_v2_Analysis_2026-06-21.md": 1,
+      "PKM_KE_KBG_Program_v2_Analysis_2026-06-21_BOARD_READY.md": 1,
+      "PKM_KE_KBG_Program_v2_Analysis_2026-06-21_DETAILED.md": 1,
+      "PKVC_Program_v1_Analysis_2026-06-21.md": 1,
+      "README.md": 1,
+      "ai_access_matrix.md": 1,
+      "conflict_resolution_record.md": 1,
+      "duplicate_report.md": 1,
+      "enrichment_report.md": 1,
+      "gap_report.md": 1,
+      "knowledge_inventory.md": 1,
+      "missing_report.md": 1,
+      "production_knowledge_report.md": 1
+    },
+    "root_files": [
+      "knowledge_base/00_governance/kb_manifest.yaml",
+      "knowledge_base/00_governance/kb_metadata_schema.yaml",
+      "knowledge_base/latestaudit21062026.txt",
+      "knowledge_base/module_registry.yaml"
+    ]
+  },
+  "frontend": {
+    "files": [
+      "app/static/dashboard.html",
+      "app/static/drafts.html",
+      "app/static/escort-roster.html",
+      "app/static/kb.html",
+      "app/static/open-chat.html",
+      "app/static/payroll.html",
+      "app/static/wa_chat.html"
+    ],
+    "count": 7
+  }
+}

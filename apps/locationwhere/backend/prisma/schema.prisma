@@ -1,0 +1,247 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  SUPER_ADMIN
+  HR_MANAGER
+  BRANCH_MANAGER
+  SECURITY_OFFICER
+}
+
+enum AlertType {
+  SIM_CHANGE
+  UNINSTALL_ATTEMPT
+  GEOFENCE_BREACH
+  APP_OFFLINE
+  LOW_BATTERY
+  REMOTE_COMMAND
+}
+
+enum Severity {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+}
+
+enum CommandType {
+  LOCK
+  UNLOCK
+  WIPE
+  SIREN
+  MESSAGE
+}
+
+enum CommandStatus {
+  PENDING
+  SENT
+  EXECUTED
+  FAILED
+}
+
+enum SimStatus {
+  PENDING
+  RESOLVED
+  FALSE_ALARM
+}
+
+enum CallType {
+  INCOMING
+  OUTGOING
+  MISSED
+}
+
+enum GeofenceAlertType {
+  ENTERED
+  EXITED
+}
+
+enum RegistrationStatus {
+  UNREGISTERED
+  REGISTERED
+}
+
+model Employee {
+  id             String    @id @default(uuid())
+  employeeCode   String    @unique
+  fullName       String
+  email          String?   @unique
+  phone          String    @unique
+  password       String    // Added for mobile login
+  department     String?
+  designation    String?
+  branchId       String?
+  deviceId       String?
+  simNumber      String?
+  fcmToken       String?
+  isActive       Boolean   @default(true)
+  registrationStatus RegistrationStatus @default(UNREGISTERED)
+  consentSigned  Boolean   @default(false)
+  consentDate    DateTime?
+
+  locationLogs   LocationLog[]
+  geofenceAlerts GeofenceAlert[]
+  simChangeLogs  SimChangeLog[]
+  callLogs       CallLog[]
+  deviceInfo     DeviceInfo?
+  remoteCommands RemoteCommand[]
+  alerts         Alert[]
+
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+}
+
+model AdminUser {
+  id           String    @id @default(uuid())
+  username     String    @unique
+  email        String    @unique
+  passwordHash String
+  role         Role
+  branchId     String?
+  isActive     Boolean   @default(true)
+  lastLogin    DateTime?
+
+  remoteCommands RemoteCommand[]
+  resolvedSims   SimChangeLog[]  @relation("SimResolver")
+  auditLogs      AuditLog[]
+  readAlerts     Alert[]         @relation("AlertReader")
+
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+}
+
+model LocationLog {
+  id           String   @id @default(uuid())
+  employeeId   String
+  employee     Employee @relation(fields: [employeeId], references: [id])
+  latitude     Float
+  longitude    Float
+  accuracy     Float?
+  address      String?
+  batteryLevel Int?
+  isOnline     Boolean  @default(true)
+  recordedAt   DateTime @default(now())
+  createdAt    DateTime @default(now())
+
+  @@index([employeeId, recordedAt])
+}
+
+model Geofence {
+  id           String   @id @default(uuid())
+  name         String
+  branchId     String?
+  centerLat    Float
+  centerLng    Float
+  radiusMeters Float
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+}
+
+model GeofenceAlert {
+  id         String            @id @default(uuid())
+  employeeId String
+  employee   Employee          @relation(fields: [employeeId], references: [id])
+  geofenceId String
+  alertType  GeofenceAlertType
+  latitude   Float
+  longitude  Float
+  triggeredAt DateTime         @default(now())
+}
+
+model SimChangeLog {
+  id                String    @id @default(uuid())
+  employeeId        String
+  employee          Employee  @relation(fields: [employeeId], references: [id])
+  deviceId          String
+  previousSimNumber String?
+  newSimNumber      String
+  previousIMSI      String?
+  newIMSI           String
+  deviceModel       String?
+  androidVersion    String?
+  detectedAt        DateTime  @default(now())
+  resolvedAt        DateTime?
+  resolvedById      String?
+  resolvedBy        AdminUser? @relation("SimResolver", fields: [resolvedById], references: [id])
+  status            SimStatus  @default(PENDING)
+}
+
+model CallLog {
+  id                 String   @id @default(uuid())
+  employeeId         String
+  employee           Employee @relation(fields: [employeeId], references: [id])
+  callType           CallType
+  phoneNumber        String
+  contactName        String?
+  duration           Int      // seconds
+  hasRecording       Boolean  @default(false)
+  recordingPath      String?  // S3 key
+  recordingEncrypted Boolean  @default(true)
+  startedAt          DateTime
+  endedAt            DateTime
+  createdAt          DateTime @default(now())
+}
+
+model DeviceInfo {
+  id             String   @id @default(uuid())
+  employeeId     String   @unique
+  employee       Employee @relation(fields: [employeeId], references: [id])
+  deviceModel    String
+  manufacturer   String?
+  androidVersion String
+  appVersion     String
+  imei           String?
+  serialNumber   String?
+  fcmToken       String?
+  isAdminActive  Boolean  @default(false)
+  lastSeen       DateTime @default(now())
+  isLocked       Boolean  @default(false)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model RemoteCommand {
+  id             String        @id @default(uuid())
+  employeeId     String
+  employee       Employee      @relation(fields: [employeeId], references: [id])
+  adminId        String
+  admin          AdminUser     @relation(fields: [adminId], references: [id])
+  commandType    CommandType
+  commandPayload Json?
+  status         CommandStatus @default(PENDING)
+  sentAt         DateTime?
+  executedAt     DateTime?
+  createdAt      DateTime      @default(now())
+}
+
+model Alert {
+  id          String    @id @default(uuid())
+  employeeId  String
+  employee    Employee  @relation(fields: [employeeId], references: [id])
+  alertType   AlertType
+  severity    Severity
+  message     String
+  isRead      Boolean   @default(false)
+  readById    String?
+  readBy      AdminUser? @relation("AlertReader", fields: [readById], references: [id])
+  createdAt   DateTime  @default(now())
+}
+
+model AuditLog {
+  id          String    @id @default(uuid())
+  adminId     String
+  admin       AdminUser @relation(fields: [adminId], references: [id])
+  action      String
+  targetType  String
+  targetId    String?
+  ipAddress   String?
+  userAgent   String?
+  details     Json?
+  createdAt   DateTime  @default(now())
+}

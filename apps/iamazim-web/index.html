@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Al-Aqsa Security Service — Bangladesh's trusted provider of professional security guards, corporate security, escort & logistics solutions since 2014.">
+  <meta name="keywords" content="security service Bangladesh, security guards Chittagong, corporate security, escort security, Al-Aqsa">
+  <meta property="og:title" content="Al-Aqsa Security Service — Professional Security in Bangladesh">
+  <meta property="og:description" content="Trusted security partner since 2014. Corporate, residential, logistics & escort security across Bangladesh.">
+  <meta property="og:type" content="website">
+  <title>Al-Aqsa Security Service — Bangladesh</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:      #0d1b2a;
+      --navy2:     #142236;
+      --navy3:     #1a2e4a;
+      --gold:      #e8a020;
+      --gold2:     #f5b830;
+      --white:     #ffffff;
+      --off-white: #f8fafc;
+      --gray:      #e4e9f0;
+      --gray2:     #c8d1dc;
+      --muted:     #64748b;
+      --text:      #1e293b;
+      --r:         8px;
+      --shadow:    0 4px 24px rgba(0,0,0,.10);
+      --shadow2:   0 12px 40px rgba(0,0,0,.16);
+    }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color: var(--text); line-height: 1.65; background: var(--white); }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    img { max-width: 100%; display: block; }
+    button { font-family: inherit; }
+
+    /* ── Utility ───────────────────────────────────────────── */
+    .wrap    { max-width: 1160px; margin: 0 auto; padding: 0 28px; }
+    .section { padding: 88px 0; }
+    .tag     { display: inline-block; background: var(--gold); color: var(--navy); font-size: .72rem; font-weight: 800; letter-spacing: 1.8px; text-transform: uppercase; padding: 4px 14px; border-radius: 20px; margin-bottom: 14px; }
+    .sec-title { font-size: clamp(1.75rem, 3vw, 2.25rem); font-weight: 800; line-height: 1.2; margin-bottom: 14px; }
+    .sec-sub   { color: var(--muted); font-size: 1.05rem; max-width: 580px; margin: 0 auto 52px; text-align: center; }
+    .center    { text-align: center; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 28px; border-radius: var(--r); font-weight: 700; font-size: .95rem; cursor: pointer; border: none; transition: all .2s; line-height: 1; }
+    .btn-gold   { background: var(--gold); color: var(--navy); }
+    .btn-gold:hover { background: var(--gold2); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(232,160,32,.35); }
+    .btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,.7); }
+    .btn-outline:hover { background: var(--white); color: var(--navy); border-color: var(--white); }
+    .btn-navy   { background: var(--navy); color: var(--white); }
+    .btn-navy:hover { background: var(--navy3); transform: translateY(-2px); }
+
+    /* ── Navbar ───────────────────────────────────────────── */
+    #navbar { position: fixed; inset: 0 0 auto; z-index: 200; background: var(--navy); transition: box-shadow .25s; }
+    #navbar.scrolled { box-shadow: 0 3px 24px rgba(0,0,0,.4); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .nav-logo  { display: flex; align-items: center; gap: 11px; }
+    .logo-shield { flex: none; width: 38px; height: 38px; }
+    .nav-logo .name { color: var(--white); font-size: 1.15rem; font-weight: 800; letter-spacing: .3px; }
+    .nav-logo .name em { color: var(--gold); font-style: normal; }
+    .nav-links { display: flex; align-items: center; gap: 2px; }
+    .nav-links a { color: rgba(255,255,255,.8); padding: 7px 13px; border-radius: 5px; font-size: .88rem; font-weight: 500; transition: color .2s; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta { background: var(--gold); color: var(--navy); padding: 8px 18px; border-radius: 6px; font-weight: 700; font-size: .88rem; margin-left: 6px; }
+    .nav-cta:hover { background: var(--gold2); color: var(--navy); }
+    .nav-burger { display: none; background: none; border: none; cursor: pointer; padding: 6px; flex-direction: column; gap: 5px; }
+    .nav-burger span { display: block; width: 23px; height: 2px; background: var(--white); border-radius: 2px; transition: all .3s; }
+    #mobile-nav { display: none; background: var(--navy2); padding: 8px 28px 16px; }
+    #mobile-nav a { display: block; color: rgba(255,255,255,.8); padding: 11px 0; font-size: .97rem; border-bottom: 1px solid rgba(255,255,255,.07); }
+    #mobile-nav a:last-child { border: none; }
+    #mobile-nav a:hover { color: var(--gold); }
+
+    /* ── Hero ─────────────────────────────────────────────── */
+    #hero { background: linear-gradient(135deg, var(--navy) 0%, #0f2540 60%, #1a3a60 100%); color: var(--white); padding: 136px 0 80px; position: relative; overflow: hidden; }
+    #hero::before { content: ''; position: absolute; top: -120px; right: -160px; width: 560px; height: 560px; background: radial-gradient(circle, rgba(232,160,32,.1) 0%, transparent 68%); border-radius: 50%; pointer-events: none; }
+    #hero::after  { content: ''; position: absolute; bottom: -80px; left: -100px; width: 420px; height: 420px; background: radial-gradient(circle, rgba(232,160,32,.06) 0%, transparent 68%); border-radius: 50%; pointer-events: none; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 420px; gap: 64px; align-items: center; position: relative; z-index: 1; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(232,160,32,.14); border: 1px solid rgba(232,160,32,.32); color: var(--gold); padding: 5px 14px; border-radius: 20px; font-size: .76rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 20px; }
+    #hero h1 { font-size: clamp(2.2rem, 4.5vw, 3.2rem); font-weight: 900; line-height: 1.15; margin-bottom: 20px; }
+    #hero h1 em { color: var(--gold); font-style: normal; }
+    #hero p { font-size: 1.08rem; color: rgba(255,255,255,.78); margin-bottom: 34px; max-width: 500px; line-height: 1.75; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero-phone  { display: flex; align-items: center; gap: 10px; margin-top: 28px; color: rgba(255,255,255,.6); font-size: .9rem; }
+    .hero-phone a { color: var(--gold); font-weight: 700; font-size: 1rem; }
+    .hero-phone a:hover { color: var(--gold2); }
+    .hero-visual { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+    .hero-shield-wrap { position: relative; }
+    .hero-shield-svg { width: 220px; filter: drop-shadow(0 24px 48px rgba(232,160,32,.28)); }
+    .hero-stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; width: 100%; }
+    .hstat { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.1); border-radius: 10px; padding: 16px 10px; text-align: center; }
+    .hstat .num { font-size: 2rem; font-weight: 900; color: var(--gold); line-height: 1; }
+    .hstat .lbl { font-size: .7rem; color: rgba(255,255,255,.55); margin-top: 5px; text-transform: uppercase; letter-spacing: .5px; }
+
+    /* ── Stats Bar ────────────────────────────────────────── */
+    #stats-bar { background: var(--navy); padding: 52px 0; }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
+    .stat-item .num { font-size: 2.8rem; font-weight: 900; color: var(--gold); line-height: 1; }
+    .stat-item .lbl { font-size: .8rem; color: rgba(255,255,255,.55); text-transform: uppercase; letter-spacing: 1px; margin-top: 6px; }
+    .stat-divider { width: 1px; background: rgba(255,255,255,.1); margin: 0 auto; }
+
+    /* ── About ────────────────────────────────────────────── */
+    #about { background: var(--white); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .about-card { background: var(--navy); color: var(--white); border-radius: 16px; padding: 36px; position: relative; overflow: hidden; }
+    .about-card::before { content: ''; position: absolute; top: -50px; right: -50px; width: 180px; height: 180px; background: rgba(232,160,32,.08); border-radius: 50%; }
+    .about-card::after  { content: ''; position: absolute; bottom: -40px; left: -40px; width: 140px; height: 140px; background: rgba(232,160,32,.05); border-radius: 50%; }
+    .about-card h3 { font-size: 1.35rem; font-weight: 800; margin-bottom: 6px; position: relative; z-index: 1; }
+    .about-card .sub { color: rgba(255,255,255,.55); font-size: .88rem; margin-bottom: 24px; position: relative; z-index: 1; }
+    .about-list { position: relative; z-index: 1; }
+    .about-list li { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.08); font-size: .93rem; color: rgba(255,255,255,.85); }
+    .about-list li:last-child { border: none; }
+    .chk { flex: none; width: 22px; height: 22px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; color: var(--navy); font-weight: 900; margin-top: 1px; }
+    .about-text .sec-title { text-align: left; }
+    .about-text .sec-sub  { text-align: left; margin: 0 0 24px; }
+    .founder-block { display: flex; align-items: center; gap: 14px; background: var(--off-white); border-radius: 10px; padding: 16px 18px; margin-top: 24px; }
+    .founder-avatar { width: 50px; height: 50px; background: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 1.3rem; font-weight: 800; flex: none; }
+    .founder-block strong { display: block; font-size: .95rem; color: var(--text); }
+    .founder-block span   { font-size: .82rem; color: var(--muted); }
+
+    /* ── Services ─────────────────────────────────────────── */
+    #services { background: var(--off-white); }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .svc-card { background: var(--white); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); transition: transform .25s, box-shadow .25s; }
+    .svc-card:hover { transform: translateY(-5px); box-shadow: var(--shadow2); }
+    .svc-head { background: linear-gradient(135deg, var(--navy) 0%, var(--navy3) 100%); padding: 26px 26px 18px; }
+    .svc-icon { width: 54px; height: 54px; background: rgba(232,160,32,.18); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin-bottom: 14px; }
+    .svc-head h3 { color: var(--white); font-size: 1.05rem; font-weight: 700; line-height: 1.3; }
+    .svc-body { padding: 20px 26px 26px; }
+    .svc-body p { color: var(--muted); font-size: .9rem; line-height: 1.7; margin-bottom: 16px; }
+    .svc-price { font-size: 1.05rem; font-weight: 800; color: var(--navy); }
+    .svc-price .inc { font-size: .78rem; color: var(--muted); font-weight: 400; display: block; margin-top: 2px; }
+    .svc-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+    .svc-tag { background: var(--off-white); color: var(--muted); font-size: .75rem; padding: 3px 10px; border-radius: 20px; }
+
+    /* ── Why Choose Us ────────────────────────────────────── */
+    #why { background: var(--white); }
+    .why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+    .why-card { text-align: center; padding: 36px 20px; border: 1.5px solid var(--gray); border-radius: 14px; transition: border-color .2s, box-shadow .2s; }
+    .why-card:hover { border-color: var(--gold); box-shadow: 0 0 0 4px rgba(232,160,32,.08); }
+    .why-icon { width: 68px; height: 68px; background: linear-gradient(135deg, var(--navy), var(--navy3)); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto 20px; }
+    .why-card h4 { font-size: 1rem; font-weight: 700; margin-bottom: 10px; }
+    .why-card p  { color: var(--muted); font-size: .88rem; line-height: 1.65; }
+
+    /* ── Timeline ─────────────────────────────────────────── */
+    #timeline { background: var(--off-white); }
+    .tl-wrap { position: relative; max-width: 840px; margin: 0 auto; }
+    .tl-line { position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: var(--gray); transform: translateX(-50%); }
+    .tl-item { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 44px; align-items: start; position: relative; }
+    .tl-dot  { position: absolute; left: 50%; top: 22px; width: 14px; height: 14px; background: var(--gold); border-radius: 50%; transform: translateX(-50%); box-shadow: 0 0 0 4px rgba(232,160,32,.25); }
+    .tl-date { display: flex; align-items: flex-start; padding-top: 2px; }
+    .tl-date .dt  { background: var(--navy); color: var(--white); padding: 5px 14px; border-radius: 20px; font-size: .8rem; font-weight: 700; white-space: nowrap; }
+    .tl-item:nth-child(even) .tl-date { justify-content: flex-end; }
+    .tl-item:nth-child(even) { direction: rtl; }
+    .tl-item:nth-child(even) > * { direction: ltr; }
+    .tl-box  { background: var(--white); border-radius: 12px; padding: 22px 24px; box-shadow: var(--shadow); border-left: 4px solid var(--gold); }
+    .tl-box h4 { font-size: .98rem; font-weight: 700; margin-bottom: 8px; }
+    .tl-box .tl-sub { font-size: .78rem; color: var(--gold); font-weight: 700; text-transform: uppercase; letter-spacing: .8px; margin-bottom: 8px; }
+    .tl-box p  { font-size: .87rem; color: var(--muted); line-height: 1.65; }
+
+    /* ── FAQ ──────────────────────────────────────────────── */
+    #faq { background: var(--white); }
+    .faq-wrap { max-width: 780px; margin: 0 auto; }
+    .faq-item { border: 1.5px solid var(--gray); border-radius: 10px; margin-bottom: 12px; overflow: hidden; transition: border-color .2s; }
+    .faq-item.open { border-color: var(--gold); }
+    .faq-q { width: 100%; text-align: left; background: none; border: none; padding: 18px 22px; display: flex; justify-content: space-between; align-items: center; gap: 16px; cursor: pointer; font-size: .98rem; font-weight: 600; color: var(--text); }
+    .faq-q:hover { color: var(--navy); }
+    .faq-ic { width: 28px; height: 28px; min-width: 28px; background: var(--off-white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: var(--navy); transition: transform .3s, background .3s; }
+    .faq-item.open .faq-ic { transform: rotate(45deg); background: var(--gold); color: var(--navy); }
+    .faq-a { display: none; padding: 0 22px 18px; color: var(--muted); font-size: .93rem; line-height: 1.75; }
+    .faq-item.open .faq-a { display: block; }
+
+    /* ── Contact ──────────────────────────────────────────── */
+    #contact { background: var(--off-white); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 60px; }
+    .contact-side h3 { font-size: 1.4rem; font-weight: 800; margin-bottom: 12px; }
+    .contact-side > p { color: var(--muted); margin-bottom: 36px; line-height: 1.7; }
+    .ci { display: flex; gap: 14px; margin-bottom: 22px; align-items: flex-start; }
+    .ci-ic { width: 44px; height: 44px; min-width: 44px; background: var(--navy); color: var(--gold); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
+    .ci-tx strong { display: block; font-size: .78rem; text-transform: uppercase; letter-spacing: .5px; color: var(--muted); margin-bottom: 3px; }
+    .ci-tx span, .ci-tx a { font-size: .94rem; color: var(--text); }
+    .ci-tx a:hover { color: var(--gold); }
+    .social-row { display: flex; gap: 10px; margin-top: 28px; }
+    .soc-btn { width: 38px; height: 38px; background: var(--navy); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.75); font-size: .88rem; font-weight: 700; transition: background .2s; }
+    .soc-btn:hover { background: var(--gold); color: var(--navy); }
+    .contact-form { background: var(--white); border-radius: 16px; padding: 36px; box-shadow: var(--shadow); }
+    .contact-form h3 { font-size: 1.2rem; font-weight: 800; margin-bottom: 22px; }
+    .f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .f-grp { margin-bottom: 14px; }
+    .f-grp label { display: block; font-size: .8rem; font-weight: 700; letter-spacing: .3px; color: var(--muted); margin-bottom: 6px; }
+    .f-grp input, .f-grp select, .f-grp textarea { width: 100%; padding: 11px 13px; border: 1.5px solid var(--gray); border-radius: var(--r); font-size: .93rem; background: var(--off-white); font-family: inherit; transition: border-color .2s; color: var(--text); }
+    .f-grp input:focus, .f-grp select:focus, .f-grp textarea:focus { outline: none; border-color: var(--gold); background: var(--white); }
+    .f-grp textarea { height: 105px; resize: vertical; }
+    .f-submit { width: 100%; padding: 13px; background: var(--navy); color: var(--white); border: none; border-radius: var(--r); font-size: .98rem; font-weight: 700; cursor: pointer; font-family: inherit; transition: background .2s; margin-top: 4px; }
+    .f-submit:hover { background: var(--navy3); }
+    .f-note { font-size: .78rem; color: var(--muted); text-align: center; margin-top: 10px; }
+
+    /* ── CTA Band ─────────────────────────────────────────── */
+    #cta-band { background: linear-gradient(135deg, var(--gold) 0%, #f5a018 100%); padding: 64px 0; text-align: center; }
+    #cta-band h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 900; color: var(--navy); margin-bottom: 12px; }
+    #cta-band p  { color: rgba(13,27,42,.68); font-size: 1.05rem; margin-bottom: 30px; max-width: 520px; margin-left: auto; margin-right: auto; }
+
+    /* ── Footer ───────────────────────────────────────────── */
+    footer { background: var(--navy); color: rgba(255,255,255,.65); padding: 64px 0 0; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.6fr; gap: 44px; margin-bottom: 44px; }
+    .footer-brand p { font-size: .88rem; line-height: 1.75; margin: 14px 0 18px; }
+    .footer-col h4 { color: var(--white); font-size: .88rem; font-weight: 800; letter-spacing: .5px; text-transform: uppercase; margin-bottom: 16px; }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul li a { font-size: .87rem; transition: color .2s; }
+    .footer-col ul li a:hover { color: var(--gold); }
+    .footer-contact li { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 12px; font-size: .87rem; }
+    .footer-contact .fc-ic { color: var(--gold); font-size: 1rem; flex: none; margin-top: 1px; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.1); padding: 20px 0; display: flex; justify-content: space-between; align-items: center; font-size: .8rem; }
+    .footer-bottom-links { display: flex; gap: 20px; }
+    .footer-bottom-links a:hover { color: var(--gold); }
+    .footer-bottom-links a { font-size: .8rem; }
+
+    /* ── Responsive ───────────────────────────────────────── */
+    @media (max-width: 980px) {
+      .hero-grid     { grid-template-columns: 1fr; }
+      .hero-visual   { display: none; }
+      .about-grid    { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .why-grid      { grid-template-columns: 1fr 1fr; }
+      .footer-grid   { grid-template-columns: 1fr 1fr; }
+      .stats-grid    { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .nav-links  { display: none; }
+      .nav-burger { display: flex; }
+      .section    { padding: 60px 0; }
+      .services-grid { grid-template-columns: 1fr; }
+      .why-grid      { grid-template-columns: 1fr 1fr; }
+      .contact-grid  { grid-template-columns: 1fr; }
+      .tl-line  { left: 14px; }
+      .tl-item  { grid-template-columns: 1fr; gap: 8px; direction: ltr !important; }
+      .tl-item:nth-child(even) .tl-date { justify-content: flex-start; }
+      .tl-dot   { left: 14px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+      .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
+      .footer-bottom-links { flex-wrap: wrap; justify-content: center; gap: 12px; }
+      .f-row { grid-template-columns: 1fr; }
+      #hero { padding: 110px 0 60px; }
+    }
+    @media (max-width: 400px) {
+      .why-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════ NAVBAR ═══════════════ -->
+<nav id="navbar">
+  <div class="wrap nav-inner">
+    <a href="#" class="nav-logo" aria-label="Al-Aqsa Security Home">
+      <svg class="logo-shield" viewBox="0 0 60 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M30 2L56 13V38C56 52 44 63 30 68C16 63 4 52 4 38V13L30 2Z" fill="#e8a020"/>
+        <path d="M30 10L50 19V38C50 49 41 58 30 63C19 58 10 49 10 38V19L30 10Z" fill="#0d1b2a"/>
+        <path d="M22 35L27 40L38 29" stroke="#e8a020" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M30 16L46 23V38C46 47 39 54 30 58C21 54 14 47 14 38V23L30 16Z" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+      </svg>
+      <span class="name">Al-<em>Aqsa</em> Security</span>
+    </a>
+    <div class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#timeline">History</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="nav-cta">Get a Quote</a>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div id="mobile-nav" aria-hidden="true">
+    <a href="#about"    onclick="closeMobile()">About</a>
+    <a href="#services" onclick="closeMobile()">Services</a>
+    <a href="#why"      onclick="closeMobile()">Why Us</a>
+    <a href="#timeline" onclick="closeMobile()">History</a>
+    <a href="#faq"      onclick="closeMobile()">FAQ</a>
+    <a href="#contact"  onclick="closeMobile()" style="color:var(--gold);font-weight:700;">Get a Quote →</a>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════ HERO ═════════════════ -->
+<section id="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="4" fill="#e8a020"/><circle cx="6" cy="6" r="6" fill="none" stroke="rgba(232,160,32,0.4)" stroke-width="1.5"/></svg>
+        Trusted Since 2014
+      </div>
+      <h1>Bangladesh's <em>Trusted</em><br>Security Partner</h1>
+      <p>Al-Aqsa Security Service provides comprehensive, reliable, and highly professional security solutions across corporate, residential, logistics, and escort industries throughout Bangladesh.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-gold">Get a Free Quote</a>
+        <a href="#services" class="btn btn-outline">Our Services</a>
+      </div>
+      <div class="hero-phone">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M14 11.27l-2.5-.29a1.1 1.1 0 0 0-.9.32l-1.82 1.82a11.06 11.06 0 0 1-4.83-4.83l1.83-1.83a1.1 1.1 0 0 0 .32-.9L5.8 2.06A1.1 1.1 0 0 0 4.7 1H2.13A1.1 1.1 0 0 0 1.02 2.2C1.56 9.28 7.28 15 14.36 14.44c.65-.05 1.14-.62 1.14-1.28V11.6a1.1 1.1 0 0 0-1.5-1.05v.72z" fill="rgba(255,255,255,0.5)"/></svg>
+        Call us now: <a href="tel:+8801958122300">+88 01958 122300</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-shield-wrap">
+        <svg class="hero-shield-svg" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 4L190 36V112C190 162 152 204 100 228C48 204 10 162 10 112V36L100 4Z" fill="url(#sg1)"/>
+          <path d="M100 20L176 48V112C176 155 142 192 100 213C58 192 24 155 24 112V48L100 20Z" fill="url(#sg2)"/>
+          <path d="M100 36L162 60V112C162 148 132 180 100 197C68 180 38 148 38 112V60L100 36Z" fill="#0d1b2a" opacity=".7"/>
+          <path d="M72 118L88 134L128 94" stroke="#e8a020" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="sg1" x1="10" y1="4" x2="190" y2="228" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#e8a020"/>
+              <stop offset="1" stop-color="#c07010"/>
+            </linearGradient>
+            <linearGradient id="sg2" x1="24" y1="20" x2="176" y2="213" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#142236"/>
+              <stop offset="1" stop-color="#0d1b2a"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="hero-stats-row">
+        <div class="hstat"><div class="num">12+</div><div class="lbl">Years Active</div></div>
+        <div class="hstat"><div class="num">50+</div><div class="lbl">Clients</div></div>
+        <div class="hstat"><div class="num">200+</div><div class="lbl">Guards</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ STATS BAR ════════════ -->
+<div id="stats-bar">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat-item"><div class="num">12+</div><div class="lbl">Years of Service</div></div>
+      <div class="stat-item"><div class="num">50+</div><div class="lbl">Satisfied Clients</div></div>
+      <div class="stat-item"><div class="num">200+</div><div class="lbl">Trained Guards</div></div>
+      <div class="stat-item"><div class="num">6</div><div class="lbl">Service Categories</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════ ABOUT ════════════════ -->
+<section id="about" class="section">
+  <div class="wrap about-grid">
+    <div class="about-card">
+      <h3>Who We Are</h3>
+      <p class="sub">Al-Aqsa Security Service & Logistics Services Ltd.</p>
+      <ul class="about-list">
+        <li><span class="chk">✓</span>Government-approved security service provider</li>
+        <li><span class="chk">✓</span>Ex-military &amp; ex-police trained security personnel</li>
+        <li><span class="chk">✓</span>Professional 15-day basic training for all guards</li>
+        <li><span class="chk">✓</span>CCTV surveillance &amp; biometric access integration</li>
+        <li><span class="chk">✓</span>24/7 patrol monitoring &amp; emergency response</li>
+        <li><span class="chk">✓</span>International standards — G4S-trained leadership</li>
+      </ul>
+    </div>
+    <div class="about-text">
+      <span class="tag">About Us</span>
+      <h2 class="sec-title">A Strategic Partner in Safeguarding Bangladesh</h2>
+      <p class="sec-sub" style="text-align:left;margin:0 0 20px;">Al-Aqsa Security &amp; Logistics Services Ltd. was founded in 2014 with a singular mission: to provide comprehensive, reliable, and highly professional security solutions across diverse industries in Bangladesh.</p>
+      <p style="color:var(--muted);font-size:.95rem;line-height:1.75;margin-bottom:20px;">We are more than just a security company — we are a strategic partner in safeguarding your assets, ensuring the safety of your personnel, and maintaining the integrity of your operations. From routine patrols to high-risk armed escort services, our versatile team delivers bespoke solutions tailored to each client's unique challenges.</p>
+      <p style="color:var(--muted);font-size:.95rem;line-height:1.75;">Our founder, Md. Muradul Alam Azim, leveraged five years of international operations management experience at G4S Security in Dubai to establish world-class security standards in Bangladesh — bringing international expertise directly to the local market.</p>
+      <div class="founder-block">
+        <div class="founder-avatar">A</div>
+        <div>
+          <strong>Md. Muradul Alam Azim</strong>
+          <span>Founder &amp; CEO — Former Operations Manager, G4S Dubai</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ SERVICES ═════════════ -->
+<section id="services" class="section">
+  <div class="wrap">
+    <div class="center"><span class="tag">Our Services</span></div>
+    <h2 class="sec-title center">Security Solutions for Every Sector</h2>
+    <p class="sec-sub">Our versatile security solutions cater to a wide range of industries, providing bespoke services to meet the unique challenges of each sector.</p>
+    <div class="services-grid">
+
+      <div class="svc-card">
+        <div class="svc-head">
+          <div class="svc-icon">🏢</div>
+          <h3>Corporate Security</h3>
+        </div>
+        <div class="svc-body">
+          <p>Comprehensive security solutions for corporate offices, data centers, and business premises to protect your staff, assets, and intellectual property.</p>
+          <div class="svc-price">BDT 14,500 / guard<span class="inc">Includes food, accommodation &amp; uniform</span></div>
+          <div class="svc-tags"><span class="svc-tag">12-Hour Duty</span><span class="svc-tag">Trained Personnel</span><span class="svc-tag">Age 22–45</span></div>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-head">
+          <div class="svc-icon">🏠</div>
+          <h3>Residential Security</h3>
+        </div>
+        <div class="svc-body">
+          <p>Secure your home with residential security solutions including regular patrols, surveillance, and emergency response services with excellent communication.</p>
+          <div class="svc-price">BDT 12,500 / guard<span class="inc">Includes food, accommodation &amp; uniform</span></div>
+          <div class="svc-tags"><span class="svc-tag">12-Hour Duty</span><span class="svc-tag">Regular Patrol</span><span class="svc-tag">24/7 Response</span></div>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-head">
+          <div class="svc-icon">🏨</div>
+          <h3>Hotel &amp; Hospitality</h3>
+        </div>
+        <div class="svc-body">
+          <p>We ensure the safety of both guests and staff in hotels and resorts with discreet, professional security services protecting against theft and accidents.</p>
+          <div class="svc-price">BDT 12,500 / guard<span class="inc">Includes food, accommodation &amp; uniform</span></div>
+          <div class="svc-tags"><span class="svc-tag">Discreet Service</span><span class="svc-tag">Guest Safety</span><span class="svc-tag">Anti-Theft</span></div>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-head">
+          <div class="svc-icon">🏥</div>
+          <h3>Healthcare Facility</h3>
+        </div>
+        <div class="svc-body">
+          <p>Our personnel provide hospital and clinic security, ensuring patient safety, staff protection, and preventing unauthorized access in sensitive healthcare environments.</p>
+          <div class="svc-price">BDT 14,500 / guard<span class="inc">Includes food, accommodation &amp; uniform</span></div>
+          <div class="svc-tags"><span class="svc-tag">Access Control</span><span class="svc-tag">Patient Safety</span><span class="svc-tag">24/7 Cover</span></div>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-head">
+          <div class="svc-icon">🚢</div>
+          <h3>Logistics &amp; Transport</h3>
+        </div>
+        <div class="svc-body">
+          <p>We offer container depot security, route escort services, and armed security for high-value goods in transit — safeguarding your assets throughout the supply chain.</p>
+          <div class="svc-price">BDT 14,500 / guard<span class="inc">Includes food, accommodation &amp; uniform</span></div>
+          <div class="svc-tags"><span class="svc-tag">Escort Service</span><span class="svc-tag">Depot Guard</span><span class="svc-tag">Armed Option</span></div>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-head">
+          <div class="svc-icon">🏗️</div>
+          <h3>Construction &amp; Industrial</h3>
+        </div>
+        <div class="svc-body">
+          <p>Specializing in securing construction sites, warehouses, factories, and industrial complexes — providing a protective layer against theft, vandalism, and accidents.</p>
+          <div class="svc-price">BDT 14,500 / guard<span class="inc">Includes food, accommodation &amp; uniform</span></div>
+          <div class="svc-tags"><span class="svc-tag">Site Security</span><span class="svc-tag">Anti-Vandalism</span><span class="svc-tag">Night Watch</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ WHY US ═══════════════ -->
+<section id="why" class="section">
+  <div class="wrap">
+    <div class="center"><span class="tag">Why Choose Us</span></div>
+    <h2 class="sec-title center">The Al-Aqsa Difference</h2>
+    <p class="sec-sub">At Al-Aqsa Security, we go above and beyond to provide top-tier security services that guarantee your safety, security, and peace of mind.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🎖️</div>
+        <h4>Government Approved</h4>
+        <p>Fully licensed and government-approved security service provider operating under Bangladesh regulations and international standards.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">👮</div>
+        <h4>Elite Personnel</h4>
+        <p>Ex-military and ex-police officers with proven track records, supplemented by professionally trained civilian guards.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📡</div>
+        <h4>Technology Integrated</h4>
+        <p>CCTV surveillance, biometric access control, and real-time patrol monitoring systems for modern security management.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🌐</div>
+        <h4>International Standards</h4>
+        <p>Founded by a former G4S Dubai Operations Manager — bringing proven international security frameworks to Bangladesh.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ TIMELINE ════════════ -->
+<section id="timeline" class="section">
+  <div class="wrap">
+    <div class="center"><span class="tag">Our Journey</span></div>
+    <h2 class="sec-title center">Built on a Decade of Excellence</h2>
+    <p class="sec-sub">From a vision born abroad to Bangladesh's trusted security partner — our history of growth and commitment.</p>
+    <div class="tl-wrap">
+      <div class="tl-line" aria-hidden="true"></div>
+
+      <div class="tl-item">
+        <div class="tl-date"><span class="dt">Jan 2013</span></div>
+        <div class="tl-box">
+          <div class="tl-sub">The Beginning of a Vision</div>
+          <h4>International Experience Meets Local Mission</h4>
+          <p>After five years as Operations Manager at G4S Security in Dubai, our founder returned home with a mission — to establish a world-class security service provider in Bangladesh.</p>
+        </div>
+        <div class="tl-dot" aria-hidden="true"></div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-box">
+          <div class="tl-sub">Official Registration &amp; First Contracts</div>
+          <h4>Registered as a Security Company</h4>
+          <p>In just one year, Al-Aqsa Security Service officially registered its business and began securing its first major client contracts across Chittagong.</p>
+        </div>
+        <div class="tl-date"><span class="dt">March 2014</span></div>
+        <div class="tl-dot" aria-hidden="true"></div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date"><span class="dt">April 2015</span></div>
+        <div class="tl-box">
+          <div class="tl-sub">Expansion into Key Sectors</div>
+          <h4>25+ Clients — Multi-Sector Growth</h4>
+          <p>Expanded operations to corporate offices, factories, shopping malls, construction sites, and VIP personal security services — reaching 25 clients across key industries.</p>
+        </div>
+        <div class="tl-dot" aria-hidden="true"></div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-box">
+          <div class="tl-sub">Workforce &amp; Training Investment</div>
+          <h4>Setting New Industry Standards</h4>
+          <p>Invested in professional recruitment of ex-military and ex-police officers, introduced regular skills training in risk assessment and emergency response, and integrated CCTV and biometric technologies.</p>
+        </div>
+        <div class="tl-date"><span class="dt">Sep 2017</span></div>
+        <div class="tl-dot" aria-hidden="true"></div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date"><span class="dt">2024 — Present</span></div>
+        <div class="tl-box">
+          <div class="tl-sub">Digital &amp; AI-Powered Operations</div>
+          <h4>Smart Security Management</h4>
+          <p>Pioneering AI-powered workforce management, digital escort tracking, and automated payroll systems to deliver faster, more accurate security services for our clients.</p>
+        </div>
+        <div class="tl-dot" aria-hidden="true"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ FAQ ══════════════════ -->
+<section id="faq" class="section">
+  <div class="wrap">
+    <div class="center"><span class="tag">FAQ</span></div>
+    <h2 class="sec-title center">Find Out Answers Here</h2>
+    <p class="sec-sub">Common questions about our services, personnel, and how to get started.</p>
+    <div class="faq-wrap">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What services does Al-Aqsa Security &amp; Logistics Services Ltd. provide?
+          <span class="faq-ic" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a">We offer professional security services including manned guarding, corporate security, event security, CCTV surveillance, and logistics support. Our escort security covers container depot security, route escort for high-value goods, and VIP personal protection throughout Bangladesh.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How experienced and qualified are your security personnel?
+          <span class="faq-ic" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a">Our team is comprised of highly trained professionals including ex-military and ex-police officers with proven experience in both international and local security operations. All guards complete a mandatory 15-day basic training program before deployment, covering risk assessment, surveillance, emergency response, and customer service.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Do you provide security services for events and temporary assignments?
+          <span class="faq-ic" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a">Yes, we offer specialized event security services to ensure the safety and smooth management of public and private gatherings, exhibitions, corporate events, and ceremonies. Contact us in advance to discuss event-specific requirements and staffing.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What industries and sectors do you serve?
+          <span class="faq-ic" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a">We serve a wide range of industries including logistics and shipping, manufacturing, construction and industrial zones, corporate offices, retail establishments, healthcare facilities, residential complexes, and hotels &amp; hospitality businesses across Bangladesh.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What are the duty hours and what does the service cost include?
+          <span class="faq-ic" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a">Standard duty assignments are 12 hours per guard. Our pricing starts from BDT 12,500 per guard per month (residential) and BDT 14,500 per guard per month (corporate, healthcare, logistics). All rates include food, accommodation, and uniform — no hidden costs.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How can I hire security personnel or get a customized quote?
+          <span class="faq-ic" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a">You can contact us directly through the form below, by phone at +88 01958 122300, or by email at admin@al-aqsasecurity.com. We will assess your specific security needs and provide a tailored solution and quote within 24 hours.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ CONTACT ═════════════ -->
+<section id="contact" class="section">
+  <div class="wrap">
+    <div class="center"><span class="tag">Contact Us</span></div>
+    <h2 class="sec-title center">Get in Touch</h2>
+    <p class="sec-sub">Ready to secure your premises? Our team responds within 24 hours.</p>
+    <div class="contact-grid">
+      <div class="contact-side">
+        <h3>We're Here to Help</h3>
+        <p>For inquiries, partnerships, or service requests, contact us today and experience the best in security and logistics solutions across Bangladesh.</p>
+        <div class="ci">
+          <div class="ci-ic">📞</div>
+          <div class="ci-tx">
+            <strong>Phone</strong>
+            <span>
+              <a href="tel:+8801958122300">+88 01958 122300</a><br>
+              <a href="tel:+8801958122301">+88 01958 122301</a><br>
+              <a href="tel:+8801958122302">+88 01958 122302</a>
+            </span>
+          </div>
+        </div>
+        <div class="ci">
+          <div class="ci-ic">✉️</div>
+          <div class="ci-tx">
+            <strong>Email</strong>
+            <a href="mailto:admin@al-aqsasecurity.com">admin@al-aqsasecurity.com</a>
+          </div>
+        </div>
+        <div class="ci">
+          <div class="ci-ic">📍</div>
+          <div class="ci-tx">
+            <strong>Location</strong>
+            <span>Chittagong, Bangladesh</span>
+          </div>
+        </div>
+        <div class="ci">
+          <div class="ci-ic">🕐</div>
+          <div class="ci-tx">
+            <strong>Response Time</strong>
+            <span>Within 24 hours — 7 days a week</span>
+          </div>
+        </div>
+        <div class="social-row">
+          <a href="#" class="soc-btn" aria-label="Facebook">f</a>
+          <a href="#" class="soc-btn" aria-label="LinkedIn">in</a>
+          <a href="#" class="soc-btn" aria-label="YouTube">▶</a>
+          <a href="#" class="soc-btn" aria-label="Instagram">ig</a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3>Request a Quote</h3>
+        <form id="quote-form" novalidate>
+          <div class="f-row">
+            <div class="f-grp"><label for="f-name">Full Name *</label><input type="text" id="f-name" name="name" placeholder="Your full name" required></div>
+            <div class="f-grp"><label for="f-phone">Phone Number *</label><input type="tel" id="f-phone" name="phone" placeholder="+88 01xxx xxxxxx" required></div>
+          </div>
+          <div class="f-grp"><label for="f-email">Email Address</label><input type="email" id="f-email" name="email" placeholder="your@email.com"></div>
+          <div class="f-grp">
+            <label for="f-service">Service Required *</label>
+            <select id="f-service" name="service" required>
+              <option value="">Select a service…</option>
+              <option>Corporate Security</option>
+              <option>Residential Security</option>
+              <option>Hotel &amp; Hospitality Security</option>
+              <option>Healthcare Facility Security</option>
+              <option>Logistics &amp; Transport Security</option>
+              <option>Construction &amp; Industrial Security</option>
+              <option>Event Security</option>
+              <option>Other / General Inquiry</option>
+            </select>
+          </div>
+          <div class="f-grp"><label for="f-msg">Message</label><textarea id="f-msg" name="message" placeholder="Describe your security requirements, number of guards needed, location, duration…"></textarea></div>
+          <button type="submit" class="f-submit">Send Inquiry →</button>
+          <p class="f-note">We will respond within 24 hours. Your information is kept strictly confidential.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ CTA BAND ════════════ -->
+<div id="cta-band">
+  <div class="wrap">
+    <h2>Find World-Class Security Services</h2>
+    <p>At Al-Aqsa Security, we are committed to providing exceptional services that guarantee safety, security, and operational efficiency for your business.</p>
+    <a href="tel:+8801958122300" class="btn btn-navy">📞 Call 01958 122300</a>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo" style="margin-bottom:4px;">
+          <svg width="32" height="32" viewBox="0 0 60 70" fill="none" aria-hidden="true"><path d="M30 2L56 13V38C56 52 44 63 30 68C16 63 4 52 4 38V13L30 2Z" fill="#e8a020"/><path d="M30 10L50 19V38C50 49 41 58 30 63C19 58 10 49 10 38V19L30 10Z" fill="#0d1b2a"/><path d="M22 35L27 40L38 29" stroke="#e8a020" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="name" style="font-size:1rem;">Al-<em>Aqsa</em> Security</span>
+        </a>
+        <p>From routine patrols to high-risk armed escorts, we provide a wide range of professional security services to cover all your needs in Bangladesh.</p>
+        <div class="social-row">
+          <a href="#" class="soc-btn" aria-label="Facebook">f</a>
+          <a href="#" class="soc-btn" aria-label="LinkedIn">in</a>
+          <a href="#" class="soc-btn" aria-label="YouTube">▶</a>
+          <a href="#" class="soc-btn" aria-label="Instagram">ig</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Corporate Security</a></li>
+          <li><a href="#services">Residential Security</a></li>
+          <li><a href="#services">Hotel Security</a></li>
+          <li><a href="#services">Healthcare Security</a></li>
+          <li><a href="#services">Logistics Security</a></li>
+          <li><a href="#services">Industrial Security</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#timeline">Our History</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="/legal/privacy">Privacy Policy</a></li>
+          <li><a href="/legal/terms">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><span class="fc-ic">📞</span><a href="tel:+8801958122300">+88 01958 122300</a></li>
+          <li><span class="fc-ic">📞</span><a href="tel:+8801958122301">+88 01958 122301</a></li>
+          <li><span class="fc-ic">📞</span><a href="tel:+8801958122302">+88 01958 122302</a></li>
+          <li><span class="fc-ic">✉️</span><a href="mailto:admin@al-aqsasecurity.com">admin@al-aqsasecurity.com</a></li>
+          <li><span class="fc-ic">📍</span><span>Chittagong, Bangladesh</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>© 2014–2026 Al-Aqsa Security Service &amp; Logistics Services Ltd. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="/legal/privacy">Privacy Policy</a>
+        <a href="/legal/terms">Terms of Service</a>
+        <a href="/legal/contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Navbar scroll shadow
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20), { passive: true });
+
+  // Mobile menu
+  const burger = document.getElementById('burger');
+  const mobileNav = document.getElementById('mobile-nav');
+  let menuOpen = false;
+  burger.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    mobileNav.style.display = menuOpen ? 'block' : 'none';
+    burger.setAttribute('aria-expanded', menuOpen);
+    mobileNav.setAttribute('aria-hidden', !menuOpen);
+    const spans = burger.querySelectorAll('span');
+    if (menuOpen) {
+      spans[0].style.cssText = 'transform:rotate(45deg) translate(5px,5px)';
+      spans[1].style.opacity = '0';
+      spans[2].style.cssText = 'transform:rotate(-45deg) translate(5px,-5px)';
+    } else {
+      spans.forEach(s => s.style.cssText = '');
+    }
+  });
+  function closeMobile() {
+    menuOpen = false;
+    mobileNav.style.display = 'none';
+    burger.setAttribute('aria-expanded', 'false');
+    burger.querySelectorAll('span').forEach(s => s.style.cssText = '');
+  }
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // Contact form (UI only — connects to /api/fazle/contact when backend ready)
+  document.getElementById('quote-form').addEventListener('submit', e => {
+    e.preventDefault();
+    const btn = e.target.querySelector('.f-submit');
+    btn.textContent = '✓ Inquiry Sent — We will contact you within 24 hours';
+    btn.style.background = '#1a7a4a';
+    btn.disabled = true;
+    e.target.querySelectorAll('input,select,textarea').forEach(f => f.disabled = true);
+  });
+</script>
+</body>
+</html>

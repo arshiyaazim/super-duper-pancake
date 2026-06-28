@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Location — Al-Aqsa Admin</title>
+<link rel="stylesheet" href="admin.css">
+<style>
+.location-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 20px;
+  height: calc(100vh - 120px);
+}
+
+@media (max-width: 768px) {
+  .location-layout {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 12px;
+  }
+
+  .emp-panel { max-height: 260px; }
+
+  .map-panel { height: 280px; }
+
+  .card-head .flex-center { flex-direction: column; align-items: stretch; gap: 6px; }
+  .card-head .flex-center select,
+  .card-head .flex-center input { width: 100%; }
+}
+
+.emp-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.emp-location-item {
+  padding: 13px 14px;
+  border-bottom: 1px solid var(--gray);
+  cursor: pointer;
+  transition: background .1s;
+}
+
+.emp-location-item:hover { background: var(--off-white); }
+.emp-location-item.selected { background: #fef3c7; border-left: 3px solid var(--gold); }
+
+.emp-loc-name { font-size: 13px; font-weight: 700; color: var(--navy); }
+.emp-loc-coords { font-size: 11px; color: var(--muted); font-family: monospace; }
+
+.map-panel {
+  background: var(--white);
+  border-radius: 12px;
+  border: 1px solid var(--gray);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  position: relative;
+}
+
+.map-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,.6);
+  gap: 12px;
+}
+
+.map-placeholder .icon { font-size: 48px; }
+.map-placeholder p { font-size: 14px; text-align: center; max-width: 280px; line-height: 1.5; }
+
+.location-dot {
+  display: inline-block;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--green);
+  margin-right: 6px;
+  box-shadow: 0 0 0 3px rgba(22,163,74,.2);
+}
+
+.location-dot.stale { background: var(--orange); box-shadow: 0 0 0 3px rgba(234,88,12,.2); }
+.location-dot.offline { background: var(--muted); box-shadow: none; }
+
+.history-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--gray);
+  font-size: 12.5px;
+}
+
+.history-row:last-child { border-bottom: none; }
+.history-ts { color: var(--muted); white-space: nowrap; }
+.history-coords { font-family: monospace; font-size: 11px; color: var(--text); }
+</style>
+</head>
+<body>
+
+<nav class="sidebar">
+  <div class="sidebar-logo">
+    <a href="admin.html" class="brand">
+      <div class="logo-icon">A</div>
+      <div class="brand-text">
+        <span class="brand-name">Al-Aqsa Admin</span>
+        <span class="brand-sub">Security Services</span>
+      </div>
+    </a>
+  </div>
+  <div class="sidebar-nav"></div>
+</nav>
+
+<div class="main">
+  <header class="topbar">
+    <div class="page-title">Live Location Tracking</div>
+    <div class="topbar-right">
+      <span id="lw-status-badge" class="badge badge-gray">LocationWhere</span>
+      <div class="tabs">
+        <button class="tab active" onclick="switchView('live',this)">Live Map</button>
+        <button class="tab" onclick="switchView('history',this)">History</button>
+        <button class="tab" onclick="switchView('devices',this)">Devices</button>
+        <button class="tab" onclick="switchView('alerts',this)">Alerts</button>
+      </div>
+      <button class="refresh-btn" onclick="loadCurrent()">↺</button>
+    </div>
+  </header>
+
+  <div class="content" style="padding-top:20px">
+
+    <!-- Live map view -->
+    <div id="view-live">
+      <div id="lw-auth-warn" style="display:none" class="alert alert-warn mb-16">
+        LocationWhere admin token not set.
+        <a href="settings.html" style="color:inherit;font-weight:700">Configure in Settings →</a>
+      </div>
+      <div class="location-layout">
+
+        <!-- Employee list -->
+        <div class="card" style="overflow:hidden;display:flex;flex-direction:column">
+          <div class="card-head">
+            <span class="card-title">Employees Online</span>
+            <span id="online-count" class="badge badge-green">0</span>
+          </div>
+          <div style="padding:8px 12px;border-bottom:1px solid var(--gray)">
+            <input class="form-input" id="loc-search" placeholder="Search…" style="font-size:12.5px;padding:7px 10px" oninput="filterLocations()">
+          </div>
+          <div style="flex:1;overflow-y:auto" id="emp-location-list">
+            <div class="loading-block"><span class="spinner"></span></div>
+          </div>
+        </div>
+
+        <!-- Map area -->
+        <div class="map-panel">
+          <div class="map-placeholder" id="map-area">
+            <div class="icon">📍</div>
+            <p>Select an employee to view location</p>
+            <p style="font-size:11px;opacity:.6">LocationWhere API: <code id="lw-api-label">http://127.0.0.1:8310</code></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- History view -->
+    <div id="view-history" style="display:none">
+      <div class="card">
+        <div class="card-head">
+          <span class="card-title">Location History</span>
+          <div class="flex-center gap-8">
+            <select id="hist-emp" class="form-select" style="width:200px;padding:6px 10px" onchange="loadHistory()">
+              <option value="">Select employee…</option>
+            </select>
+            <input type="date" id="hist-date" class="form-input" style="width:150px;padding:6px 10px" onchange="loadHistory()">
+          </div>
+        </div>
+        <div class="card-body">
+          <div id="history-list">
+            <div class="empty-state"><div class="icon">📅</div><p>Select employee and date to view history</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Devices view -->
+    <div id="view-devices" style="display:none">
+      <div class="card">
+        <div class="card-head">
+          <span class="card-title">Employee Devices</span>
+          <span id="device-count" class="badge badge-gray">0</span>
+        </div>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th>Employee</th>
+                <th>Device</th>
+                <th>Platform</th>
+                <th>App Version</th>
+                <th>Last Seen</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="devices-tbody">
+              <tr><td colspan="6"><div class="loading-block"><span class="spinner"></span></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alerts view -->
+    <div id="view-alerts" style="display:none">
+      <div class="card">
+        <div class="card-head">
+          <span class="card-title">Geofence Alerts</span>
+          <span id="alert-count" class="badge badge-red">0</span>
+        </div>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Employee</th>
+                <th>Alert Type</th>
+                <th>Location</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="alerts-tbody">
+              <tr><td colspan="5"><div class="loading-block"><span class="spinner"></span></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="admin.js"></script>
+<script>
+renderNav('location.html');
+
+let currentView = 'live';
+let allLocations = [];
+let selectedEmpId = null;
+
+function switchView(view, btn) {
+  currentView = view;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  ['live','history','devices','alerts'].forEach(v => {
+    document.getElementById('view-' + v).style.display = v === view ? '' : 'none';
+  });
+  loadCurrent();
+}
+
+function loadCurrent() {
+  document.getElementById('lw-api-label').textContent = LW_API();
+  if (currentView === 'live') loadLive();
+  else if (currentView === 'history') populateHistEmpSelect();
+  else if (currentView === 'devices') loadDevices();
+  else loadAlerts();
+}
+
+async function loadLive() {
+  const list = document.getElementById('emp-location-list');
+  if (!LW_TOKEN()) {
+    document.getElementById('lw-auth-warn').style.display = '';
+    list.innerHTML = '<div class="empty-state"><div class="icon">🔑</div><p>Login token required for LocationWhere</p></div>';
+    document.getElementById('lw-status-badge').innerHTML = '<span class="badge badge-red">Auth Required</span>';
+    return;
+  }
+  list.innerHTML = '<div class="loading-block"><span class="spinner"></span></div>';
+  try {
+    const data = await lwGet('/api/v1/location/live');
+    allLocations = data.employees || data || [];
+    const online = allLocations.filter(e => e.status === 'online' || e.is_online);
+    document.getElementById('online-count').textContent = online.length;
+    document.getElementById('lw-status-badge').innerHTML = statusBadge('ok');
+    filterLocations();
+  } catch (e) {
+    list.innerHTML = `<div class="alert alert-error" style="margin:12px">${e.message}</div>`;
+    document.getElementById('lw-status-badge').innerHTML = statusBadge('error');
+  }
+}
+
+function filterLocations() {
+  const q = (document.getElementById('loc-search')?.value || '').toLowerCase();
+  const filtered = q ? allLocations.filter(e =>
+    (e.name || e.employee_name || '').toLowerCase().includes(q) ||
+    (e.employee_code || '').toLowerCase().includes(q)
+  ) : allLocations;
+  renderLocationList(filtered);
+}
+
+function renderLocationList(locs) {
+  const list = document.getElementById('emp-location-list');
+  if (!locs.length) {
+    list.innerHTML = '<div class="empty-state"><div class="icon">👤</div><p>No employees with active location</p></div>';
+    return;
+  }
+  list.innerHTML = locs.map(e => {
+    const online = e.status === 'online' || e.is_online;
+    const stale = e.status === 'stale';
+    const dotCls = online ? '' : (stale ? ' stale' : ' offline');
+    const lat = e.latitude || e.lat || e.last_location?.latitude || null;
+    const lng = e.longitude || e.lng || e.last_location?.longitude || null;
+    return `
+      <div class="emp-location-item${e.employee_id === selectedEmpId ? ' selected' : ''}"
+           onclick="selectEmployee(${JSON.stringify(e).replace(/"/g,'&quot;')})">
+        <div class="flex-center gap-8">
+          <span class="location-dot${dotCls}"></span>
+          <span class="emp-loc-name">${escHtml(e.name || e.employee_name || '—')}</span>
+        </div>
+        <div class="emp-loc-coords">
+          ${lat && lng ? `${lat.toFixed(5)}, ${lng.toFixed(5)}` : 'Location unknown'}
+        </div>
+        <div style="font-size:11px;color:var(--muted);margin-top:2px">
+          ${relTime(e.last_seen_at || e.last_location?.recorded_at)}
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function selectEmployee(emp) {
+  selectedEmpId = emp.employee_id || emp.id;
+  renderLocationList(allLocations);
+
+  const lat = emp.latitude || emp.lat || emp.last_location?.latitude;
+  const lng = emp.longitude || emp.lng || emp.last_location?.longitude;
+  const name = emp.name || emp.employee_name || '—';
+  const mapArea = document.getElementById('map-area');
+
+  if (lat && lng) {
+    const googleUrl = `https://maps.google.com/maps?q=${lat},${lng}&z=15&output=embed`;
+    mapArea.innerHTML = `
+      <div style="width:100%;height:100%;display:flex;flex-direction:column">
+        <div style="padding:12px 16px;background:var(--white);border-bottom:1px solid var(--gray);display:flex;align-items:center;gap:10px">
+          <span class="location-dot"></span>
+          <strong style="font-size:14px;color:var(--navy)">${escHtml(name)}</strong>
+          <span class="text-muted">${lat.toFixed(6)}, ${lng.toFixed(6)}</span>
+          <a href="https://maps.google.com/?q=${lat},${lng}" target="_blank" class="btn btn-sm btn-outline" style="margin-left:auto">Open Maps ↗</a>
+        </div>
+        <div style="flex:1;background:var(--off-white);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;padding:24px">
+          <div style="font-size:36px">📍</div>
+          <div style="font-size:14px;font-weight:700;color:var(--navy)">${escHtml(name)}</div>
+          <div style="font-family:monospace;font-size:13px;color:var(--muted)">${lat.toFixed(6)}, ${lng.toFixed(6)}</div>
+          <a href="https://maps.google.com/?q=${lat},${lng}" target="_blank" class="btn btn-gold">View on Google Maps ↗</a>
+          <p style="font-size:11px;color:var(--muted);text-align:center">Map embed requires Google Maps API key. Click button above for direct view.</p>
+        </div>
+      </div>
+    `;
+  } else {
+    mapArea.innerHTML = `
+      <div class="map-placeholder">
+        <div class="icon">❓</div>
+        <p><strong>${escHtml(name)}</strong> has no recent location data</p>
+      </div>
+    `;
+  }
+}
+
+async function populateHistEmpSelect() {
+  if (!allLocations.length) {
+    try {
+      const data = await lwGet('/api/v1/location/live');
+      allLocations = data.employees || data || [];
+    } catch (e) {}
+  }
+  const sel = document.getElementById('hist-emp');
+  const current = sel.value;
+  sel.innerHTML = '<option value="">Select employee…</option>' +
+    allLocations.map(e => `<option value="${e.employee_id || e.id}">${escHtml(e.name || e.employee_name)}</option>`).join('');
+  if (current) sel.value = current;
+  const dateInput = document.getElementById('hist-date');
+  if (!dateInput.value) dateInput.value = new Date().toISOString().split('T')[0];
+}
+
+async function loadHistory() {
+  const empId = document.getElementById('hist-emp').value;
+  const date  = document.getElementById('hist-date').value;
+  if (!empId) return;
+  const hlist = document.getElementById('history-list');
+  hlist.innerHTML = '<div class="loading-block"><span class="spinner"></span></div>';
+  try {
+    const data = await lwGet(`/api/v1/location/${empId}/history?date=${date}&limit=100`);
+    const rows = data.history || data || [];
+    if (!rows.length) {
+      hlist.innerHTML = '<div class="empty-state"><div class="icon">📍</div><p>No location history for this date</p></div>';
+      return;
+    }
+    hlist.innerHTML = rows.map(r => `
+      <div class="history-row">
+        <div class="history-ts">${fmtDate(r.recorded_at || r.timestamp)}</div>
+        <div>
+          <div class="history-coords">${r.latitude?.toFixed(6)}, ${r.longitude?.toFixed(6)}</div>
+          ${r.accuracy ? `<div class="text-muted">±${r.accuracy}m accuracy</div>` : ''}
+          ${r.event_type ? `<span class="badge badge-navy" style="margin-top:3px">${r.event_type}</span>` : ''}
+        </div>
+        <a href="https://maps.google.com/?q=${r.latitude},${r.longitude}" target="_blank" class="btn btn-sm btn-outline" style="margin-left:auto">Map</a>
+      </div>
+    `).join('');
+  } catch (e) {
+    hlist.innerHTML = `<div class="alert alert-error">${e.message}</div>`;
+  }
+}
+
+async function loadDevices() {
+  const tbody = document.getElementById('devices-tbody');
+  tbody.innerHTML = '<tr><td colspan="6"><div class="loading-block"><span class="spinner"></span></div></td></tr>';
+  try {
+    const data = await lwGet('/api/v1/devices');
+    const devices = data.devices || data || [];
+    document.getElementById('device-count').textContent = devices.length;
+    if (!devices.length) {
+      tbody.innerHTML = '<tr><td colspan="6" class="text-muted" style="text-align:center;padding:24px">No devices registered</td></tr>';
+      return;
+    }
+    tbody.innerHTML = devices.map(d => `
+      <tr>
+        <td><strong>${escHtml(d.employee_name || d.employee_id || '—')}</strong></td>
+        <td>${escHtml(d.device_name || d.model || '—')}</td>
+        <td>${escHtml(d.platform || d.os || '—')}</td>
+        <td>${escHtml(d.app_version || '—')}</td>
+        <td class="text-muted">${relTime(d.last_seen_at || d.updated_at)}</td>
+        <td>${statusBadge(d.status || 'active')}</td>
+      </tr>
+    `).join('');
+  } catch (e) {
+    tbody.innerHTML = `<tr><td colspan="6"><div class="alert alert-error">${e.message}</div></td></tr>`;
+  }
+}
+
+async function loadAlerts() {
+  const tbody = document.getElementById('alerts-tbody');
+  tbody.innerHTML = '<tr><td colspan="5"><div class="loading-block"><span class="spinner"></span></div></td></tr>';
+  try {
+    const data = await lwGet('/api/v1/alerts?limit=50');
+    const alerts = data.alerts || data || [];
+    document.getElementById('alert-count').textContent = alerts.length;
+    if (!alerts.length) {
+      tbody.innerHTML = '<tr><td colspan="5" class="text-muted" style="text-align:center;padding:24px">No alerts</td></tr>';
+      return;
+    }
+    tbody.innerHTML = alerts.map(a => `
+      <tr>
+        <td class="text-muted">${fmtDate(a.created_at || a.timestamp)}</td>
+        <td><strong>${escHtml(a.employee_name || a.employee_id || '—')}</strong></td>
+        <td>${escHtml(a.alert_type || a.type || '—')}</td>
+        <td class="text-muted">${a.latitude?.toFixed(5) || '—'}, ${a.longitude?.toFixed(5) || '—'}</td>
+        <td>${statusBadge(a.status || 'active')}</td>
+      </tr>
+    `).join('');
+  } catch (e) {
+    tbody.innerHTML = `<tr><td colspan="5"><div class="alert alert-error">${e.message}</div></td></tr>`;
+  }
+}
+
+function escHtml(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderNav('location.html');
+  loadCurrent();
+  setInterval(() => { if (currentView === 'live') loadLive(); }, 30000);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name locationwhere.iamazim.com;
+
+    # SSL config here (certbot managed)
+
+    # ── Admin Dashboard (React SPA) ──
+    root /var/www/locationwhere.iamazim.com/dist;
+    index index.html;
+
+    # ── APK Downloads ──
+    location /downloads/ {
+        alias /var/www/locationwhere.iamazim.com/downloads/;
+        add_header Content-Disposition "attachment";
+        types {
+            application/vnd.android.package-archive apk;
+        }
+    }
+
+    # ── Backend API ──
+    location /api/ {
+        proxy_pass http://127.0.0.1:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_cache_bypass $http_upgrade;
+    }
+
+    # ── Backend Health ──
+    location /health {
+        proxy_pass http://127.0.0.1:3000/health;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+    }
+
+    # ── SPA fallback (must be LAST) ──
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+}

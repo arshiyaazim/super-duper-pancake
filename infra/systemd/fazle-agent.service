@@ -1,0 +1,26 @@
+[Unit]
+Description=Fazle Super Agent (active)
+After=network-online.target docker.service fazle-core.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=azim
+Group=azim
+WorkingDirectory=/home/azim/agent
+EnvironmentFile=/home/azim/agent/.env
+ExecStart=/home/azim/agent/venv/bin/uvicorn system_agent.main:app --host 127.0.0.1 --port 8300
+Restart=on-failure
+RestartSec=5
+StandardOutput=append:/home/azim/agent/logs/agent.log
+StandardError=append:/home/azim/agent/logs/agent-error.log
+
+# Hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=false
+ReadWritePaths=/home/azim/agent /home/azim/secure-env-backup
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Al-Aqsa Admin</title>
+<link rel="stylesheet" href="admin.css">
+<style>
+.health-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .health-grid { grid-template-columns: 1fr 1fr; }
+  .llm-grid    { grid-template-columns: 1fr 1fr 1fr; }
+  .warn-list   { font-size: 13px; }
+}
+
+.health-card {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 16px;
+  border: 1px solid var(--gray);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.health-card .hc-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.health-card .hc-name {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  color: var(--muted);
+}
+
+.health-card .hc-detail {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.llm-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.llm-item {
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.llm-item .provider {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.llm-item .latency {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.llm-item .model {
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.warn-list { list-style: none; }
+
+.warn-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--gray);
+  font-size: 13px;
+}
+
+.warn-item:last-child { border-bottom: none; }
+
+.warn-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.warn-msg { color: var(--text); }
+.warn-ts  { font-size: 11px; color: var(--muted); margin-top: 2px; }
+</style>
+</head>
+<body>
+
+<!-- ── Sidebar ─────────────────────────────────────────── -->
+<nav class="sidebar">
+  <div class="sidebar-logo">
+    <a href="admin.html" class="brand">
+      <div class="logo-icon">A</div>
+      <div class="brand-text">
+        <span class="brand-name">Al-Aqsa Admin</span>
+        <span class="brand-sub">Security Services</span>
+      </div>
+    </a>
+  </div>
+  <div class="sidebar-nav"></div>
+  <div class="sidebar-footer">
+    <div class="sidebar-status">
+      <span class="status-dot" id="sys-dot"></span>
+      <span id="sys-status-text">Checking…</span>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Main ────────────────────────────────────────────── -->
+<div class="main">
+  <header class="topbar">
+    <div class="page-title">System Dashboard</div>
+    <div class="topbar-right">
+      <span id="ts-label" class="text-muted"></span>
+      <button class="refresh-btn" onclick="loadAll()" title="Refresh">↺</button>
+      <button class="btn btn-outline btn-sm" onclick="openSettings()">⚙ Config</button>
+    </div>
+  </header>
+
+  <div class="content">
+
+    <!-- Warnings banner -->
+    <div id="warn-banner" style="display:none"></div>
+
+    <!-- Stats row -->
+    <div class="stats-grid" id="stats-grid">
+      <div class="stat-card gold-accent">
+        <div class="label">Pending Outbound</div>
+        <div class="value" id="s-outbound">…</div>
+        <div class="sub">messages queued</div>
+      </div>
+      <div class="stat-card red-accent">
+        <div class="label">Dead Letter Queue</div>
+        <div class="value" id="s-dlq">…</div>
+        <div class="sub">actionable failures</div>
+      </div>
+      <div class="stat-card navy-accent">
+        <div class="label">Pending Drafts</div>
+        <div class="value" id="s-drafts">…</div>
+        <div class="sub">awaiting approval</div>
+      </div>
+      <div class="stat-card green-accent">
+        <div class="label">Disk Free</div>
+        <div class="value" id="s-disk">…</div>
+        <div class="sub">GB available</div>
+      </div>
+    </div>
+
+    <div class="grid-2 mb-24">
+
+      <!-- System Health -->
+      <div class="card">
+        <div class="card-head">
+          <span class="card-title">Service Health</span>
+          <span id="overall-badge"></span>
+        </div>
+        <div class="card-body">
+          <div class="health-grid" id="health-grid">
+            <div class="loading-block"><span class="spinner"></span> Loading…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LLM Status -->
+      <div class="card">
+        <div class="card-head">
+          <span class="card-title">LLM Providers</span>
+          <span id="llm-primary-badge"></span>
+        </div>
+        <div class="card-body">
+          <div class="llm-grid" id="llm-grid">
+            <div class="loading-block"><span class="spinner"></span> Loading…</div>
+          </div>
+          <div class="divider"></div>
+          <div class="kv-list" id="llm-meta"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="grid-2 mb-24">
+
+      <!-- Bridge Pollers -->
+      <div class="card">
+        <div class="card-head">
+          <span class="card-title">Bridge Pollers</span>
+        </div>
+        <div class="card-body">
+          <ul class="probe-list" id="bridge-list"></ul>
+        </div>
+      </div>
+
+      <!-- Outbound Queue -->
+      <div class="card">
+        <div class="card-head">
+          <span class="card-title">Outbound Queue</span>
+          <a href="wa-chat.html" class="btn btn-outline btn-sm">View Drafts →</a>
+        </div>
+        <div class="card-body">
+          <ul class="kv-list" id="outbound-detail"></ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Recent Warnings -->
+    <div class="card mb-24">
+      <div class="card-head">
+        <span class="card-title">Active Warnings</span>
+        <span id="warn-count" class="badge badge-orange">0</span>
+      </div>
+      <div class="card-body">
+        <ul class="warn-list" id="warn-list">
+          <div class="loading-block"><span class="spinner"></span></div>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Quick actions -->
+    <div class="card">
+      <div class="card-head">
+        <span class="card-title">Quick Actions</span>
+      </div>
+      <div class="card-body flex gap-12" style="flex-wrap:wrap">
+        <a href="wa-chat.html" class="btn btn-navy">💬 WhatsApp Chat</a>
+        <a href="escorts.html" class="btn btn-navy">🛡 Escort Programs</a>
+        <a href="employees.html" class="btn btn-navy">👥 Employees</a>
+        <a href="payroll.html" class="btn btn-navy">💰 Payroll</a>
+        <a href="location.html" class="btn btn-gold">📍 Live Location</a>
+        <a href="sms-gateway.html" class="btn btn-outline">📱 SMS Gateway</a>
+        <a href="settings.html" class="btn btn-outline">⚙ Settings</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Settings modal -->
+<div id="settings-modal" class="modal-overlay" style="display:none">
+  <div class="modal">
+    <div class="modal-head">
+      <span class="modal-title">API Configuration</span>
+      <button class="modal-close" onclick="closeModal('settings-modal')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label class="form-label">Fazle Core URL</label>
+        <input class="form-input" id="cfg-fazle-url" placeholder="http://127.0.0.1:8200">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Fazle Core API Key</label>
+        <input class="form-input" id="cfg-fazle-key" type="password" placeholder="fk_…">
+      </div>
+      <div class="form-group">
+        <label class="form-label">LocationWhere API URL</label>
+        <input class="form-input" id="cfg-lw-url" placeholder="http://127.0.0.1:8310">
+      </div>
+      <div class="form-group">
+        <label class="form-label">LocationWhere Admin Token</label>
+        <input class="form-input" id="cfg-lw-token" type="password" placeholder="Bearer token">
+      </div>
+      <div class="form-group">
+        <label class="form-label">SMS Gateway Secret</label>
+        <input class="form-input" id="cfg-lw-secret" type="password" placeholder="gateway secret">
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-outline" onclick="closeModal('settings-modal')">Cancel</button>
+      <button class="btn btn-gold" onclick="saveConfig()">Save & Reload</button>
+    </div>
+  </div>
+</div>
+
+<script src="admin.js"></script>
+<script>
+renderNav('admin.html');
+
+function openSettings() {
+  document.getElementById('cfg-fazle-url').value  = FAZLE_API();
+  document.getElementById('cfg-fazle-key').value  = FAZLE_KEY();
+  document.getElementById('cfg-lw-url').value     = LW_API();
+  document.getElementById('cfg-lw-token').value   = LW_TOKEN();
+  document.getElementById('cfg-lw-secret').value  = LW_SECRET();
+  openModal('settings-modal');
+}
+
+function saveConfig() {
+  localStorage.setItem('fazle_api_url', document.getElementById('cfg-fazle-url').value.trim());
+  localStorage.setItem('fazle_api_key', document.getElementById('cfg-fazle-key').value.trim());
+  localStorage.setItem('lw_api_url',    document.getElementById('cfg-lw-url').value.trim());
+  localStorage.setItem('lw_token',      document.getElementById('cfg-lw-token').value.trim());
+  localStorage.setItem('lw_gateway_secret', document.getElementById('cfg-lw-secret').value.trim());
+  closeModal('settings-modal');
+  toast('Configuration saved', 'ok');
+  loadAll();
+}
+
+async function loadHealth() {
+  const data = await fazleGet('/health');
+  const probes = data.probes || {};
+
+  // Overall status
+  const overallOk = data.status === 'ok';
+  document.getElementById('overall-badge').innerHTML = statusBadge(data.status);
+  document.getElementById('sys-dot').className = `status-dot${overallOk ? '' : ' error'}`;
+  document.getElementById('sys-status-text').textContent = overallOk ? 'System OK' : 'Issues detected';
+  document.getElementById('ts-label').textContent = 'Updated ' + relTime(data.ts);
+
+  // Stats row
+  const out = probes.outbound || {};
+  document.getElementById('s-outbound').textContent = out.pending ?? '—';
+  document.getElementById('s-dlq').textContent = out.actionable_dlq ?? '—';
+  document.getElementById('s-disk').textContent = probes.disk?.free_gb != null ? probes.disk.free_gb.toFixed(0) : '—';
+
+  // Load drafts count
+  fazleGet('/api/drafts/stats').then(d => {
+    document.getElementById('s-drafts').textContent = d.pending ?? d.total ?? '—';
+  }).catch(() => {
+    document.getElementById('s-drafts').textContent = '—';
+  });
+
+  // Health cards
+  const bridgeNames = ['db', 'bridge1_db', 'bridge2_db', 'qdrant', 'redis', 'disk', 'memory'];
+  const bridgeFriendly = {
+    db: 'PostgreSQL', bridge1_db: 'Bridge 1 DB', bridge2_db: 'Bridge 2 DB',
+    qdrant: 'Qdrant (RAG)', redis: 'Redis', disk: 'Disk', memory: 'Memory'
+  };
+
+  const grid = document.getElementById('health-grid');
+  grid.innerHTML = bridgeNames.map(k => {
+    const p = probes[k];
+    if (!p) return '';
+    const ok = p.status === 'ok';
+    let detail = '';
+    if (p.mtime_age_s != null) detail = `mtime ${Math.round(p.mtime_age_s/60)}m ago`;
+    if (p.used_pct != null) detail = `${p.used_pct}% used`;
+    if (p.used_mb != null) detail = `${p.used_mb}MB used`;
+    return `
+      <div class="health-card">
+        <div class="hc-top">
+          <span class="hc-name">${bridgeFriendly[k] || k}</span>
+          ${statusBadge(p.status)}
+        </div>
+        <div class="hc-detail">${detail || (ok ? 'Healthy' : 'Error')}</div>
+      </div>
+    `;
+  }).join('');
+
+  // Bridge pollers
+  const bl = document.getElementById('bridge-list');
+  const bpollers = ['bridge_poller_b1', 'bridge_poller_b2'];
+  bl.innerHTML = bpollers.map((k, i) => {
+    const p = probes[k] || {};
+    const name = `Bridge ${i+1} Poller`;
+    return `
+      <li class="probe-item">
+        <div>
+          <div class="probe-name">${name}</div>
+          <div class="probe-detail">
+            age: ${p.age_s != null ? p.age_s + 's' : '—'}
+            &nbsp;·&nbsp; queue: ${p.queue_depth ?? '—'}
+            &nbsp;·&nbsp; last: ${p.last_message_id || 'none'}
+          </div>
+        </div>
+        ${statusBadge(p.status || 'unknown')}
+      </li>
+    `;
+  }).join('');
+
+  // Outbound detail
+  const od = document.getElementById('outbound-detail');
+  od.innerHTML = `
+    <li class="kv-item"><span class="kv-key">Status</span><span class="kv-val">${statusBadge(out.status || '—')}</span></li>
+    <li class="kv-item"><span class="kv-key">Pending</span><span class="kv-val">${out.pending ?? '—'}</span></li>
+    <li class="kv-item"><span class="kv-key">DLQ Total</span><span class="kv-val">${out.dlq ?? '—'}</span></li>
+    <li class="kv-item"><span class="kv-key">Actionable DLQ</span><span class="kv-val">${out.actionable_dlq ?? '—'}</span></li>
+  `;
+
+  // LLM
+  const llm = probes.llm || {};
+  const primary = llm.primary_provider || 'unknown';
+  document.getElementById('llm-primary-badge').innerHTML = `<span class="badge badge-navy">${primary}</span>`;
+
+  const providers = { groq: llm.groq, github_models: llm.github_models, ollama: llm.ollama };
+  const lg = document.getElementById('llm-grid');
+  lg.innerHTML = Object.entries(providers).map(([name, p]) => {
+    if (!p) return '';
+    const ok = p.status === 'ok';
+    return `
+      <div class="llm-item">
+        <div class="provider">${name.replace('_', ' ')}</div>
+        <div class="latency" style="color:${ok ? 'var(--green)' : 'var(--red)'}">
+          ${p.latency_ms != null ? p.latency_ms + 'ms' : (ok ? '✓' : '✗')}
+        </div>
+        <div class="model">${p.model || p.active_model || ''}</div>
+      </div>
+    `;
+  }).join('');
+
+  const lm = document.getElementById('llm-meta');
+  lm.innerHTML = `
+    <li class="kv-item"><span class="kv-key">Primary</span><span class="kv-val">${primary}</span></li>
+    <li class="kv-item"><span class="kv-key">Ollama disabled</span><span class="kv-val">${llm.ollama_reply_disabled ? 'Yes' : 'No'}</span></li>
+    <li class="kv-item"><span class="kv-key">Groq configured</span><span class="kv-val">${llm.groq_configured ? 'Yes' : 'No'}</span></li>
+  `;
+
+  // Warnings
+  const warnings = [];
+  if (probes.bridge_meta?.status !== 'ok') {
+    const age = probes.bridge_meta?.mtime_age_s;
+    warnings.push({ icon: '⚠️', msg: `Meta bridge stale${age ? ` — ${Math.round(age/3600)}h since last heartbeat` : ''}`, level: 'warn' });
+  }
+  if (llm.github_models?.status === 'error') {
+    warnings.push({ icon: '⚠️', msg: `GitHub Models rate-limited — Primary is ${primary}`, level: 'warn' });
+  }
+  if ((out.actionable_dlq || 0) > 0) {
+    warnings.push({ icon: '🔴', msg: `${out.actionable_dlq} actionable DLQ messages need attention`, level: 'error' });
+  }
+  if (probes.disk?.status !== 'ok') {
+    warnings.push({ icon: '💾', msg: `Disk at ${probes.disk?.used_pct}%`, level: 'warn' });
+  }
+
+  document.getElementById('warn-count').textContent = warnings.length;
+  const wl = document.getElementById('warn-list');
+  if (warnings.length === 0) {
+    wl.innerHTML = '<div class="empty-state"><div class="icon">✅</div><p>No active warnings</p></div>';
+  } else {
+    wl.innerHTML = warnings.map(w => `
+      <li class="warn-item">
+        <span class="warn-icon">${w.icon}</span>
+        <div><div class="warn-msg">${w.msg}</div></div>
+      </li>
+    `).join('');
+  }
+
+  return data;
+}
+
+async function loadAll() {
+  document.getElementById('ts-label').textContent = 'Loading…';
+  try {
+    await loadHealth();
+  } catch (e) {
+    document.getElementById('sys-dot').className = 'status-dot error';
+    document.getElementById('sys-status-text').textContent = 'Cannot reach API';
+    document.getElementById('health-grid').innerHTML = `
+      <div class="alert alert-error">
+        Failed to reach Fazle Core at <strong>${FAZLE_API()}</strong>.<br>
+        Check API URL and key in <strong>⚙ Config</strong>.
+        <br><small>${e.message}</small>
+      </div>`;
+    /* key always has a default — no prompt needed */
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderNav('admin.html');
+  loadAll();
+  setInterval(loadAll, 30000);
+});
+</script>
+</body>
+</html>

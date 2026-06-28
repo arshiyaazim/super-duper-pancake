@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payroll — Al-Aqsa Admin</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<nav class="sidebar">
+  <div class="sidebar-logo">
+    <a href="admin.html" class="brand">
+      <div class="logo-icon">A</div>
+      <div class="brand-text">
+        <span class="brand-name">Al-Aqsa Admin</span>
+        <span class="brand-sub">Security Services</span>
+      </div>
+    </a>
+  </div>
+  <div class="sidebar-nav"></div>
+</nav>
+
+<div class="main">
+  <header class="topbar">
+    <div class="page-title">Payroll / FPE</div>
+    <div class="topbar-right">
+      <div class="tabs">
+        <button class="tab active" onclick="switchView('overview',this)">Overview</button>
+        <button class="tab" onclick="switchView('transactions',this)">Transactions</button>
+        <button class="tab" onclick="switchView('employees',this)">FPE Employees</button>
+        <button class="tab" onclick="switchView('unmatched',this)">Unmatched</button>
+      </div>
+      <button class="refresh-btn" onclick="loadCurrent()">↺</button>
+    </div>
+  </header>
+
+  <div class="content">
+
+    <!-- FPE Health banner -->
+    <div id="fpe-health-banner"></div>
+
+    <!-- Overview -->
+    <div id="view-overview">
+      <div class="stats-grid mb-24">
+        <div class="stat-card gold-accent">
+          <div class="label">Total Disbursed (BDT)</div>
+          <div class="value" id="s-disbursed">…</div>
+          <div class="sub">all time</div>
+        </div>
+        <div class="stat-card navy-accent">
+          <div class="label">Pending Payments</div>
+          <div class="value" id="s-pending-pay">…</div>
+        </div>
+        <div class="stat-card green-accent">
+          <div class="label">Sync Status</div>
+          <div class="value" id="s-sync">…</div>
+        </div>
+        <div class="stat-card red-accent">
+          <div class="label">Unmatched Records</div>
+          <div class="value" id="s-unmatched">…</div>
+        </div>
+      </div>
+
+      <div class="grid-2 mb-24">
+        <div class="card">
+          <div class="card-head">
+            <span class="card-title">FPE Health</span>
+            <span id="fpe-status-badge"></span>
+          </div>
+          <div class="card-body">
+            <ul class="kv-list" id="fpe-health-list"></ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <span class="card-title">Sync Status</span>
+            <button class="btn btn-outline btn-sm" onclick="triggerSync()">↺ Sync Now</button>
+          </div>
+          <div class="card-body">
+            <ul class="kv-list" id="sync-detail"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <span class="card-title">Quick Actions</span>
+        </div>
+        <div class="card-body flex gap-12" style="flex-wrap:wrap">
+          <button class="btn btn-navy" onclick="switchView('transactions',document.querySelectorAll('.tab')[1])">View Transactions</button>
+          <button class="btn btn-navy" onclick="switchView('employees',document.querySelectorAll('.tab')[2])">FPE Employees</button>
+          <button class="btn btn-outline" onclick="triggerSync()">↺ Sync All</button>
+          <button class="btn btn-outline" onclick="switchView('unmatched',document.querySelectorAll('.tab')[3])">Review Unmatched</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Transactions -->
+    <div id="view-transactions" style="display:none">
+      <div class="card">
+        <div class="card-head">
+          <span class="card-title">Transactions</span>
+          <div class="flex-center gap-8">
+            <input type="text" id="txn-search" class="form-input" style="width:200px;padding:6px 10px"
+              placeholder="Employee, amount…" oninput="filterTxn()">
+            <select id="txn-type" class="form-select" style="width:140px;padding:6px 10px" onchange="loadTransactions()">
+              <option value="">All types</option>
+              <option value="salary">Salary</option>
+              <option value="cash_advance">Cash Advance</option>
+              <option value="income">Income</option>
+              <option value="deduction">Deduction</option>
+            </select>
+          </div>
+        </div>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Employee</th>
+                <th>Type</th>
+                <th>Amount (BDT)</th>
+                <th>Note</th>
+                <th>Status</th>
+                <th>Source</th>
+              </tr>
+            </thead>
+            <tbody id="txn-tbody">
+              <tr><td colspan="7"><div class="loading-block"><span class="spinner"></span></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- FPE Employees -->
+    <div id="view-employees" style="display:none">
+      <div class="card">
+        <div class="card-head">
+          <span class="card-title">FPE Employee Ledger</span>
+          <input type="text" id="fpe-emp-search" class="form-input" style="width:220px;padding:6px 10px"
+            placeholder="Search name, phone…" oninput="filterFpeEmp()">
+        </div>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th>Employee</th>
+                <th>Phone</th>
+                <th>Total Earned</th>
+                <th>Total Paid</th>
+                <th>Balance</th>
+                <th>Last Txn</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="fpe-emp-tbody">
+              <tr><td colspan="7"><div class="loading-block"><span class="spinner"></span></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Unmatched -->
+    <div id="view-unmatched" style="display:none">
+      <div class="card">
+        <div class="card-head">
+          <span class="card-title">Unmatched Records</span>
+          <span class="badge badge-orange" id="unmatched-count">0</span>
+        </div>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Raw Text</th>
+                <th>Amount</th>
+                <th>Source</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="unmatched-tbody">
+              <tr><td colspan="5"><div class="loading-block"><span class="spinner"></span></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="admin.js"></script>
+<script>
+renderNav('payroll.html');
+
+let currentView = 'overview';
+let allTxn = [];
+let allFpeEmp = [];
+
+function switchView(view, btn) {
+  currentView = view;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  ['overview','transactions','employees','unmatched'].forEach(v => {
+    document.getElementById('view-' + v).style.display = v === view ? '' : 'none';
+  });
+  loadCurrent();
+}
+
+function loadCurrent() {
+  if (currentView === 'overview') loadOverview();
+  else if (currentView === 'transactions') loadTransactions();
+  else if (currentView === 'employees') loadFpeEmployees();
+  else loadUnmatched();
+}
+
+async function loadOverview() {
+  // FPE health
+  try {
+    const h = await fazleGet('/api/fpe/health');
+    document.getElementById('fpe-status-badge').innerHTML = statusBadge(h.status || 'unknown');
+    const list = document.getElementById('fpe-health-list');
+    list.innerHTML = Object.entries(h).filter(([k]) => k !== 'status').slice(0, 8).map(([k, v]) =>
+      `<li class="kv-item"><span class="kv-key">${k}</span><span class="kv-val">${typeof v === 'object' ? JSON.stringify(v) : String(v)}</span></li>`
+    ).join('');
+  } catch (e) {
+    document.getElementById('fpe-status-badge').innerHTML = statusBadge('error');
+  }
+
+  // Stats
+  try {
+    const s = await fazleGet('/api/fpe/stats');
+    document.getElementById('s-disbursed').textContent = fmtBDT(s.total_disbursed || 0);
+    document.getElementById('s-pending-pay').textContent = s.pending_payments ?? '—';
+    document.getElementById('s-unmatched').textContent = s.unmatched_count ?? '—';
+  } catch (e) {
+    document.getElementById('s-disbursed').textContent = '—';
+  }
+
+  // Sync
+  try {
+    const syn = await fazleGet('/api/fpe/sync/status');
+    document.getElementById('s-sync').textContent = syn.status || '—';
+    const sd = document.getElementById('sync-detail');
+    sd.innerHTML = `
+      <li class="kv-item"><span class="kv-key">Status</span><span class="kv-val">${statusBadge(syn.status || '—')}</span></li>
+      <li class="kv-item"><span class="kv-key">Last sync</span><span class="kv-val">${relTime(syn.last_sync_at)}</span></li>
+      <li class="kv-item"><span class="kv-key">Next sync</span><span class="kv-val">${relTime(syn.next_sync_at)}</span></li>
+      <li class="kv-item"><span class="kv-key">Records synced</span><span class="kv-val">${syn.records_synced ?? '—'}</span></li>
+    `;
+  } catch (e) {
+    document.getElementById('s-sync').textContent = 'err';
+  }
+}
+
+async function triggerSync() {
+  try {
+    await fazlePost('/api/fpe/sync/trigger', {});
+    toast('Sync triggered', 'ok');
+  } catch (e) {
+    toast('Sync failed: ' + e.message, 'error');
+  }
+}
+
+async function loadTransactions() {
+  const tbody = document.getElementById('txn-tbody');
+  tbody.innerHTML = '<tr><td colspan="7"><div class="loading-block"><span class="spinner"></span></div></td></tr>';
+  const type = document.getElementById('txn-type')?.value || '';
+  try {
+    const data = await fazleGet('/api/fpe/transactions?limit=100' + (type ? '&type=' + type : ''));
+    allTxn = data.transactions || data || [];
+    filterTxn();
+  } catch (e) {
+    tbody.innerHTML = `<tr><td colspan="7"><div class="alert alert-error">${e.message}</div></td></tr>`;
+  }
+}
+
+function filterTxn() {
+  const q = document.getElementById('txn-search')?.value.toLowerCase() || '';
+  const filtered = q ? allTxn.filter(t =>
+    (t.employee_name || '').toLowerCase().includes(q) ||
+    (t.note || t.description || '').toLowerCase().includes(q) ||
+    String(t.amount || '').includes(q)
+  ) : allTxn;
+  renderTxnTable(filtered);
+}
+
+function renderTxnTable(rows) {
+  const tbody = document.getElementById('txn-tbody');
+  if (!rows.length) {
+    tbody.innerHTML = '<tr><td colspan="7" class="text-muted" style="text-align:center;padding:24px">No transactions found</td></tr>';
+    return;
+  }
+  tbody.innerHTML = rows.map(t => `
+    <tr>
+      <td class="text-muted">${fmtDate(t.transaction_date || t.created_at)}</td>
+      <td><strong>${escHtml(t.employee_name || t.employee_id || '—')}</strong></td>
+      <td>${t.transaction_type || t.type || '—'}</td>
+      <td style="font-weight:700;color:${t.amount > 0 ? 'var(--green)' : 'var(--red)'}">${fmtBDT(t.amount || 0)}</td>
+      <td class="text-muted">${escHtml((t.note || t.description || '—').slice(0, 60))}</td>
+      <td>${statusBadge(t.status || 'completed')}</td>
+      <td class="text-muted">${t.source || t.source_bridge || '—'}</td>
+    </tr>
+  `).join('');
+}
+
+async function loadFpeEmployees() {
+  const tbody = document.getElementById('fpe-emp-tbody');
+  tbody.innerHTML = '<tr><td colspan="7"><div class="loading-block"><span class="spinner"></span></div></td></tr>';
+  try {
+    const data = await fazleGet('/api/fpe/employees?limit=100');
+    allFpeEmp = data.employees || data || [];
+    filterFpeEmp();
+  } catch (e) {
+    tbody.innerHTML = `<tr><td colspan="7"><div class="alert alert-error">${e.message}</div></td></tr>`;
+  }
+}
+
+function filterFpeEmp() {
+  const q = document.getElementById('fpe-emp-search')?.value.toLowerCase() || '';
+  const filtered = q ? allFpeEmp.filter(e =>
+    (e.name || e.normalized_name || '').toLowerCase().includes(q) ||
+    (e.phone || '').includes(q)
+  ) : allFpeEmp;
+  renderFpeEmpTable(filtered);
+}
+
+function renderFpeEmpTable(rows) {
+  const tbody = document.getElementById('fpe-emp-tbody');
+  if (!rows.length) {
+    tbody.innerHTML = '<tr><td colspan="7" class="text-muted" style="text-align:center;padding:24px">No employees</td></tr>';
+    return;
+  }
+  tbody.innerHTML = rows.map(e => {
+    const balance = (e.total_earned || 0) - (e.total_paid || 0);
+    return `
+      <tr>
+        <td><strong>${escHtml(e.name || e.normalized_name || '—')}</strong></td>
+        <td>${e.phone || '—'}</td>
+        <td style="font-weight:600">${fmtBDT(e.total_earned || 0)}</td>
+        <td style="font-weight:600">${fmtBDT(e.total_paid || 0)}</td>
+        <td style="font-weight:700;color:${balance > 0 ? 'var(--green)' : balance < 0 ? 'var(--red)' : 'var(--muted)'}">${fmtBDT(balance)}</td>
+        <td class="text-muted">${relTime(e.last_transaction_at)}</td>
+        <td>
+          <a href="#" class="btn btn-sm btn-outline" onclick="viewLedger(${e.id || e.emp_id});return false">Ledger</a>
+        </td>
+      </tr>
+    `;
+  }).join('');
+}
+
+async function loadUnmatched() {
+  const tbody = document.getElementById('unmatched-tbody');
+  tbody.innerHTML = '<tr><td colspan="5"><div class="loading-block"><span class="spinner"></span></div></td></tr>';
+  try {
+    const data = await fazleGet('/api/fpe/unmatched?limit=50');
+    const rows = data.unmatched || data || [];
+    document.getElementById('unmatched-count').textContent = rows.length;
+    if (!rows.length) {
+      tbody.innerHTML = '<tr><td colspan="5" class="text-muted" style="text-align:center;padding:24px">No unmatched records ✓</td></tr>';
+      return;
+    }
+    tbody.innerHTML = rows.map(r => `
+      <tr>
+        <td class="text-muted">${fmtDate(r.created_at)}</td>
+        <td>${escHtml(r.raw_text || '—')}</td>
+        <td style="font-weight:700">${fmtBDT(r.amount || 0)}</td>
+        <td class="text-muted">${r.source || '—'}</td>
+        <td>
+          <button class="btn btn-sm btn-outline" onclick="markReviewed(${r.id})">Mark Reviewed</button>
+        </td>
+      </tr>
+    `).join('');
+  } catch (e) {
+    tbody.innerHTML = `<tr><td colspan="5"><div class="alert alert-error">${e.message}</div></td></tr>`;
+  }
+}
+
+async function markReviewed(id) {
+  try {
+    await fazlePost(`/api/fpe/unmatched/${id}/mark-reviewed`, {});
+    toast('Marked as reviewed', 'ok');
+    loadUnmatched();
+  } catch (e) {
+    toast('Error: ' + e.message, 'error');
+  }
+}
+
+async function viewLedger(id) {
+  if (!id) return;
+  try {
+    const data = await fazleGet(`/api/fpe/ledger/${id}`);
+    alert(JSON.stringify(data, null, 2));
+  } catch (e) {
+    toast('Error: ' + e.message, 'error');
+  }
+}
+
+function fmtBDT(n) {
+  return '৳ ' + Number(n || 0).toLocaleString('en-BD');
+}
+
+function escHtml(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderNav('payroll.html');
+  loadOverview();
+});
+</script>
+</body>
+</html>

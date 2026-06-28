@@ -1,0 +1,20 @@
+[Unit]
+Description=WhatsApp Bridge - Instance 1 (primary)
+After=network.target media-processor.service
+Wants=media-processor.service
+
+[Service]
+User=azim
+WorkingDirectory=/home/azim/whatsapp-mcp/whatsapp-bridge
+ExecStart=/home/azim/whatsapp-mcp/whatsapp-bridge/whatsapp-bridge
+Restart=always
+RestartSec=10
+Environment=HOME=/home/azim
+Environment=WHATSAPP_PORT=8082
+Environment=WHATSAPP_STORE_DIR=/home/azim/whatsapp1/store
+Environment=MEDIA_PROCESSOR_URL=http://127.0.0.1:8090
+StandardOutput=append:/home/azim/whatsapp-mcp/logs/bridge1.log
+StandardError=append:/home/azim/whatsapp-mcp/logs/bridge1.log
+
+[Install]
+WantedBy=multi-user.target

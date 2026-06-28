@@ -1,0 +1,3267 @@
+{
+  "generated_at": "2026-06-24T20:08:57.029421+00:00",
+  "generated_dir": "resources/generated_kb",
+  "files": [
+    {
+      "source": "knowledge_base/00_governance/README.md",
+      "target": "resources/generated_kb/knowledge_base__00_governance__README.txt",
+      "sha256": "24c42d26fdc056f06d7cfd54bca5be5814bcd7ee5fd159aaead3abf4ed11da8e",
+      "version": "24c42d26fdc0",
+      "metadata": {
+        "title": "00 Governance — Fazle AI Platform",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/00_governance/active_development_plan.md",
+      "target": "resources/generated_kb/knowledge_base__00_governance__active_development_plan.txt",
+      "sha256": "88cac068ac8fc8e4e92ae3f9328312f4c4e4f5882a19351f633dea1caa594b57",
+      "version": "88cac068ac8f",
+      "metadata": {
+        "title": "Active Development Plan — Session 2",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/00_governance/claude_session3_audit_report.md",
+      "target": "resources/generated_kb/knowledge_base__00_governance__claude_session3_audit_report.txt",
+      "sha256": "b2d39f1438bac26838daea4fff19c7dd2d425348f677bee8daa7109d13d32a3e",
+      "version": "b2d39f1438ba",
+      "metadata": {
+        "title": "Claude Session 3 — Independent Audit Report",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/00_governance/final_management_directive.md",
+      "target": "resources/generated_kb/knowledge_base__00_governance__final_management_directive.txt",
+      "sha256": "9398125a1e87b44a17083c0c44d3cfdd86f2badf52fc45e780fda08d7440e3cc",
+      "version": "9398125a1e87",
+      "metadata": {
+        "title": "Final Management Directive — Fazle AI Platform",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/00_governance/kb_certification.md",
+      "target": "resources/generated_kb/knowledge_base__00_governance__kb_certification.txt",
+      "sha256": "91b188b0dc9eac7c6219385e8299466c78d72a4b9b8d549119daa63ecce3a34a",
+      "version": "91b188b0dc9e",
+      "metadata": {
+        "title": "Knowledge Base Certification",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true,
+        "tags": "[governance, certification, knowledge_base]"
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/00_governance/kb_enrichment_plan_v2.md",
+      "target": "resources/generated_kb/knowledge_base__00_governance__kb_enrichment_plan_v2.txt",
+      "sha256": "b6e3529b4e1756fd25ddc68746248433b219dd547a27a3a4b26473472d4da2a9",
+      "version": "b6e3529b4e17",
+      "metadata": {
+        "title": "KB Enrichment Plan v2",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/00_governance/kb_policy.md",
+      "target": "resources/generated_kb/knowledge_base__00_governance__kb_policy.txt",
+      "sha256": "b3544f28dc1729316d92915d51c25652417f8939b559fcb02aa4135ab156a17f",
+      "version": "b3544f28dc17",
+      "metadata": {
+        "title": "Knowledge Base Policy",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true,
+        "tags": "[governance, knowledge_base, policy]"
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/00_governance/management_decisions.md",
+      "target": "resources/generated_kb/knowledge_base__00_governance__management_decisions.txt",
+      "sha256": "63986ab365b7630059bb70e7167e5cc48db62e13551ae22389928898017fc3e8",
+      "version": "63986ab365b7",
+      "metadata": {
+        "title": "Management Decisions — Active Register",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/00_governance/master_execution_plan_v2.md",
+      "target": "resources/generated_kb/knowledge_base__00_governance__master_execution_plan_v2.txt",
+      "sha256": "273e07d1c0400ed919960e8d1c7379718764ed915122b186d11fec9146a0c527",
+      "version": "273e07d1c040",
+      "metadata": {
+        "title": "Master Execution Plan v2 — Organizational Brain Validation & Alignment",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/00_governance/module_alignment_report.md",
+      "target": "resources/generated_kb/knowledge_base__00_governance__module_alignment_report.txt",
+      "sha256": "d0260950e362bf19f31bb738db37a37a9b922bb8402e26eaf9e160ba6ef07e70",
+      "version": "d0260950e362",
+      "metadata": {
+        "title": "Module Alignment Report — Phase 4 Step 5",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/00_governance/organizational_brain_gap_report.md",
+      "target": "resources/generated_kb/knowledge_base__00_governance__organizational_brain_gap_report.txt",
+      "sha256": "1b0f0319a2d335b94bb6a80b81f1b363c4495b4b766210671ac5fefa3aded9ea",
+      "version": "1b0f0319a2d3",
+      "metadata": {
+        "title": "Organizational Brain Gap Report — Phase 4 Step 5",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/00_governance/phase1_5_hybrid_rag_design.md",
+      "target": "resources/generated_kb/knowledge_base__00_governance__phase1_5_hybrid_rag_design.txt",
+      "sha256": "4f027d074f9fb41151a55fdae0afba035984273d8acd903fcc74448456708f2f",
+      "version": "4f027d074f9f",
+      "metadata": {
+        "title": "PHASE 1.5 — Hybrid RAG Architecture Design Package",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/00_governance/phase1_rag_analysis.md",
+      "target": "resources/generated_kb/knowledge_base__00_governance__phase1_rag_analysis.txt",
+      "sha256": "4af437b3a314256070e3169da8f5325d3d06416a41b41de4accee0e1eebb88b4",
+      "version": "4af437b3a314",
+      "metadata": {
+        "title": "PHASE 1 — Hybrid RAG Integration Analysis",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/00_governance/project_context.md",
+      "target": "resources/generated_kb/knowledge_base__00_governance__project_context.txt",
+      "sha256": "3a32aa7e84e1404a6fd4387f8aa212fb63e70e8feaaf30103708d10c2bf82945",
+      "version": "3a32aa7e84e1",
+      "metadata": {
+        "title": "Project Context — Fazle AI Platform",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/00_governance/session4_audit_report_2026_06_23.md",
+      "target": "resources/generated_kb/knowledge_base__00_governance__session4_audit_report_2026_06_23.txt",
+      "sha256": "e13a1808258d7cd8e71e03bf07c4178b411c62c7353f1210ee2228d58bf9e20b",
+      "version": "e13a1808258d",
+      "metadata": {
+        "title": "Session 4 — Audit Report (Final / Post-Execution)",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/01_employee_knowledge/attendance_policy.md",
+      "target": "resources/generated_kb/knowledge_base__01_employee_knowledge__attendance_policy.txt",
+      "sha256": "dba7f9d1e2d9a402f67ac766931e42fdfa9114cdaebcf3ed040efad441a5667b",
+      "version": "dba7f9d1e2d9",
+      "metadata": {
+        "title": "Attendance Policy",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/01_employee_knowledge/company_identity.md",
+      "target": "resources/generated_kb/knowledge_base__01_employee_knowledge__company_identity.txt",
+      "sha256": "584902cd0ef0432fdd3672f0aeb5d3c6d3f5e12b660ab4c209bc1f18fd20d8e7",
+      "version": "584902cd0ef0",
+      "metadata": {
+        "title": "Company Identity",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/01_employee_knowledge/faq_employee.md",
+      "target": "resources/generated_kb/knowledge_base__01_employee_knowledge__faq_employee.txt",
+      "sha256": "c5758bdc3c87e891dc3bed0e56211849b093fcb4fffa8aef121e015e6a9a31e2",
+      "version": "c5758bdc3c87",
+      "metadata": {
+        "title": "Employee FAQ",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/01_employee_knowledge/leave_policy.md",
+      "target": "resources/generated_kb/knowledge_base__01_employee_knowledge__leave_policy.txt",
+      "sha256": "eec79e13436732b370d492fc82d9517b7f8ddf524e9990b26906b95d21b7f4ab",
+      "version": "eec79e134367",
+      "metadata": {
+        "title": "Leave Policy",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/01_employee_knowledge/recruitment_policy.md",
+      "target": "resources/generated_kb/knowledge_base__01_employee_knowledge__recruitment_policy.txt",
+      "sha256": "12c03581777f152d8bece3793424be5c7eab0ce4c0a212400dbe5eda29a1eb22",
+      "version": "12c03581777f",
+      "metadata": {
+        "title": "Recruitment Policy",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/01_employee_knowledge/release_slip.md",
+      "target": "resources/generated_kb/knowledge_base__01_employee_knowledge__release_slip.txt",
+      "sha256": "1deadba8101eb525917389372e152619a426f5243b6ba25d211182c83c7a70ec",
+      "version": "1deadba8101e",
+      "metadata": {
+        "title": "Release Slip",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/01_employee_knowledge/salary_policy.md",
+      "target": "resources/generated_kb/knowledge_base__01_employee_knowledge__salary_policy.txt",
+      "sha256": "079beba6579db39b527cfbefbd4aa7e57166e1144a6335e2910a6fc40a8d062c",
+      "version": "079beba6579d",
+      "metadata": {
+        "title": "Salary Policy",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/01_employee_knowledge/transport_allowance.md",
+      "target": "resources/generated_kb/knowledge_base__01_employee_knowledge__transport_allowance.txt",
+      "sha256": "b9a76201bfef0d52b9b67e0190f2295e0e132c8549db506c98b7049ef5be6e7e",
+      "version": "b9a76201bfef",
+      "metadata": {
+        "title": "Transport Allowance",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/02_admin_knowledge/admin_attendance_handling.md",
+      "target": "resources/generated_kb/knowledge_base__02_admin_knowledge__admin_attendance_handling.txt",
+      "sha256": "c7d0840573c43e2bc2b0d6c624c508fc2c90e4aa5f458fec9ab9aedc0baa6fe0",
+      "version": "c7d0840573c4",
+      "metadata": {
+        "title": "Admin Attendance Handling",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/02_admin_knowledge/admin_operations_overview.md",
+      "target": "resources/generated_kb/knowledge_base__02_admin_knowledge__admin_operations_overview.txt",
+      "sha256": "ad97e2f6ec207f0b7668e9e20bf705ee92308e7989716f4b12bcc88d9b176f0b",
+      "version": "ad97e2f6ec20",
+      "metadata": {
+        "title": "Admin Operations Overview",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/02_admin_knowledge/admin_payment_handling.md",
+      "target": "resources/generated_kb/knowledge_base__02_admin_knowledge__admin_payment_handling.txt",
+      "sha256": "f2b60ce53d7817733da6c30d9146b990c9ca5d91ef10dd1e8571067b541fd8e6",
+      "version": "f2b60ce53d78",
+      "metadata": {
+        "title": "Admin Payment Handling",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/02_admin_knowledge/admin_role_management.md",
+      "target": "resources/generated_kb/knowledge_base__02_admin_knowledge__admin_role_management.txt",
+      "sha256": "635dbbf518cba56293ade0a2d3e8448e1459c06a0cf9d9cde2a282ae1ab1a774",
+      "version": "635dbbf518cb",
+      "metadata": {
+        "title": "Admin Role Management",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/02_admin_knowledge/admin_transactions_rules.md",
+      "target": "resources/generated_kb/knowledge_base__02_admin_knowledge__admin_transactions_rules.txt",
+      "sha256": "9ad7de489a2a4724f51cdf25ccadbaef383e019bed2d3f4974d361503ed01845",
+      "version": "9ad7de489a2a",
+      "metadata": {
+        "title": "Admin Transactions Rules",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/02_admin_system/admin_business_rules.md",
+      "target": "resources/generated_kb/knowledge_base__02_admin_system__admin_business_rules.txt",
+      "sha256": "c72ab3e6cbd174d01cf1f0dc2c96f6470492880fe385998bf6ba7156bd045e52",
+      "version": "c72ab3e6cbd1",
+      "metadata": {
+        "title": "Admin Business Rules",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/02_admin_system/attendance_workflow.md",
+      "target": "resources/generated_kb/knowledge_base__02_admin_system__attendance_workflow.txt",
+      "sha256": "154acc32fd121ce275f737765aa861eb6b5a3857ebf367ab92f883bf3c05f57c",
+      "version": "154acc32fd12",
+      "metadata": {
+        "title": "Attendance Workflow",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/02_admin_system/escort_workflow.md",
+      "target": "resources/generated_kb/knowledge_base__02_admin_system__escort_workflow.txt",
+      "sha256": "d58e9afdea010bf74250538df2006313421622e879890acbd7872f2113f9a612",
+      "version": "d58e9afdea01",
+      "metadata": {
+        "title": "Escort Workflow",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/02_admin_system/payment_workflow.md",
+      "target": "resources/generated_kb/knowledge_base__02_admin_system__payment_workflow.txt",
+      "sha256": "040dd6f4c0c2ea411919ff537a9fd7375718b57f23f146c4173390de1e6efdbf",
+      "version": "040dd6f4c0c2",
+      "metadata": {
+        "title": "Payment Workflow",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/02_admin_system/payroll_rules.md",
+      "target": "resources/generated_kb/knowledge_base__02_admin_system__payroll_rules.txt",
+      "sha256": "b01d8045a5f82ce763e4721ab125784f13dcca3667dedd26ca52660eb3b9ace9",
+      "version": "b01d8045a5f8",
+      "metadata": {
+        "title": "Payroll Rules",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/02_admin_system/release_slip_workflow.md",
+      "target": "resources/generated_kb/knowledge_base__02_admin_system__release_slip_workflow.txt",
+      "sha256": "c87469d3351e1f705f5193a47fe8b11ce8cf6c5eae42ab6e7f38fcedf9c9d564",
+      "version": "c87469d3351e",
+      "metadata": {
+        "title": "Release Slip Workflow",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/03_ai_identity/accountant_identity.md",
+      "target": "resources/generated_kb/knowledge_base__03_ai_identity__accountant_identity.txt",
+      "sha256": "baad355d92a489f383e79a686f394056b6f13bccf1a7654d4a4c3ad3ea447c1d",
+      "version": "baad355d92a4",
+      "metadata": {
+        "title": "Accountant Identity",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/03_ai_identity/admin_identity.md",
+      "target": "resources/generated_kb/knowledge_base__03_ai_identity__admin_identity.txt",
+      "sha256": "a36b6c61de10e8d1939c127f54b615e8eadc7bc146be6d1795432fddd78cac68",
+      "version": "a36b6c61de10",
+      "metadata": {
+        "title": "Admin Identity",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/03_ai_identity/candidate_identity.md",
+      "target": "resources/generated_kb/knowledge_base__03_ai_identity__candidate_identity.txt",
+      "sha256": "8bc92b85d7627f83165125893693aa8a3a497292a16a0581bb7e5602580a9323",
+      "version": "8bc92b85d762",
+      "metadata": {
+        "title": "Candidate Identity",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/03_ai_identity/employee_identity.md",
+      "target": "resources/generated_kb/knowledge_base__03_ai_identity__employee_identity.txt",
+      "sha256": "afdd88c41376c89c8f9f7d57018b84480d9c98654a4e8b79536bd7da55dbc4ee",
+      "version": "afdd88c41376",
+      "metadata": {
+        "title": "Employee Identity",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/03_ai_identity/escort_identity.md",
+      "target": "resources/generated_kb/knowledge_base__03_ai_identity__escort_identity.txt",
+      "sha256": "f161feccc98c643d987a4426d20975f2fbefef1a9952eb2a0019d5c27ca5a5f4",
+      "version": "f161feccc98c",
+      "metadata": {
+        "title": "Escort Identity",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/03_ai_identity/family_identity.md",
+      "target": "resources/generated_kb/knowledge_base__03_ai_identity__family_identity.txt",
+      "sha256": "8e91adc8c4c18874c3bba5f4b09e1e4f58e2173551137a41bccb1546b414eb06",
+      "version": "8e91adc8c4c1",
+      "metadata": {
+        "title": "Family Identity",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/03_ai_identity/identity_overview.md",
+      "target": "resources/generated_kb/knowledge_base__03_ai_identity__identity_overview.txt",
+      "sha256": "562e55d3df877a67e0ef776a07a961e22935f335202d4ebbaa263c0d83f46ed6",
+      "version": "562e55d3df87",
+      "metadata": {
+        "title": "AI Identity Overview",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/03_ai_identity/permission_matrix.md",
+      "target": "resources/generated_kb/knowledge_base__03_ai_identity__permission_matrix.txt",
+      "sha256": "99260b3dc6c3b6cc855032724b05a01889d8310e99becf74c89bc44687e84a0b",
+      "version": "99260b3dc6c3",
+      "metadata": {
+        "title": "Permission Matrix",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/03_ai_identity/response_rules.md",
+      "target": "resources/generated_kb/knowledge_base__03_ai_identity__response_rules.txt",
+      "sha256": "68299de55406db91c244f4c4d2c0e5f31c39bd1d7a2c4e8b8343d9ee81cfa371",
+      "version": "68299de55406",
+      "metadata": {
+        "title": "Response Rules",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/03_ai_identity/vip_identity.md",
+      "target": "resources/generated_kb/knowledge_base__03_ai_identity__vip_identity.txt",
+      "sha256": "9639c3a82a713df66376c4ef6dc55b309648440999690d3bbc51c9b152c36b3c",
+      "version": "9639c3a82a71",
+      "metadata": {
+        "title": "VIP Identity",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/03_developer_system/ai_system_prompt.md",
+      "target": "resources/generated_kb/knowledge_base__03_developer_system__ai_system_prompt.txt",
+      "sha256": "38bcccef749e98c1e692ad99b36ad287bce9319df12c98601832ef5d0423a8dd",
+      "version": "38bcccef749e",
+      "metadata": {
+        "title": "AI System Prompt Rules",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/03_developer_system/identity_brain.md",
+      "target": "resources/generated_kb/knowledge_base__03_developer_system__identity_brain.txt",
+      "sha256": "067eef7b388300eda9351c989e09107532ec13a69f930db63120d88690eedb1c",
+      "version": "067eef7b3883",
+      "metadata": {
+        "title": "Identity Brain",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/03_developer_system/ocr_pipeline.md",
+      "target": "resources/generated_kb/knowledge_base__03_developer_system__ocr_pipeline.txt",
+      "sha256": "0d14c4e5db13e63b5a51edb2724cf69a2d860e4a088b7165eb4c79d6f4f8b731",
+      "version": "0d14c4e5db13",
+      "metadata": {
+        "title": "OCR Pipeline",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/03_developer_system/parser_logic.md",
+      "target": "resources/generated_kb/knowledge_base__03_developer_system__parser_logic.txt",
+      "sha256": "d4a422393f92ad8e40723430259521a9348823d0635e1061312b1388c9f4779e",
+      "version": "d4a422393f92",
+      "metadata": {
+        "title": "Parser Logic",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/03_developer_system/rag_rules.md",
+      "target": "resources/generated_kb/knowledge_base__03_developer_system__rag_rules.txt",
+      "sha256": "bedc3da932be63f2c6be67215f12e7d1b4209b88cba7ffa238d074371a420a64",
+      "version": "bedc3da932be",
+      "metadata": {
+        "title": "RAG Rules",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/03_developer_system/security_rules.md",
+      "target": "resources/generated_kb/knowledge_base__03_developer_system__security_rules.txt",
+      "sha256": "c2a50d2d2d44a62288fd5d619f54391869884853e384f64e3e8e976aa4757a0a",
+      "version": "c2a50d2d2d44",
+      "metadata": {
+        "title": "Security Rules",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/03_developer_system/workflow_engine.md",
+      "target": "resources/generated_kb/knowledge_base__03_developer_system__workflow_engine.txt",
+      "sha256": "f6e47db8e2c8e465e5300584020be4d211dcba330bd580f1f131a66237e7660c",
+      "version": "f6e47db8e2c8",
+      "metadata": {
+        "title": "Workflow Engine",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/04_business_rules/ai_response_rules.md",
+      "target": "resources/generated_kb/knowledge_base__04_business_rules__ai_response_rules.txt",
+      "sha256": "2c5fbe11a3559721d60c922fc48ee8ed4bc52bb71fc52aef25a094c1a7bb5b96",
+      "version": "2c5fbe11a355",
+      "metadata": {
+        "title": "AI Response Business Rules",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/04_business_rules/attendance_business_rules.md",
+      "target": "resources/generated_kb/knowledge_base__04_business_rules__attendance_business_rules.txt",
+      "sha256": "98ff02c01d1d9d3c770e7fd3b3d49df989ed159736ebccfdf1d3c96244dcac28",
+      "version": "98ff02c01d1d",
+      "metadata": {
+        "title": "Attendance Business Rules",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/04_business_rules/cash_business_rules.md",
+      "target": "resources/generated_kb/knowledge_base__04_business_rules__cash_business_rules.txt",
+      "sha256": "09505cfb3e48672c44f502c3ade73f6ac497b7edfcc368c8ff36ddf5da7a6e5a",
+      "version": "09505cfb3e48",
+      "metadata": {
+        "title": "Cash Business Rules",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/04_business_rules/escort_business_rules.md",
+      "target": "resources/generated_kb/knowledge_base__04_business_rules__escort_business_rules.txt",
+      "sha256": "b046fd22d5181e49f26a40d64f2d94063d862eb5facadbd0046edb7eec82fa73",
+      "version": "b046fd22d518",
+      "metadata": {
+        "title": "Escort Business Rules",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/04_business_rules/joining_business_rules.md",
+      "target": "resources/generated_kb/knowledge_base__04_business_rules__joining_business_rules.txt",
+      "sha256": "ee73d61b3e564166c8d17c3e305fd8da81e229455e425d46060bd110a313d5ea",
+      "version": "ee73d61b3e56",
+      "metadata": {
+        "title": "Joining Business Rules",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/04_business_rules/payment_business_rules.md",
+      "target": "resources/generated_kb/knowledge_base__04_business_rules__payment_business_rules.txt",
+      "sha256": "49fdea977c5fb2a57464de7e337aa6e1236b3e50e6ff8a8d4083d8b9fdaf5863",
+      "version": "49fdea977c5f",
+      "metadata": {
+        "title": "Payment Business Rules",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/04_business_rules/recruitment_business_rules.md",
+      "target": "resources/generated_kb/knowledge_base__04_business_rules__recruitment_business_rules.txt",
+      "sha256": "484b3855b8ec9439d379ad36df4175e792a20135a6491c5b155e2b8c5209de83",
+      "version": "484b3855b8ec",
+      "metadata": {
+        "title": "Recruitment Business Rules",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/04_business_rules/salary_business_rules.md",
+      "target": "resources/generated_kb/knowledge_base__04_business_rules__salary_business_rules.txt",
+      "sha256": "39851bbe619c1fb32b5e9296d36f6113cc0f6b3ca36ec13bcbbd4264fa08275e",
+      "version": "39851bbe619c",
+      "metadata": {
+        "title": "Salary Business Rules",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/04_business_rules/salary_policy.md",
+      "target": "resources/generated_kb/knowledge_base__04_business_rules__salary_policy.txt",
+      "sha256": "b5980ac766576b2e296af21645ba0639fe14aa9f3f7b700d07f9acd99b9c7dc4",
+      "version": "b5980ac76657",
+      "metadata": {
+        "title": "Salary Policy — Al-Aqsa Security & Logistics Services Ltd.",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/05_workflows/attendance_workflow.md",
+      "target": "resources/generated_kb/knowledge_base__05_workflows__attendance_workflow.txt",
+      "sha256": "752accbb196c116c512b46160e65ce3b20c7ac7c2b02d5707069ecc7ff274f7f",
+      "version": "752accbb196c",
+      "metadata": {
+        "title": "Attendance Workflow",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/05_workflows/cash_workflow.md",
+      "target": "resources/generated_kb/knowledge_base__05_workflows__cash_workflow.txt",
+      "sha256": "4c340094c6524d888886e4a6b31ce49d86c845525b0ce9eab6c45b452d5989b4",
+      "version": "4c340094c652",
+      "metadata": {
+        "title": "Cash Workflow",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/05_workflows/client_order_workflow.md",
+      "target": "resources/generated_kb/knowledge_base__05_workflows__client_order_workflow.txt",
+      "sha256": "6b0eee91a8ae7e31ec9d374320cf5ca03b609d5d7c316f0393d560a64fecba97",
+      "version": "6b0eee91a8ae",
+      "metadata": {
+        "title": "Client Order Workflow",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/05_workflows/escort_workflow.md",
+      "target": "resources/generated_kb/knowledge_base__05_workflows__escort_workflow.txt",
+      "sha256": "c3e5c919220cf032f6aa320711d4b0c228e75ee1e9fb4f0cae5f44acc12eb170",
+      "version": "c3e5c919220c",
+      "metadata": {
+        "title": "Escort Workflow",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/05_workflows/payment_workflow.md",
+      "target": "resources/generated_kb/knowledge_base__05_workflows__payment_workflow.txt",
+      "sha256": "e2216159cddbc5d4f8113b201e4b68798dfdaa6210d7d30d7aa8c96d65c51ea9",
+      "version": "e2216159cddb",
+      "metadata": {
+        "title": "Payment Workflow",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/05_workflows/recruitment_workflow.md",
+      "target": "resources/generated_kb/knowledge_base__05_workflows__recruitment_workflow.txt",
+      "sha256": "1118bfcb7f3d5239930e55bd9e9b65934f679780a42dda72f228e16f9f81fcaf",
+      "version": "1118bfcb7f3d",
+      "metadata": {
+        "title": "Recruitment Workflow",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/05_workflows/release_slip_workflow.md",
+      "target": "resources/generated_kb/knowledge_base__05_workflows__release_slip_workflow.txt",
+      "sha256": "7c8b97d3c433a46820b249735e0fb713e2b0d9413dddf059e93a295df6a0d512",
+      "version": "7c8b97d3c433",
+      "metadata": {
+        "title": "Release Slip Workflow",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/05_workflows/salary_workflow.md",
+      "target": "resources/generated_kb/knowledge_base__05_workflows__salary_workflow.txt",
+      "sha256": "ae81b8fd52eb80557bf07d2f084a2f23d7337e6dfcbae6ebdcff19f02db711c7",
+      "version": "ae81b8fd52eb",
+      "metadata": {
+        "title": "Salary Workflow",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/accountant_summary.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__accountant_summary.txt",
+      "sha256": "f7a94452754863dbbf8590f4b99970113bde4d935a99dc68c6b04634f8b90f19",
+      "version": "f7a944527548",
+      "metadata": {
+        "title": "Accountant Summary Detector",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/admin_commands_detail.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__admin_commands_detail.txt",
+      "sha256": "5a03929131b956dd35a0d6c68fe44adbdc64b4915b865caeb195f783254e20ec",
+      "version": "5a03929131b9",
+      "metadata": {
+        "title": "Admin Commands — Developer Reference",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/admin_ui.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__admin_ui.txt",
+      "sha256": "d1618908ddfb53f90c9faaa53c0e9dbe9ceb14277c19c65d82210b6dded67407",
+      "version": "d1618908ddfb",
+      "metadata": {
+        "title": "Admin UI — wa_chat_frontend",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/ai_readonly_data_access.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__ai_readonly_data_access.txt",
+      "sha256": "3826efc019227b41a76a4da512e3e3695f5cf59424ccbabdb237f24b731fb1db",
+      "version": "3826efc01922",
+      "metadata": {
+        "owner": "Fazle Core Admin",
+        "kb_id": "DEV-AI-READONLY-ACCESS",
+        "title": "AI Read-Only Data Access Layer",
+        "status": "active",
+        "visibility": "developer",
+        "source_modules": "",
+        "source_tables": "",
+        "runtime_index": true,
+        "last_verified": "2026-06-24"
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/attendance_parser.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__attendance_parser.txt",
+      "sha256": "9a7742a9a189f71acbc5122a0c5ae49bcdaad314d59c01abbbfcaab2fbe73d82",
+      "version": "9a7742a9a189",
+      "metadata": {
+        "title": "Attendance Parser Module",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/automation_pipeline.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__automation_pipeline.txt",
+      "sha256": "96e9d47355486ee8be63118a376320f4553ffe43fea6f18869f9a47aa60d51f7",
+      "version": "96e9d4735548",
+      "metadata": {
+        "title": "Automation Pipeline",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/bridge_poller.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__bridge_poller.txt",
+      "sha256": "1e76c4c19df4a279155b59e2418e9176f1294ba84c742e4ee5a2e6970b95ca78",
+      "version": "1e76c4c19df4",
+      "metadata": {
+        "title": "Bridge Poller",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/contact_sync.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__contact_sync.txt",
+      "sha256": "83b015994289a97cf4211208a977a762e0f47eaea9f2af0f89d0a5ad77c38197",
+      "version": "83b015994289",
+      "metadata": {
+        "title": "Contact Sync System",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/conversation_parser.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__conversation_parser.txt",
+      "sha256": "877b4cdfe29fc87b0bc7086e1822279a076bea76c44065569a5b8270cf963e43",
+      "version": "877b4cdfe29f",
+      "metadata": {
+        "title": "Conversation Parser",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/database_rules.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__database_rules.txt",
+      "sha256": "fde67f83c21885adf453e63cf989a37e135b4a4a8e7b0d502d590a54e9bcc627",
+      "version": "fde67f83c218",
+      "metadata": {
+        "title": "Database Rules — Fazle AI Platform",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/developer_notes.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__developer_notes.txt",
+      "sha256": "d991151605081f1376490560781298b83d18371d431c47eed113676b99236ef3",
+      "version": "d99115160508",
+      "metadata": {
+        "title": "Developer Notes",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/distributed_architecture.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__distributed_architecture.txt",
+      "sha256": "72b662a67155e29166d25148c9fe436e54f0335d0163d33b7877f27822e7d11e",
+      "version": "72b662a67155",
+      "metadata": {
+        "title": "Distributed Architecture — Queue, Orchestration, and Self-Healing",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/escort_roster_system.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__escort_roster_system.txt",
+      "sha256": "af97dca31c69fadac76929769701f56d9293301a891aab7060dc9c2f3fac9ea4",
+      "version": "af97dca31c69",
+      "metadata": {
+        "title": "Escort Roster System",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/escort_slip_extractor.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__escort_slip_extractor.txt",
+      "sha256": "6ef8fe60e8ec0dc3f627d98fcdf32d5a34a4caa26c6f2245a4b247f9d55c8050",
+      "version": "6ef8fe60e8ec",
+      "metadata": {
+        "title": "Escort Slip Extractor",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/event_pipeline.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__event_pipeline.txt",
+      "sha256": "f54977aa4dbb5b2eda3f70e8b6705c627e9eb09e47b7ed8b6247b7d72f6c8f6b",
+      "version": "f54977aa4dbb",
+      "metadata": {
+        "title": "Event Pipeline",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/fpe_overview.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__fpe_overview.txt",
+      "sha256": "b57155aed76d1fa9e896774602dfb1046f6bb8dbf32da2c7be1d9468afbca284",
+      "version": "b57155aed76d",
+      "metadata": {
+        "title": "Fazle Payroll Engine (FPE) — System Overview",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/hybrid_search.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__hybrid_search.txt",
+      "sha256": "b8534a3556a690aac7d77d924369aa74dc51301875d9da1522055430f0504d28",
+      "version": "b8534a3556a6",
+      "metadata": {
+        "title": "Hybrid Search System",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/identity_brain.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__identity_brain.txt",
+      "sha256": "9df832c6477f15a3daca86f44bf145d1aadf557c3975848a4c46d12e3f28b606",
+      "version": "9df832c6477f",
+      "metadata": {
+        "title": "Identity Brain",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/identity_integration.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__identity_integration.txt",
+      "sha256": "a29d33ebf15448b3a92ddd7ff60dacc05def1c4977a1eeac3f2ae15a9d8849cd",
+      "version": "a29d33ebf154",
+      "metadata": {
+        "title": "Identity Integration Reference",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/intent_classifier.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__intent_classifier.txt",
+      "sha256": "34b0f6c5094be6aba7dfe3c18dc832e44c89fd359fd0c345c319837f6543f8f9",
+      "version": "34b0f6c5094b",
+      "metadata": {
+        "title": "Intent Classifier",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/ocr_engine.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__ocr_engine.txt",
+      "sha256": "9e1c715102cf35d6c10b4faaf476fb78c27704fd3c456737df21f4f616f7e7c8",
+      "version": "9e1c715102cf",
+      "metadata": {
+        "title": "OCR Engine — Fazle AI Platform",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/ollama_memory.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__ollama_memory.txt",
+      "sha256": "fbf24df8a8060231b0a54ad92524646ccfdbcb98a8229856f9e49c277c990130",
+      "version": "fbf24df8a806",
+      "metadata": {
+        "owner": "Fazle Core Admin",
+        "kb_id": "DEV-OLLAMA-MEMORY",
+        "title": "Ollama Memory Database",
+        "status": "active",
+        "visibility": "developer",
+        "source_modules": "",
+        "source_tables": "",
+        "runtime_index": true,
+        "last_verified": "2026-06-24"
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/outbound_delivery.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__outbound_delivery.txt",
+      "sha256": "eaac4518e8b66f4436162af8f194a44509591177b926a636924c420929829de3",
+      "version": "eaac4518e8b6",
+      "metadata": {
+        "title": "Outbound Delivery Module",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/parser_engine.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__parser_engine.txt",
+      "sha256": "a44ffdfda5102390076cd038ba50074f6d8662c2daacbbba3815589490fbf0ad",
+      "version": "a44ffdfda510",
+      "metadata": {
+        "title": "Parser Engine",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/payroll_module.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__payroll_module.txt",
+      "sha256": "392ad54d3a52dfd365baac65f32952fd806e16bfdc7beea7d7f4631e61fb41d3",
+      "version": "392ad54d3a52",
+      "metadata": {
+        "title": "Core Payroll Module — Developer Reference",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/phone_normalizer.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__phone_normalizer.txt",
+      "sha256": "dd387ebe2280b33016d43719e2b9c998ce36b9e1ee0c6d5936dc145acd034f1e",
+      "version": "dd387ebe2280",
+      "metadata": {
+        "title": "Phone Normalizer",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/rag_strategy.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__rag_strategy.txt",
+      "sha256": "ff015fc4a687db07b807e07815132561867ed3ceb399a87bac4bc1ac515e1902",
+      "version": "ff015fc4a687",
+      "metadata": {
+        "title": "RAG Strategy — Fazle AI Platform",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/recruitment_ai_detail.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__recruitment_ai_detail.txt",
+      "sha256": "04356f4427fedea2bcd4aac7f6c2899a7fdff78f12ea53e3b737b4d3f0b27c02",
+      "version": "04356f4427fe",
+      "metadata": {
+        "title": "Recruitment AI — Detailed Developer Reference",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/recruitment_flow_system.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__recruitment_flow_system.txt",
+      "sha256": "8531148122adcc148e71e7f8b07d64649bf229828ab25de1af16ddf7af528008",
+      "version": "8531148122ad",
+      "metadata": {
+        "title": "Recruitment Flow System",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/reviewed_reply_memory.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__reviewed_reply_memory.txt",
+      "sha256": "353862ca92d52761be4f672678e54cbdcfe72c906b5c103942077eb2e5b9a6b1",
+      "version": "353862ca92d5",
+      "metadata": {
+        "title": "Reviewed Reply Memory",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/role_permissions.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__role_permissions.txt",
+      "sha256": "7798487137a5a817a7eb8c78088f7e968ed06588e680b2bc0a9cf8b3cb9fed1e",
+      "version": "7798487137a5",
+      "metadata": {
+        "title": "Role Permissions",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/runtime_gateway_flags.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__runtime_gateway_flags.txt",
+      "sha256": "a4ebf459ee2e9fed8cf0551f9b8b50782951c0c69f4a12f309072f329cf4f8d6",
+      "version": "a4ebf459ee2e",
+      "metadata": {
+        "title": "Runtime Gateway & Feature Flags",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/security_rules.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__security_rules.txt",
+      "sha256": "3f9edae5221035373a5beed3bb24d4ea5c3723f1306b4c2269c1b068a10846ea",
+      "version": "3f9edae52210",
+      "metadata": {
+        "title": "Security Rules",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/social_auto_reply_system.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__social_auto_reply_system.txt",
+      "sha256": "197aeb44266b9e74a1463c373a0919e07d7236dc7c9b25d1bb8342b945933fcd",
+      "version": "197aeb44266b",
+      "metadata": {
+        "title": "Social Auto-Reply System — System Overview",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/system_prompt.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__system_prompt.txt",
+      "sha256": "b203135cb2febd0957406035a289bd4184d22c2c1cd9dd2eb5285adce398173a",
+      "version": "b203135cb2fe",
+      "metadata": {
+        "title": "System Prompt Architecture",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/visibility_rules.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__visibility_rules.txt",
+      "sha256": "a111b766880c21d87432a76d09a573f7c150548bdf5ca00d6ffdc9d8a1b17081",
+      "version": "a111b766880c",
+      "metadata": {
+        "title": "Visibility Rules",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/06_developer_system/workflow_engine.md",
+      "target": "resources/generated_kb/knowledge_base__06_developer_system__workflow_engine.txt",
+      "sha256": "2176d341b65d9af255effe4d5f02ae4e3d94d49484d85a04226ebc6b38e06427",
+      "version": "2176d341b65d",
+      "metadata": {
+        "title": "Workflow Engine — Message Router",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/final_kb_completion_report_20260622.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__final_kb_completion_report_20260622.txt",
+      "sha256": "76efb5db3bf8139d16a76ffd56ea787c58ece7604cf96d15aba9067fab91c0cc",
+      "version": "76efb5db3bf8",
+      "metadata": {
+        "title": "Final KB Completion Report — Wave-2B",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/kb_v1_governance_record.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__kb_v1_governance_record.txt",
+      "sha256": "9cd1d3a8b09e042c704d7ceca1838e0c2e042e93c5166a46e0c2209cccfa590b",
+      "version": "9cd1d3a8b09e",
+      "metadata": {
+        "title": "Knowledge Base v1.0 — Governance Record",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/legacy_structure_notes/old_structure_mapping.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__legacy_structure_notes__old_structure_mapping.txt",
+      "sha256": "b00e3d4a36c1ec920c09292a7ce347b8b6d7aa30bcf5007270e010e7f933c9e6",
+      "version": "b00e3d4a36c1",
+      "metadata": {
+        "title": "Old Structure Mapping",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/01_production_knowledge_coverage_matrix.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__01_production_knowledge_coverage_matrix.txt",
+      "sha256": "4adf6c751bbaa161c3558ded432f6eabb3e8aeab99c637a7211f856ae1594065",
+      "version": "4adf6c751bba",
+      "metadata": {
+        "title": "PKCA Report 01: Production Knowledge Coverage Matrix",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/02_module_coverage_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__02_module_coverage_report.txt",
+      "sha256": "2407098bdc24bfda20f41e79017644399639119ab43e0d0dbf04784835f35252",
+      "version": "2407098bdc24",
+      "metadata": {
+        "title": "PKCA Report 02: Module Coverage Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/03_workflow_coverage_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__03_workflow_coverage_report.txt",
+      "sha256": "89fd41b10f8da74792382c85e06d5c373a2999fceeb6ea8320a10bd0261f66b4",
+      "version": "89fd41b10f8d",
+      "metadata": {
+        "title": "PKCA Report 03: Workflow Coverage Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/04_business_rule_coverage_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__04_business_rule_coverage_report.txt",
+      "sha256": "33fc663b7d2b0b7e8ccc7f11dcab60198ada15dada8cca50ffb1567a1752d1bf",
+      "version": "33fc663b7d2b",
+      "metadata": {
+        "title": "PKCA Report 04: Business Rule Coverage Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/05_parser_coverage_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__05_parser_coverage_report.txt",
+      "sha256": "f6a2a6e3dbd03c59ed7f6cef1ee4012473b5c2d6f0271fbd8c0a594f3681036e",
+      "version": "f6a2a6e3dbd0",
+      "metadata": {
+        "title": "PKCA Report 05: Parser Coverage Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/06_database_behavior_coverage_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__06_database_behavior_coverage_report.txt",
+      "sha256": "4befc20ec9fc94c0dbb4fe823d5184b639f7a691e3e2cdf25e549cf156b9becb",
+      "version": "4befc20ec9fc",
+      "metadata": {
+        "title": "PKCA Report 06: Database Behavior Coverage Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/07_scheduler_coverage_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__07_scheduler_coverage_report.txt",
+      "sha256": "f93205cc0a2f5daaa289e27474bffcad49306b18bdd00d0b1fb65fd1dba367bb",
+      "version": "f93205cc0a2f",
+      "metadata": {
+        "title": "PKCA Report 07: Scheduler Coverage Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/08_ai_behavior_coverage_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__08_ai_behavior_coverage_report.txt",
+      "sha256": "0f5993274ff9d6dc8214c446274cc4cdeda094debea2ec3709284bccaa91f2d9",
+      "version": "0f5993274ff9",
+      "metadata": {
+        "title": "PKCA Report 08: AI Behavior Coverage Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/09_state_machine_coverage_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__09_state_machine_coverage_report.txt",
+      "sha256": "5ee18201c436804f6fafcd036dc52e507e326536afd31d8535c9e7172978b1db",
+      "version": "5ee18201c436",
+      "metadata": {
+        "title": "PKCA Report 09: State Machine Coverage Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/10_hidden_rule_coverage_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__10_hidden_rule_coverage_report.txt",
+      "sha256": "0e2a6b9cd7a445f70d626fa89620ea258efabeb5830246ee3135ede23ad57ba2",
+      "version": "0e2a6b9cd7a4",
+      "metadata": {
+        "title": "PKCA Report 10: Hidden Rule Coverage Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/11_identity_coverage_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__11_identity_coverage_report.txt",
+      "sha256": "bf31e107a6ce4bfe5b3b45a4a96a9eb5149fda938b698d5cbb12ee128003d73f",
+      "version": "bf31e107a6ce",
+      "metadata": {
+        "title": "PKCA Report 11: Identity Coverage Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/12_command_coverage_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__12_command_coverage_report.txt",
+      "sha256": "7ea6cd5deee0f71ea574ca6930f2361b1151e08c990cce62ab6e9668c6a895f0",
+      "version": "7ea6cd5deee0",
+      "metadata": {
+        "title": "PKCA Report 12: Admin Command Coverage Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/13_knowledge_gap_matrix.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__13_knowledge_gap_matrix.txt",
+      "sha256": "fbd1bfe859e95b995e6010911bc8e9b46282ab41f7d5e643452bd3df7b8b19fd",
+      "version": "fbd1bfe859e9",
+      "metadata": {
+        "title": "PKCA Report 13: Knowledge Gap Matrix",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/14_missing_knowledge_inventory.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__14_missing_knowledge_inventory.txt",
+      "sha256": "98a72a3b42d11d679145e632bfae66c3c48cc40f2cc17be71dd763ca37ea40cf",
+      "version": "98a72a3b42d1",
+      "metadata": {
+        "title": "PKCA Report 14: Missing Knowledge Inventory",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/15_knowledge_extraction_tracker.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__15_knowledge_extraction_tracker.txt",
+      "sha256": "123f6edbbc043246f8fd2c70151b5cf75892ff8479d93e1b0744f4cab96fa597",
+      "version": "123f6edbbc04",
+      "metadata": {
+        "title": "PKCA Report 15: Knowledge Extraction Tracker",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/16_existing_article_enrichment_plan.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__16_existing_article_enrichment_plan.txt",
+      "sha256": "2cb21437d8d294e07127a521985c72d7fe115a6453a0c54e08a5d9ff1cd801de",
+      "version": "2cb21437d8d2",
+      "metadata": {
+        "title": "PKCA Report 16: Existing Article Enrichment Plan",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/17_new_article_justification.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__17_new_article_justification.txt",
+      "sha256": "06e65c145734d6d30ce322059d8545446a21e54727ad1a59e57828ba1b62e584",
+      "version": "06e65c145734",
+      "metadata": {
+        "title": "PKCA Report 17: New Article Justification",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/18_production_traceability_matrix.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__18_production_traceability_matrix.txt",
+      "sha256": "8c3d895cc17c200c3aa18575458cc4bb651e3b033ab59676c31d80a0253df328",
+      "version": "8c3d895cc17c",
+      "metadata": {
+        "title": "PKCA Report 18: Production Traceability Matrix",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/19_coverage_score.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__19_coverage_score.txt",
+      "sha256": "9129f6c7399525db7773ab7ac3f6db700503fd4f84dc038ae57583955ad995c2",
+      "version": "9129f6c73995",
+      "metadata": {
+        "title": "PKCA Report 19: Coverage Score",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/20_management_summary.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__20_management_summary.txt",
+      "sha256": "90b0ba3ec7d8a8b5bdb9fae1e7d8e3678f43c76ec92800b51581b56f41abf453",
+      "version": "90b0ba3ec7d8",
+      "metadata": {
+        "title": "PKCA Report 20: Management Summary",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260622/wave1_changes.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260622__wave1_changes.txt",
+      "sha256": "39065587d3a4eed67e215f01600f33574d269bd92261066ba88aafedbc950657",
+      "version": "39065587d3a4",
+      "metadata": {
+        "title": "Wave-1 Knowledge Synchronization — Change Record",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260623/01_pkca_v2_coverage_matrix.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260623__01_pkca_v2_coverage_matrix.txt",
+      "sha256": "0a21c2c3140b1985c7eaa4c991bad8b5f45b96fa8c384b07563b493fb0503f15",
+      "version": "0a21c2c3140b",
+      "metadata": {
+        "title": "PKCA v2 — Production Knowledge Coverage Audit",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkca_reports_20260623/02_pkca_v3_coverage_matrix.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkca_reports_20260623__02_pkca_v3_coverage_matrix.txt",
+      "sha256": "951f8c2521b68d1e3e7d8470ed90d40ab95dbc090dcc78af7c5e59abfe03418b",
+      "version": "951f8c2521b6",
+      "metadata": {
+        "title": "PKCA v3 — Production Knowledge Coverage Audit",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/01_knowledge_maturity_summary.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__01_knowledge_maturity_summary.txt",
+      "sha256": "edc3007c1399943b548188b7575300c5e1ff379fcf88b8ec4bf604cb341ef17b",
+      "version": "edc3007c1399",
+      "metadata": {
+        "title": "PKMA Report 01 — Knowledge Maturity Summary",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/02_maturity_matrix.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__02_maturity_matrix.txt",
+      "sha256": "77452eb499b2489052bcc4d237a165cf64f8aef28ce7ae985ee5dca6c7a7483c",
+      "version": "77452eb499b2",
+      "metadata": {
+        "title": "PKMA Report 02 — Knowledge Maturity Matrix",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/03_domain_maturity_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__03_domain_maturity_report.txt",
+      "sha256": "91d428c2509a509d8e3eafd0c8614373a0f1b6dc0ee58f5ccfe6b426de6e190a",
+      "version": "91d428c2509a",
+      "metadata": {
+        "title": "PKMA Report 03 — Domain Maturity Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/04_knowledge_governance_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__04_knowledge_governance_report.txt",
+      "sha256": "2a739fcbfa781003c517cef3a7bd33bd33a8a8d2f78ed98b3a4f438fa6e6d87f",
+      "version": "2a739fcbfa78",
+      "metadata": {
+        "title": "PKMA Report 04 — Knowledge Governance Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/05_authority_readiness_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__05_authority_readiness_report.txt",
+      "sha256": "61803271ee49bfaebd6c48f51e8f509270b348a222c8ac29e9088c04c0fbdae5",
+      "version": "61803271ee49",
+      "metadata": {
+        "title": "PKMA Report 05 — Authority Readiness Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/06_traceability_maturity.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__06_traceability_maturity.txt",
+      "sha256": "f96607ed762e94fdcd2eebf5b6debd910d04e566b0d874308955c8510315c635",
+      "version": "f96607ed762e",
+      "metadata": {
+        "title": "PKMA Report 06 — Traceability Maturity",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/07_quality_assessment.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__07_quality_assessment.txt",
+      "sha256": "980befa5fafef15e405b78e115dfaa2a169331343681b05f54cfe1d622e7003a",
+      "version": "980befa5fafe",
+      "metadata": {
+        "title": "PKMA Report 07 — Quality Assessment",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/08_risk_assessment.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__08_risk_assessment.txt",
+      "sha256": "1f90e3ef93df463fbe1cc928c9cbb278cabce0128a18fbe8904d3cf40842e0d5",
+      "version": "1f90e3ef93df",
+      "metadata": {
+        "title": "PKMA Report 08 — Knowledge Risk Assessment",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/09_heatmap.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__09_heatmap.txt",
+      "sha256": "c5c713e4606c496b17f9dcf564e1f527cdb182ab3f2796aaa65c00e50ae04b7b",
+      "version": "c5c713e4606c",
+      "metadata": {
+        "title": "PKMA Report 09 — Knowledge Maturity Heatmap",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/10_business_rule_maturity.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__10_business_rule_maturity.txt",
+      "sha256": "67c40a3de8cd20de5a2bb19a349bd1744d7c4dd22541bdbf1bd5267ea42feaae",
+      "version": "67c40a3de8cd",
+      "metadata": {
+        "title": "PKMA Report 10 — Business Rule Maturity",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/11_workflow_maturity.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__11_workflow_maturity.txt",
+      "sha256": "629abf49d5b343748cbb77bd6fff78b87da3521037cfa0a5578958109bb1048d",
+      "version": "629abf49d5b3",
+      "metadata": {
+        "title": "PKMA Report 11 — Workflow Maturity",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/12_state_machine_maturity.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__12_state_machine_maturity.txt",
+      "sha256": "cb762e99337c8024c60489d26d7af4e743d4c937b1359e87bffd665bd01d03b4",
+      "version": "cb762e99337c",
+      "metadata": {
+        "title": "PKMA Report 12 — State Machine Maturity",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/13_parser_maturity.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__13_parser_maturity.txt",
+      "sha256": "89ed40ec30bc1a5f8b3ce0d1c065ba5c69a13b982e40b464095b200bc725219f",
+      "version": "89ed40ec30bc",
+      "metadata": {
+        "title": "PKMA Report 13 — Parser Maturity",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/14_scheduler_maturity.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__14_scheduler_maturity.txt",
+      "sha256": "6a03edc00b73d2489dc4c46b2f0dfce4ed2f8505c08edf0ed4a5bf132e16a982",
+      "version": "6a03edc00b73",
+      "metadata": {
+        "title": "PKMA Report 14 — Scheduler Maturity",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/15_ai_maturity.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__15_ai_maturity.txt",
+      "sha256": "42706623810974350ea9f950000a62c0f3410487808c6ee55949fd23217740cb",
+      "version": "427066238109",
+      "metadata": {
+        "title": "PKMA Report 15 — AI Behavior Maturity",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/16_identity_maturity.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__16_identity_maturity.txt",
+      "sha256": "1d756ee6e9460171d99e5b1483984386fd568ec9b4d7f73c36029a3890065c55",
+      "version": "1d756ee6e946",
+      "metadata": {
+        "title": "PKMA Report 16 — Identity Brain Maturity",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/17_database_maturity.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__17_database_maturity.txt",
+      "sha256": "7d3a733924f1bc50d7235029f50c18b152995365e705b4803c4c023b9385a252",
+      "version": "7d3a733924f1",
+      "metadata": {
+        "title": "PKMA Report 17 — Database Maturity",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/18_developer_system_maturity.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__18_developer_system_maturity.txt",
+      "sha256": "8f3656426d1ed6d0e2bf14d417226ba0b9505e90c6c7d1bc14efaf83c792eea0",
+      "version": "8f3656426d1e",
+      "metadata": {
+        "title": "PKMA Report 18 — Developer System Maturity",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/19_organizational_brain_readiness.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__19_organizational_brain_readiness.txt",
+      "sha256": "0b336df3a3b3aff90d860de9ac7f254fad5d1941c2d13361480e6c1f137774c7",
+      "version": "0b336df3a3b3",
+      "metadata": {
+        "title": "PKMA Report 19 — Organizational Brain Readiness",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260622/20_final_pkma_assessment.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260622__20_final_pkma_assessment.txt",
+      "sha256": "aab975dcb316b250fa2abac9f0dc11d56d10579b9cb32ba2a9e8f9e541adb54b",
+      "version": "aab975dcb316",
+      "metadata": {
+        "title": "PKMA Report 20 — Final Assessment",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260623/01_pkma_v2_maturity_matrix.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260623__01_pkma_v2_maturity_matrix.txt",
+      "sha256": "518f95cb90df26905ac19fa12e9e048525ca3b277255a178dd764e647e8f3f34",
+      "version": "518f95cb90df",
+      "metadata": {
+        "title": "PKMA v2 — Production Knowledge Maturity Audit",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkma_reports_20260623/02_pkma_v3_maturity_matrix.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkma_reports_20260623__02_pkma_v3_maturity_matrix.txt",
+      "sha256": "58fdb0c42f1fe71c13f7bf892879df827fb70d6ccd71ed88b4f4062c20ff6bc8",
+      "version": "58fdb0c42f1f",
+      "metadata": {
+        "title": "PKMA v3 — Production Knowledge Maturity Audit",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/01_executive_validation_summary.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__01_executive_validation_summary.txt",
+      "sha256": "9a8f4f4e74cb23591933a2363d71c31a6a1b9fa8fb164ffa240d9c234ac30d99",
+      "version": "9a8f4f4e74cb",
+      "metadata": {
+        "title": "PKVC Report 01: Executive Validation Summary",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/02_knowledge_coverage_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__02_knowledge_coverage_report.txt",
+      "sha256": "07093572350a4dee61536dd2bbe6842498b59a252cb508210e8737748776d3af",
+      "version": "07093572350a",
+      "metadata": {
+        "title": "PKVC Report 02: Knowledge Coverage Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/03_knowledge_completeness_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__03_knowledge_completeness_report.txt",
+      "sha256": "abe996f96ec8dcd1696bc0a6c381abb97868d9a8fb53e80a84c904377919ba3b",
+      "version": "abe996f96ec8",
+      "metadata": {
+        "title": "PKVC Report 03: Knowledge Completeness Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/04_workflow_validation_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__04_workflow_validation_report.txt",
+      "sha256": "a9a87f0009ee5e6b430767cd485effba1319396f0c3d3fd060816e0db92afb68",
+      "version": "a9a87f0009ee",
+      "metadata": {
+        "title": "PKVC Report 04: Workflow Validation Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/05_business_rule_validation_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__05_business_rule_validation_report.txt",
+      "sha256": "1fd1ca3779cd6c8de084693405beae24d8edac6b3d9c72937e1201fd611267ab",
+      "version": "1fd1ca3779cd",
+      "metadata": {
+        "title": "PKVC Report 05: Business Rule Validation Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/06_parser_validation_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__06_parser_validation_report.txt",
+      "sha256": "e3b96fbbf0b0516d31a4894836679c1ec7f8ca971dc411bc6245d8b93455eac4",
+      "version": "e3b96fbbf0b0",
+      "metadata": {
+        "title": "PKVC Report 06: Parser Validation Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/07_database_behaviour_validation_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__07_database_behaviour_validation_report.txt",
+      "sha256": "b485fe2f39014acea6a7a4e655d0bc40294479432f5862607fa35bb6ffb8a49a",
+      "version": "b485fe2f3901",
+      "metadata": {
+        "title": "PKVC Report 07: Database Behaviour Validation Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/08_ai_behaviour_validation_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__08_ai_behaviour_validation_report.txt",
+      "sha256": "82449418270b67ca8721f283d596055653381d65c48588f8628456627ec0d733",
+      "version": "82449418270b",
+      "metadata": {
+        "title": "PKVC Report 08: AI Behaviour Validation Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/09_identity_validation_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__09_identity_validation_report.txt",
+      "sha256": "014eabbc2ae9c363021726d1b287ade4c417757169316abe8fe0f610e6edbfc2",
+      "version": "014eabbc2ae9",
+      "metadata": {
+        "title": "PKVC Report 09: Identity Validation Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/10_notification_validation_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__10_notification_validation_report.txt",
+      "sha256": "b694191196cd697eb661a910de50ff82c05a95746be151766699f4811c03403a",
+      "version": "b694191196cd",
+      "metadata": {
+        "title": "PKVC Report 10: Notification Validation Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/11_scheduler_validation_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__11_scheduler_validation_report.txt",
+      "sha256": "130f62fa3bd24c5e9b7fe39cabf8262fcef3284d8cca847d9a66aac3c49961d2",
+      "version": "130f62fa3bd2",
+      "metadata": {
+        "title": "PKVC Report 11: Scheduler Validation Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/12_command_validation_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__12_command_validation_report.txt",
+      "sha256": "0c64ee846a406e833171ce7360cca9869b174909a9d0efef1f3202754b4c6aee",
+      "version": "0c64ee846a40",
+      "metadata": {
+        "title": "PKVC Report 12: Command Validation Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/13_state_machine_validation_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__13_state_machine_validation_report.txt",
+      "sha256": "5443bde2bac81e4d2d624d0efca2d07ed173e5eee05ee7da2504d1b01fa364d4",
+      "version": "5443bde2bac8",
+      "metadata": {
+        "title": "PKVC Report 13: State Machine Validation Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/14_traceability_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__14_traceability_report.txt",
+      "sha256": "d909360ab2523691a8b9ffd9e59d6eb15d928badae8169e24ce990df87780584",
+      "version": "d909360ab252",
+      "metadata": {
+        "title": "PKVC Report 14: Traceability Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/15_duplicate_validation_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__15_duplicate_validation_report.txt",
+      "sha256": "3fe7f2ad98dababd719057ea498f1f13beffb66679720f179011035d4e7e7912",
+      "version": "3fe7f2ad98da",
+      "metadata": {
+        "title": "PKVC Report 15: Duplicate Validation Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/16_conflict_validation_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__16_conflict_validation_report.txt",
+      "sha256": "194c0cdca617bf8070ff1e217588ca86154f61ed4bb9805bcbd02610b095c4ba",
+      "version": "194c0cdca617",
+      "metadata": {
+        "title": "PKVC Report 16: Conflict Validation Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/17_missing_knowledge_validation_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__17_missing_knowledge_validation_report.txt",
+      "sha256": "7dbcb7b979922b8fa91494770a0e0f60a28a44c1bc514e9232d0359b3e3064c9",
+      "version": "7dbcb7b97992",
+      "metadata": {
+        "title": "PKVC Report 17: Missing Knowledge Validation Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/18_knowledge_quality_score.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__18_knowledge_quality_score.txt",
+      "sha256": "54124e84e1239f07a09376f9f6d53be4547cee5fb3b9f590c3d68c137c9ea571",
+      "version": "54124e84e123",
+      "metadata": {
+        "title": "PKVC Report 18: Knowledge Quality Score",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/19_certification_readiness_report.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__19_certification_readiness_report.txt",
+      "sha256": "f283a240bffc96a7e189692778bb392b2208f3538f4758ed107be64e4483b5a9",
+      "version": "f283a240bffc",
+      "metadata": {
+        "title": "PKVC Report 19: Certification Readiness Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/20_management_decision_register.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__20_management_decision_register.txt",
+      "sha256": "c7edace674fb6834cba4e544fd16daceb65b099bfd00af91aab0706c4e4e6a75",
+      "version": "c7edace674fb",
+      "metadata": {
+        "title": "PKVC Report 20: Management Decision Register",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/21_management_decisions_and_directives_20260621.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__21_management_decisions_and_directives_20260621.txt",
+      "sha256": "f90fbad1132abd05951ff7e8e423105808e5250f1ccda6e3f04e00b72ae5132c",
+      "version": "f90fbad1132a",
+      "metadata": {
+        "title": "Management Decisions and Directives Record (Approved)",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260621/22_pending_dup_evidence_20260621.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260621__22_pending_dup_evidence_20260621.txt",
+      "sha256": "665aed1c1c4c9ed74ca53c9a8059a46b7b29e06386091ab21b4a8d158f4721b6",
+      "version": "665aed1c1c4c",
+      "metadata": {
+        "title": "Pending DUP Evidence Pack (Developer Evidence)",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260622/01_fpe_overview_pkvc.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260622__01_fpe_overview_pkvc.txt",
+      "sha256": "aba2ca3719c8d917e839f6b906cbfeffc63b6c7104cf57f82f3d36e244e07aab",
+      "version": "aba2ca3719c8",
+      "metadata": {
+        "title": "PKVC Report — fpe_overview.md",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260622/02_social_auto_reply_pkvc.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260622__02_social_auto_reply_pkvc.txt",
+      "sha256": "2acc4994aa84d5948326314b5fc32a5d02b01acbcb737f287c6060b0a4aa9a3c",
+      "version": "2acc4994aa84",
+      "metadata": {
+        "title": "PKVC Report — social_auto_reply_system.md",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260622/03_database_rules_pkvc.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260622__03_database_rules_pkvc.txt",
+      "sha256": "890ff68ad743e80c74174510ad1ea4fa57193606109a6ff526d15d71ffe95f54",
+      "version": "890ff68ad743",
+      "metadata": {
+        "title": "PKVC Report — database_rules.md",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260622/04_automation_pipeline_pkvc.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260622__04_automation_pipeline_pkvc.txt",
+      "sha256": "968d75db6aeee62fafa9dd52d484b957e87fabcd41d397856a6516e2bcf9f797",
+      "version": "968d75db6aee",
+      "metadata": {
+        "title": "PKVC Report — automation_pipeline.md",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260622/05_rag_strategy_pkvc.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260622__05_rag_strategy_pkvc.txt",
+      "sha256": "6e8448f1bfda36b8b869da4068c1e00b1a29b9491f9e5dc1a948f9c225e871e7",
+      "version": "6e8448f1bfda",
+      "metadata": {
+        "title": "PKVC Report — rag_strategy.md",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260622/06_ocr_engine_pkvc.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260622__06_ocr_engine_pkvc.txt",
+      "sha256": "baef9f212662844c2c4ec95574fedc377a27289a3b1dbea7c8d8ecfa2909d3b6",
+      "version": "baef9f212662",
+      "metadata": {
+        "title": "PKVC Report — ocr_engine.md",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260622/07_developer_notes_pkvc.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260622__07_developer_notes_pkvc.txt",
+      "sha256": "38c469c2a7df9489bdb5072b164d2d35bf9339a855cb30ca3bcb5e3a14db5cad",
+      "version": "38c469c2a7df",
+      "metadata": {
+        "title": "PKVC Report — developer_notes.md",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260622/08_identity_brain_pkvc.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260622__08_identity_brain_pkvc.txt",
+      "sha256": "a1bbfaee97dca293c7c4c858f8d7f621102683e2839e7fe06da9ab85319e71d2",
+      "version": "a1bbfaee97dc",
+      "metadata": {
+        "title": "PKVC Report — identity_brain.md",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260622/certification_index.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260622__certification_index.txt",
+      "sha256": "8602a7ebdd43d50287cc2cb8bb0253049fe098f44e1e06869d1656d9f06975bd",
+      "version": "8602a7ebdd43",
+      "metadata": {
+        "title": "PKVC Certification Index — Wave-2A + Wave-2B",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260622/freeze_readiness.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260622__freeze_readiness.txt",
+      "sha256": "84bc0615d3fd5a920b26f5143bb70ea99751aea961a81a38a3230f9f63f866a9",
+      "version": "84bc0615d3fd",
+      "metadata": {
+        "title": "Knowledge Base v1.0 Freeze Readiness Report",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/pkvc_reports_20260623/01_pkvc_v2_conflict_verification.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__pkvc_reports_20260623__01_pkvc_v2_conflict_verification.txt",
+      "sha256": "1995d563719149009571cfdc95ecf4d0a2c8b6e150634193a2ff1fb92be0f6fb",
+      "version": "1995d5637191",
+      "metadata": {
+        "title": "PKVC v2 — Production Knowledge Verification / Conflict Check",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/source_rewrites/clean_admin_system_knowledge.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__source_rewrites__clean_admin_system_knowledge.txt",
+      "sha256": "e6b42ca2c0029eeb6afdd9ffa8c05f33657961bb1549dd4621123caf01dbc858",
+      "version": "e6b42ca2c002",
+      "metadata": {
+        "title": "Clean Rewrite: Admin System Knowledge",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/source_rewrites/clean_fazle_system_operations.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__source_rewrites__clean_fazle_system_operations.txt",
+      "sha256": "e7464bd1549af99184143cdc17342c0b5ae6d48cfff4ce3c4375c377370b43ff",
+      "version": "e7464bd1549a",
+      "metadata": {
+        "title": "Clean Rewrite: Fazle System AI Automation And Operations",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/07_archived/source_rewrites/clean_hr_identity_candidate.md",
+      "target": "resources/generated_kb/knowledge_base__07_archived__source_rewrites__clean_hr_identity_candidate.txt",
+      "sha256": "c124877ebf901a8cd604aa29a8ee1a1735f8e9fdcefc52cd952e20caadef5107",
+      "version": "c124877ebf90",
+      "metadata": {
+        "title": "Clean Rewrite: HR Identity Brain And Candidate",
+        "owner": "Fazle Core Admin",
+        "status": "archived",
+        "last_verified": "2026-06-24",
+        "runtime_index": false
+      },
+      "skip": true,
+      "skip_reason": "archived",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/KBTI_v1_PreExecution_Deliverables_20260621.md",
+      "target": "resources/generated_kb/knowledge_base__KBTI_v1_PreExecution_Deliverables_20260621.txt",
+      "sha256": "b63ab815fd13192b493998cbaeca638d6d4df8d2678034aacd2d32243cbb1178",
+      "version": "b63ab815fd13",
+      "metadata": {
+        "title": "FAZLE AI PLATFORM",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/PKM_KE_KBG_Program_v2_Analysis_2026-06-21.md",
+      "target": "resources/generated_kb/knowledge_base__PKM_KE_KBG_Program_v2_Analysis_2026-06-21.txt",
+      "sha256": "a89d701496f5a0d4b648aa7fd354e245784ad4243ae53dc1adc1822cf45dbab4",
+      "version": "a89d701496f5",
+      "metadata": {
+        "title": "FAZLE AI PLATFORM",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/PKM_KE_KBG_Program_v2_Analysis_2026-06-21_BOARD_READY.md",
+      "target": "resources/generated_kb/knowledge_base__PKM_KE_KBG_Program_v2_Analysis_2026-06-21_BOARD_READY.txt",
+      "sha256": "113d915c042c28ec54979f5244c31cdb940ee7848311710ae42706297b5c30a4",
+      "version": "113d915c042c",
+      "metadata": {
+        "title": "FAZLE AI PLATFORM",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/PKM_KE_KBG_Program_v2_Analysis_2026-06-21_DETAILED.md",
+      "target": "resources/generated_kb/knowledge_base__PKM_KE_KBG_Program_v2_Analysis_2026-06-21_DETAILED.txt",
+      "sha256": "75051d460b9bb2ff0c0ab88204a0badcb0e9346c545166bb42e6d5a9f9ce36d5",
+      "version": "75051d460b9b",
+      "metadata": {
+        "title": "FAZLE AI PLATFORM",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/PKVC_Program_v1_Analysis_2026-06-21.md",
+      "target": "resources/generated_kb/knowledge_base__PKVC_Program_v1_Analysis_2026-06-21.txt",
+      "sha256": "20a421331fa0eb13e22d7229b44a9f2e5e474bef8bc1be63df774a7273a7fd73",
+      "version": "20a421331fa0",
+      "metadata": {
+        "title": "FAZLE AI PLATFORM",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/README.md",
+      "target": "resources/generated_kb/knowledge_base__README.txt",
+      "sha256": "ee6013e9ff107b066bba6183e3a8ece6741e89eda29689f3816966a5f2d60e6d",
+      "version": "ee6013e9ff10",
+      "metadata": {
+        "title": "Fazle AI Platform Knowledge Base",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/ai_access_matrix.md",
+      "target": "resources/generated_kb/knowledge_base__ai_access_matrix.txt",
+      "sha256": "24d3c91d045603b07d401c5daf0c03f28148778fa0aa36717d777522987703ed",
+      "version": "24d3c91d0456",
+      "metadata": {
+        "title": "AI Access Matrix",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/conflict_resolution_record.md",
+      "target": "resources/generated_kb/knowledge_base__conflict_resolution_record.txt",
+      "sha256": "3a02a72bfda3013496b7ba963b9b663e6399eacadf7d837fa1ca53baddffa28a",
+      "version": "3a02a72bfda3",
+      "metadata": {
+        "title": "Conflict Resolution Record",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/duplicate_report.md",
+      "target": "resources/generated_kb/knowledge_base__duplicate_report.txt",
+      "sha256": "ac6706b17a7f65f3af0e46529b9c7b9202041740694f624cc61f89c876afcff4",
+      "version": "ac6706b17a7f",
+      "metadata": {
+        "title": "Duplicate Report",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/enrichment_report.md",
+      "target": "resources/generated_kb/knowledge_base__enrichment_report.txt",
+      "sha256": "061db330fa4567a89002965c57e184616bd646625753e76fb09d7f7b720e3a2b",
+      "version": "061db330fa45",
+      "metadata": {
+        "title": "Knowledge Base Enrichment Report",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/gap_report.md",
+      "target": "resources/generated_kb/knowledge_base__gap_report.txt",
+      "sha256": "babd1490986c494e798712e26ffb34340b832cf9d6736a8be13d4d316ffb9cd2",
+      "version": "babd1490986c",
+      "metadata": {
+        "title": "Knowledge Base Gap Report",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/knowledge_inventory.md",
+      "target": "resources/generated_kb/knowledge_base__knowledge_inventory.txt",
+      "sha256": "cec5751bccfb41e7c6993b58825c55369d176c04864995868315c844a4790bef",
+      "version": "cec5751bccfb",
+      "metadata": {
+        "title": "Knowledge Inventory",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/missing_report.md",
+      "target": "resources/generated_kb/knowledge_base__missing_report.txt",
+      "sha256": "809dabba7d93d24c5135f65ce91e3d7f733e6defe558d30e5fe1443a7d673bc6",
+      "version": "809dabba7d93",
+      "metadata": {
+        "title": "Missing Report",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    },
+    {
+      "source": "knowledge_base/production_knowledge_report.md",
+      "target": "resources/generated_kb/knowledge_base__production_knowledge_report.txt",
+      "sha256": "35829e04d798fdf9a6a428fa08f45fc646d17342233c32f272d6cf8a94b3422b",
+      "version": "35829e04d798",
+      "metadata": {
+        "title": "PKE-KBE PRODUCTION KNOWLEDGE REPORT",
+        "owner": "Fazle Core Admin",
+        "status": "active",
+        "last_verified": "2026-06-24",
+        "runtime_index": true
+      },
+      "skip": false,
+      "skip_reason": "",
+      "changed": false
+    }
+  ],
+  "indexed_count": 119,
+  "skipped_count": 84,
+  "changed_count": 0
+}

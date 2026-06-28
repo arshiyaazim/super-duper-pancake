@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employees — Al-Aqsa Admin</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<nav class="sidebar">
+  <div class="sidebar-logo">
+    <a href="admin.html" class="brand">
+      <div class="logo-icon">A</div>
+      <div class="brand-text">
+        <span class="brand-name">Al-Aqsa Admin</span>
+        <span class="brand-sub">Security Services</span>
+      </div>
+    </a>
+  </div>
+  <div class="sidebar-nav"></div>
+</nav>
+
+<div class="main">
+  <header class="topbar">
+    <div class="page-title">Employees</div>
+    <div class="topbar-right">
+      <div class="search-bar" style="max-width:240px">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="emp-search" placeholder="Name, phone, code…" oninput="filterEmp()">
+      </div>
+      <div class="tabs">
+        <button class="tab active" onclick="setFilter('all',this)">All</button>
+        <button class="tab" onclick="setFilter('active',this)">Active</button>
+        <button class="tab" onclick="setFilter('inactive',this)">Inactive</button>
+      </div>
+      <button class="btn btn-gold" onclick="openCreate()">+ Add Employee</button>
+      <button class="refresh-btn" onclick="loadEmployees()">↺</button>
+    </div>
+  </header>
+
+  <div class="content">
+
+    <div class="stats-grid mb-24">
+      <div class="stat-card navy-accent">
+        <div class="label">Total Employees</div>
+        <div class="value" id="s-total">…</div>
+      </div>
+      <div class="stat-card green-accent">
+        <div class="label">Active</div>
+        <div class="value" id="s-active">…</div>
+      </div>
+      <div class="stat-card gold-accent">
+        <div class="label">Escort Guards</div>
+        <div class="value" id="s-escort">…</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="card-title">Employee Directory</span>
+        <span id="emp-count" class="badge badge-gray">0</span>
+      </div>
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th>Code</th>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>Role</th>
+              <th>Department</th>
+              <th>Status</th>
+              <th>Joined</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="emp-tbody">
+            <tr><td colspan="8"><div class="loading-block"><span class="spinner"></span></div></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Create/Edit modal -->
+<div id="emp-modal" class="modal-overlay" style="display:none">
+  <div class="modal" style="max-width:560px">
+    <div class="modal-head">
+      <span class="modal-title" id="emp-modal-title">Add Employee</span>
+      <button class="modal-close" onclick="closeModal('emp-modal')">×</button>
+    </div>
+    <div class="modal-body">
+      <input type="hidden" id="emp-id">
+      <div class="grid-2 form-grid">
+        <div class="form-group">
+          <label class="form-label">Full Name *</label>
+          <input class="form-input" id="f-name" placeholder="Mohammad Rahman">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Phone *</label>
+          <input class="form-input" id="f-phone" placeholder="8801711…">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Employee Code</label>
+          <input class="form-input" id="f-code" placeholder="EMP-001">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Role</label>
+          <select class="form-select" id="f-role">
+            <option value="">Select role</option>
+            <option value="escort_guard">Escort Guard</option>
+            <option value="office_staff">Office Staff</option>
+            <option value="supervisor">Supervisor</option>
+            <option value="accountant">Accountant</option>
+            <option value="manager">Manager</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Department</label>
+          <input class="form-input" id="f-dept" placeholder="Operations">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Daily Rate (BDT)</label>
+          <input class="form-input" type="number" id="f-rate" placeholder="500">
+        </div>
+        <div class="form-group">
+          <label class="form-label">NID Number</label>
+          <input class="form-input" id="f-nid" placeholder="National ID">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Join Date</label>
+          <input class="form-input" type="date" id="f-join">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Address</label>
+        <input class="form-input" id="f-address" placeholder="Full address">
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-outline" onclick="closeModal('emp-modal')">Cancel</button>
+      <button class="btn btn-gold" onclick="saveEmployee()" id="emp-save-btn">Create Employee</button>
+    </div>
+  </div>
+</div>
+
+<script src="admin.js"></script>
+<script>
+renderNav('employees.html');
+
+let allEmployees = [];
+let filterStatus = 'all';
+
+function setFilter(status, btn) {
+  filterStatus = status;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  filterEmp();
+}
+
+async function loadEmployees() {
+  const tbody = document.getElementById('emp-tbody');
+  tbody.innerHTML = '<tr><td colspan="8"><div class="loading-block"><span class="spinner"></span></div></td></tr>';
+  try {
+    const data = await fazleGet('/api/admin/employees?limit=200');
+    allEmployees = data.employees || data || [];
+    document.getElementById('s-total').textContent = allEmployees.length;
+    document.getElementById('s-active').textContent = allEmployees.filter(e => e.is_active !== false).length;
+    document.getElementById('s-escort').textContent = allEmployees.filter(e => (e.role || '').includes('escort')).length;
+    filterEmp();
+  } catch (e) {
+    tbody.innerHTML = `<tr><td colspan="8"><div class="alert alert-error">${e.message}</div></td></tr>`;
+  }
+}
+
+function filterEmp() {
+  const q = document.getElementById('emp-search').value.toLowerCase();
+  let filtered = allEmployees;
+  if (filterStatus === 'active') filtered = filtered.filter(e => e.is_active !== false);
+  if (filterStatus === 'inactive') filtered = filtered.filter(e => e.is_active === false);
+  if (q) filtered = filtered.filter(e =>
+    (e.name || e.full_name || '').toLowerCase().includes(q) ||
+    (e.phone || '').includes(q) ||
+    (e.employee_code || e.code || '').toLowerCase().includes(q)
+  );
+  renderTable(filtered);
+}
+
+function renderTable(employees) {
+  document.getElementById('emp-count').textContent = employees.length;
+  const tbody = document.getElementById('emp-tbody');
+  if (!employees.length) {
+    tbody.innerHTML = '<tr><td colspan="8" class="text-muted" style="text-align:center;padding:24px">No employees found</td></tr>';
+    return;
+  }
+  tbody.innerHTML = employees.map(e => {
+    const active = e.is_active !== false;
+    const name = e.name || e.full_name || '—';
+    return `
+      <tr>
+        <td><code style="font-size:11px">${e.employee_code || e.code || '—'}</code></td>
+        <td><strong>${escHtml(name)}</strong></td>
+        <td>${e.phone || '—'}</td>
+        <td>${e.role || '—'}</td>
+        <td>${e.department || '—'}</td>
+        <td>${statusBadge(active ? 'active' : 'inactive')}</td>
+        <td class="text-muted">${fmtDate(e.join_date || e.created_at)}</td>
+        <td>
+          <button class="btn btn-sm btn-outline" onclick="openEdit(${JSON.stringify(e).replace(/"/g,'&quot;')})">Edit</button>
+          ${active
+            ? `<button class="btn btn-sm btn-danger" onclick="deactivate(${e.id})">Deactivate</button>`
+            : `<span class="badge badge-gray">Inactive</span>`
+          }
+        </td>
+      </tr>
+    `;
+  }).join('');
+}
+
+function openCreate() {
+  document.getElementById('emp-id').value = '';
+  document.getElementById('emp-modal-title').textContent = 'Add Employee';
+  document.getElementById('emp-save-btn').textContent = 'Create Employee';
+  ['name','phone','code','role','dept','rate','nid','join','address'].forEach(f => {
+    const el = document.getElementById('f-' + f);
+    if (el) el.value = '';
+  });
+  openModal('emp-modal');
+}
+
+function openEdit(emp) {
+  document.getElementById('emp-id').value = emp.id || '';
+  document.getElementById('emp-modal-title').textContent = 'Edit Employee';
+  document.getElementById('emp-save-btn').textContent = 'Save Changes';
+  document.getElementById('f-name').value = emp.name || emp.full_name || '';
+  document.getElementById('f-phone').value = emp.phone || '';
+  document.getElementById('f-code').value = emp.employee_code || emp.code || '';
+  document.getElementById('f-role').value = emp.role || '';
+  document.getElementById('f-dept').value = emp.department || '';
+  document.getElementById('f-rate').value = emp.daily_rate || '';
+  document.getElementById('f-nid').value = emp.nid || '';
+  document.getElementById('f-join').value = (emp.join_date || '').split('T')[0] || '';
+  document.getElementById('f-address').value = emp.address || '';
+  openModal('emp-modal');
+}
+
+async function saveEmployee() {
+  const id = document.getElementById('emp-id').value;
+  const payload = {
+    name: document.getElementById('f-name').value.trim(),
+    phone: document.getElementById('f-phone').value.trim(),
+    employee_code: document.getElementById('f-code').value.trim() || undefined,
+    role: document.getElementById('f-role').value || undefined,
+    department: document.getElementById('f-dept').value.trim() || undefined,
+    daily_rate: parseFloat(document.getElementById('f-rate').value) || undefined,
+    nid: document.getElementById('f-nid').value.trim() || undefined,
+    join_date: document.getElementById('f-join').value || undefined,
+    address: document.getElementById('f-address').value.trim() || undefined,
+  };
+  if (!payload.name || !payload.phone) { toast('Name and phone are required', 'error'); return; }
+  try {
+    if (id) {
+      await fazlePatch(`/api/admin/employees/${id}`, payload);
+      toast('Employee updated', 'ok');
+    } else {
+      await fazlePost('/api/admin/employees', payload);
+      toast('Employee created', 'ok');
+    }
+    closeModal('emp-modal');
+    loadEmployees();
+  } catch (e) {
+    toast('Error: ' + e.message, 'error');
+  }
+}
+
+async function deactivate(id) {
+  if (!confirm('Deactivate this employee?')) return;
+  try {
+    await fazlePatch(`/api/admin/employees/${id}/deactivate`, {});
+    toast('Employee deactivated', 'warn');
+    loadEmployees();
+  } catch (e) {
+    toast('Error: ' + e.message, 'error');
+  }
+}
+
+function escHtml(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderNav('employees.html');
+  loadEmployees();
+});
+</script>
+</body>
+</html>

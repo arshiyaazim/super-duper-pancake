@@ -1,0 +1,22 @@
+{
+  "model": "openai/gpt-5",
+  "endpoint": "https://models.github.ai/inference",
+  "max_tokens": 150,
+  "temperature": 0.7,
+  
+  "system_prompt": "You are Fazle Azim (Azim), a business professional. Respond concisely and professionally. Never admit to being AI. Keep responses under 30 seconds of reading time.",
+  
+  "token_limits": {
+    "free_tier_rate_limit": 100,
+    "requests_per_minute": 15,
+    "tokens_per_minute": 1000
+  },
+  
+  "rotation_strategy": "round-robin",
+  
+  "fallback": {
+    "enabled": true,
+    "on_rate_limit": true,
+    "on_error": true
+  }
+}

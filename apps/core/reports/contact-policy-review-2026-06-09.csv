@@ -1,0 +1,577 @@
+whatsapp_number,display_name,current_keep_tier,current_keep_reason,inferred_bucket,confidence,recommended_action,last_human_evidence_at,evidence_note
+8801958122300,Al-Aqsa Security Service & Trading Centre,tier1,admin,protected_admin,high,preserve_and_allow_manual_only,,is_protected=true
+8801958122322,Magnus Marine (Meta Business),tier1,admin,protected_admin,high,preserve_and_allow_manual_only,,is_protected=true
+8801880446111,fazle_ai_owner Alam,tier1,admin,protected_admin,high,preserve_and_allow_manual_only,2026-04-30 09:40:04,is_protected=true
+8801787635690,Operation R E D Y M A X,tier1,identity_role,keyword_block_no_autoreply,high,preserve_and_block_autoreply,,keyword match: operation
+8801849283561,al-aqsasecuritygroup 🙅‍♂️,tier1,has_payment,keyword_block_no_autoreply,high,preserve_and_block_autoreply,,keyword match: al-aqsa
+8801849258074,Saiful Operation,tier1,identity_role,keyword_block_no_autoreply,high,preserve_and_block_autoreply,,keyword match: operation
+8801958122302,Al-Aqsa Nimtola,tier1,identity_role,keyword_block_no_autoreply,high,preserve_and_block_autoreply,,keyword match: al-aqsa
+8801958122301,Al-Aqsa AK Khan,tier1,identity_role,keyword_block_no_autoreply,high,preserve_and_block_autoreply,,keyword match: al-aqsa
+8801958122303,Operation Jasim,tier1,identity_role,keyword_block_no_autoreply,high,preserve_and_block_autoreply,,keyword match: operation
+8801823903067,Scot Iftekhar,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801771843773,Security Rana SV,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801774425742,Scot Al-Mamun Gopalgonj,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801830441083,Scot Mainuddin 2,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801778813200,Scot Ikhtiar,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801882788388,Security Mohosin,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801896430145,Security Bappi Das Sadorghat,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801930627434,Security Joynal WA,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,2026-04-26 07:23:50,keep_reason=name_prefix
+8801892714411,Security Arju 2,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801326711039,Security Incharge,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801834947517,Scot Asif Rauzan,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801309394960,Scot Likhon,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801816362853,Client Taher Shofiq AC,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801827329467,Scot Rezaul,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801633229327,Escort TORIQUL Ghat,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801602077627,Scot Piash Nagod,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801602775112,Scot Rasel 1,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801332696011,Security Cosmopolitan Ashek,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801876952783,Security Feni,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801309597227,Scot Security Comilla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801829366960,Client Didar Max,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801836037010,Escort Rahim,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801820885734,Scot Sirrul Bro,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801816088492,Security Najam HS,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801871122087,Scot Sojol Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801818897662,Security Jasim Incharge,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801834293260,Client Nova New,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801605795548,Security Arju,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801765387781,Client Taher Jahid Vai,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801321234604,Client Orchid Accounts,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801891685210,Scot Rahim,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801888620548,Scot Aftab,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801837813282,Security Abiha Welkins,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801772974906,Scot Labu Sheikh,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801724500891,Escort Bhushan,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801891969914,Security Debasish,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,2026-04-26 07:23:50,keep_reason=name_prefix
+8801713485507,Client Muktadir HR,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801310731837,Scot Shamim Wife,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801328172109,Security Halishahar Daily,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801848278572,Client Satkania Brick Mangr,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801974008172,Client Rakib Barek Building,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801881766448,Security N. Amin SV,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801822539698,Escort Showrov,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801993007343,Scot Subrata Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801825017724,Escort SeaTech,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801883532255,Scot Ridowan,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801880681133,Security Nasir MK Hasan Home,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801752329918,Scot Nasir Akmol Ali Bkash,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801922191280,Escort Easin,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801710681233,Security Company SS Security,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801817896057,Escort Raihan Rony,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801818398735,Escort GPS Supplier,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801686982001,Client Taher Nagor Bhaban,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801974537302,Escort Nayeem Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801971514244,Escort Uzzal San Marin,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801319639393,Scot Shafiq Nagod,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801683508377,Security Pulok Sumon,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801819066726,Client Anderkilla AC 2 2,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801606207182,Security Saimun *,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801814729163,Client Mozammel Port Link,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801714380044,Client New Construction,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801568008707,Security Swajib Fakir,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801872224565,Security Dipankor Nagod,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801726627060,Client Nurul GPH,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801645936275,Security Sojol Chak,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801713138373,"Client Frank, MD",tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801844682499,Client HNS,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801831171217,Escort Swajib Ghat,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801620347580,Security New Welkins,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801735692001,Client Chowdhury Convention Sunny,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801842395122,Client Sugandha R/A,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801858143412,Scot modinUllah,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801755545882,Client BSRM Amin,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801621090128,Scot Lelin Chak,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801716277787,Client Satkania Seven Star,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801715462239,Scot Asraf Bkash,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801602260415,Security Company Padma Owner,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801956896226,Escort Zahid,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801823262073,Client Orchid MOMEN,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801860142551,Client Mirrora AC,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801823517630,Scot Rana,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801755535323,Client Primier Kibria,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801814055755,Security Saiful HS,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801823321016,Client Taher Boropol,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801755639134,Client KDS Admin Executive,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801876009983,Scot Safayet,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801810292234,Security Abdun Noor,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801821297600,Scot Liakot Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801737097113,Escort Mamun,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801607111347,Security Nizam Shohel,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801400764012,Scot Jibon Mongla Tqreq,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801616897274,Scot Rifatul,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801676588561,Client Shahin Nalapara,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801870056653,Scot Swakat Bat,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801777773390,Client Jumeirah Ctg,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801605804737,Scot Ripon Rahim,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801782113003,Escort MD Aslam,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801304258276,Scot আবদুল্লাহ Nazrul,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801533374128,Scot Golap,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801749064037,Client Taher PD,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801864897469,Security Bablu,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801829157470,Security A. Aziz,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801893405294,Scot Raja Nimtola,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801619145813,Security Faroque Frank,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801627308022,Client Agrabad,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801869603646,Client Harilal Da Nava,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801862031959,Scot Rintu Rintu,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801724769854,Escort Tachin Hridoy,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801712868700,Client Frank DGM,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801632659515,Scot Shahidul শহীদ,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801711829415,Client S. E. Eng. Manager,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801862570164,Security Motaleb,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801518623942,Scot Apurbo Chakma,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801863408819,Security Towhid Frank,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801885395176,Security Sekander Son,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801772674727,Client Angkor Towhid,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801968377877,Scot Polash Mollik,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801580388003,Escort Rasel Chorpara,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801823133797,Client Satkania Padua,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801783339880,Escort Khokon Jessore,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801322838537,Client Masud Group,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801834064795,Scot Nur Islam,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801407033395,Escort Bondor,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801791703009,Security Eshad,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801867926516,Security Jahed SV,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801600063584,Security Company Padma Security,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801891513199,Scot Aminur,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801888646120,Scot Faruqul,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801834997668,Scot Raj,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801927701943,Scot Robiul,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801879202854,Scot Ali Salim,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801831790693,Security Munshipara,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801866340276,Security Asif P.C.,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801818065042,Client BM Dipot Kaiyum,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801712624251,Scot Mosarrof Sagor,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801704888586,Client Nasirabad Society,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801791516851,Client Premier Canteen N/B,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801620464931,Security Rudra Istl,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801609402566,Scot Bappi,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801911873345,Scot Abu Hossain Aslam,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801713442415,Client Dgm Fabian Thread Anwar,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801771455903,Scot Sumon Ctg,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801841555509,Client Kisholoy,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801953120000,Client Raquib,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801996420784,Scot Fatikchari,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801959391395,Scot Choto Foysal,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801881458530,Scot Hridoy,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801726775413,Security Shamsuddin,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801834952863,Scot Sagor Nimtola,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801704146208,Client Escort Pran Group,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801892942547,Client Matherbari SHIP BREAKING,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801854509323,Scot Arafat 2,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801813323068,Security Akib HS,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801814651079,Client Amin Metro Lab,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801968683120,Escort Jahir Mongla WA,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801770981142,Client SA Office Runu,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801885344454,Security Showrov Showrov,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801817726885,Security Alamgir Nagod,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801312093389,Client Car Service Agrabad,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801558212626,Escort Rony WA,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801731949791,Scot Nabil,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801925624284,Scot Atiqul Islam,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801888251349,Security SA Eng,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801749532439,Security Kamrul,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801738561189,Client Survey N. Gonj,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801690104250,Scot Jahed Hathazari,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801604646083,Escort Khokon Jessore 2,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801819559790,Client Clifton Anowar Ac,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801842227650,Scot Shahriar,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801759012062,Security Mizan Alamgir,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801620434705,Security Company Fahmida Security,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801683047909,Client Cpdl Hridoy,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801715999197,Escort Mongla Supliet,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801853520851,Scot Mehedi Ghat,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801879298996,Scot Mishu,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801848159015,Client Iftehar Rakib Barek,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801843915738,Client Mother Fashion,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801755545537,Client BM Depot Manager,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801786647686,Scot Anik Bkash,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801811141357,Client Taher Parvez,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801795786302,Client Charuta Dinesh,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801848292914,Scot Maruf,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801911099393,Escort Jahir Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801649121202,Security Shafiqul Shafiqul,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801405331738,Security Mustakim,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801889629978,Security Safayet O-point,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801580388149,Client Alishah Faruk,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801909956433,Security Shohag,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,2026-04-26 07:23:50,keep_reason=name_prefix
+8801839881891,Scot Tofayel,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801866731730,Scot Mohiuddin,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801816833501,Client Satkania S* Bricks,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801638593941,Scot Tanvir Mita,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801711122857,Escort Mahfuz Sir 2,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801641685686,Scot Abser,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801817631045,Client Chandonpura Sha Alom,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801941612993,Escort Arafat Noapara,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801851983947,Scot Fahim,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801859470883,Security Twohid PC,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801819993434,Client CDA 27,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801845320113,Client Taher Halishahar,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801933576554,Escort Korban Ali,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801755072798,Security Ayan SV,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801307485291,Security Raju Max,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801861374859,Client Taher Mishu,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801988564519,Scot Sarif Jaber,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801823972668,Security Elias Bkash,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801330910131,Client Ruby Gaye,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801854885523,Security Raihan Chawkbazar,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801843942140,Security Pankoj Nalapara,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801936554031,Escort Serveyor New Office,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801976275874,Security Noyon BKash,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801873336296,Scot Boro Foysal,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801879464242,Security Jewel Frank,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801709664980,Client P2P,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801975714171,Escort Saimun,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801976283748,Security Noman HS,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801864289845,Scot Minhaj Cox,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801815660572,Client Siraj Mimtaj,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801820041570,Client Taher Port Market,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801769764797,Client Shipping GM,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801344087914,Scot Sanbir Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801771437853,Client S. Alam Jubayer,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801859350253,Escort Shakil B. Nagor,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801816363630,Client TM Tower,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801755665178,Client KDS Sharmin,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801634131206,Security Anondo Bazaar,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801873248213,Client Zillur WA,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801518432909,Scot Eyad,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801721312943,Scot Hasan Sitakundha,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801755637489,Client Primier Cement,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801643629453,Escort Joynal,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801834339833,Escort A. Munna,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801819179169,Client Metro Director,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801312680857,Scot Sumon,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801841315062,Security Foysal PC,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801923006688,Escort Mahfuz Sir,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801765850702,Scot Azmir,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801823820242,Scot Mezba BKash,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801814431856,Client Taher MANIK,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801708117331,Client Primier Abdul Baki,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801714230856,Security Ibrahim New,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801671174137,Client S. A. Office,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801814913831,Client Car Wash Manager,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801817762788,Client Chowdhury Fashion,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801830538951,Security Shajib Katghar,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801817740755,Client Shiblu Rangunia,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801814908070,Client Ship,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801685900704,Client Taher Aminul TBL,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801321234600,Client Orchid Chowdhury,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801819312640,Client Rakib Islam Satkania,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801604641850,Scot Mainuddin Karnofully,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801843648631,Client Taher Murad AC,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801718620811,Client S. A. Site Engg.,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801647533422,Escort Jibon,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801874161799,Scot Roman Nagad,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801814298583,Client Frank Inch Kalek,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801974622300,Escort Nahid,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801537443173,Client Max Ahmed,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,2026-04-30 09:40:04,name starts with 'client'
+8801958323278,Client Ctg Four Brothers,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801719080867,Escort Shakhawat Surveyor,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801911503586,Scot Kajol Sk Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801744256017,Client AC,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801865993529,Scot Security Parvez,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801883812424,Security Rahim Akt,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801609426639,Security Sharmin Sultana,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801937121100,Scot Islam Khulna,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801989947218,Security Monsur Terminal,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801854611884,Security Rubel PC,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801817201184,Client Saker Barek Building,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801865764504,Client Chowdhury Fashoin 2,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801914741118,Escort Supplier Munna N.para,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801858687940,Scot Sumon,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801819502622,Security Nazim Chandanpura,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801791400111,Client Raquib 2,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801815696039,Scot Kabir Kabir,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801959992595,Scot Bappi Agrabad,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801791575452,Security Ashek,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801845144077,Scot Amirul Safe,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801877208433,Client Satkania New GM,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801626573301,security Vai Daraz,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801518663215,Scot Shah Alam,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801836743754,Escort REZAUL KARIM,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801581556817,Security Pujon,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801837595671,Scot Rahed Hossain,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801823821388,Scot Abser Ali,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801793962253,Scot Ali Raj,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801852898118,Escort Masud WA,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801791927570,Client Nova,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801672538563,Client Dr. Md. Mahmudul Hasan,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801678063869,Client Ruby Gate Sajib Dutta,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801711649281,Client Taher Eng. Moin Kalurghat,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801824802075,Client Satkania Mamun,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801995250358,Escort Mohidul Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801832835238,Scot Shohel Rana,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801861340291,Scot Azizul,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801795995479,Client Halishahar B-Block,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801715565219,Client Cosmopolitan Faruq,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801601509048,Client Seven Star Bricks,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801889837381,Scot Imran Mithun,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801896511547,Scot Mainuddin New Zz,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801797186654,Scot Jaber Khan,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801834646345,Security Fahad Anderkilla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801713113113,Client Image Garments,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801889898273,Security Imtiaz,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801612418018,Security Hasan,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801627157395,Scot Imamul Nagid,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801811114535,Escort Akiz Sobuj,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801970538363,Security N. Amin SV WA,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801628831558,Security Jagannath Nagod,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801703595725,Escort Rahim Afnan,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801766744772,Escort Rasel,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801829975605,Security Arif Nova,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801854873438,Security Rana,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801770572731,Client Cosmopolitan,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801881970381,Scot Mahfuz Rakiba 11,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801308754394,Scot Badshah,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801632216521,Escort Nazmul,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801572326987,Scot Babu Marma,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801643518916,Scot Humayun,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801976725088,Scot Akter Lohagara,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801821322453,Security Dipangkar New,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801638901019,Security Sabib,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801727529083,Scot Shohan Gazi,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801333243298,Security Faruq SA Eng,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801999330826,Client MAX Shakil,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801856026157,Security Mohiuddin Alonkar,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801846825248,Security Prodip Nova,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801330048394,Scot Jishan Anwara,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801576445972,Escort Client Service RB,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801761492230,Client Patenga,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801914488960,Scot Naime Mongla Tarek,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801637638044,Scot Niaz Parvez Bkash,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801990450643,Scot Ferdous Kobiraj,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801855046832,Security Anowar Port Market,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801622205711,Security Swajib 2,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801606600577,Security Chandgaon 1,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801891910663,Security Aman Patiya,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801980331998,Scot Feroz Dhaka,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801870933314,Security Nasir Halishahar,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801890818741,Scot Kamrul Nagod Banshkhali,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801859114474,Escort Murad Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801320314187,Scot Swajib Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801841560495,Client 2 No. Gate Showroom,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801734948531,Security Company Nameless Security,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801821498048,Security Sergent Andarkilla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801911246627,Scot Awal Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801609071043,Scot Rashedul N. Gonj,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801755965352,Security Hridoy PC,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801856063209,Scot Arshadul Anwara,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801704410153,Scot Takir Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801972894014,Escort Manager Rahim,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801891854331,Security Waysing,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801326607282,Client Taher Halishahar 2,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801860305447,Security Titu SV,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801575699166,Security Rejaul SA Eng.,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801833062860,Scot N. Islam Nagod,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801581154676,Security Salim Bahaddarhat,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801898307259,Scot Riad Potengga,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801797707124,Scot Mohsin,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801861545426,Scot Foysal Sitakundu,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801837780659,Security Topon Boropol,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801781900167,Scot Shakhawat Bkash,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801897025862,Security Paitu 2,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801795297827,Security Alamgir Halishahar 2,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801813411010,Security Iqbal Ruby Gate,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801335907108,Scot Labor Narikeltola,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801600818437,Security Nasir Sagorika,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801948054374,Scot Romjan Babu Nagod,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801307899350,Security Raju HS,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801842330389,Security Pranto Ck Bazar,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801842534431,Scot Jishan Anwara,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801831517719,Client Taher Aziz AC,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801722895578,Escort Madina Trading Raihan,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801726393424,Client MAX Shamsul,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801765655078,Security Labour Alongkar,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801321134891,Client Astha Feed,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801322839055,Client BM Dipu Kaiyum,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801329715542,Client Escort Service,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801708456945,Client Max Construction Ctg,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801810004470,Client Riaz Sir,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801602274793,Client S. A. Day Labour,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801518931187,Client S. A. Store Guard,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801648348816,Client Saiful Store,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801806204735,Client Satkania Hasan,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801838494557,Client Taher Artillery,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801917624605,Client Taher Eng.,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801849252205,Client Taher Hasib,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801930691846,Escort Nazmul SAN Marine,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801925434994,Escort Sobuk Aslam,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801993260354,Escort Tareq Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801837858892,Escort Tareq Mongla New,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'escort'
+8801643729631,Scot A. Hakim Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801624737538,Scot A. Hamid Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801985963404,Scot A. Latif Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801400633830,Scot Ahmed Hossain,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801906220334,Scot Al-Amin Munshi,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801912713412,Scot Atiar Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801921165961,Scot Ayub Ali,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801925618597,Scot Babul Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801996181959,Scot Farid Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801344107791,Scot Fosiar Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801325943368,Scot Habibur Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801924189669,Scot Idris,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801964766381,Scot Jahedul Tarek,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801821642059,Scot Jahidul Anwara,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801316427496,Scot Jalal Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801738173938,Scot Jasim Free Port,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801836529351,Scot Jasim Pagla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801780245017,Scot Kaykobad,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801943169765,Scot Liakot Mongla Bkash,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801344107792,Scot Masum Mongla New,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801953052367,Scot Masum Sk.,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801744646972,Scot Mongla Aslam Off.,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801798541748,Scot Mostofa Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801600874992,Scot Mujibur Oldman,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801774595676,Scot Nasir Akmal Ali,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801917619322,Scot Nazrul Sk.,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801611028560,Scot Niaz Parvez,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801975830418,Scot Noyon Sk.,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801721569307,Scot Rahmat Ali N. Para,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801934267703,Scot Shahjahan Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801949783261,Scot Siddique Mongla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801625330973,Scot Sorwar Sheikh,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801920279259,Scot Younus Ali,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801856954432,Security Abdur Rahman,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801843192722,Security Akter Hossen,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801675727347,Security Alamgir Halishahar,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801813225542,Security Anowar Nimtola,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801789288744,Security Arun EPZ,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801614012682,Security Aung Sinu,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801321853852,Security Chandra Ketu,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801949291605,Security Cosmopolitan 1,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801829251038,Security Dilip Anderkilla,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801581826103,Security Foysal Port Colony,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801835916708,Security Harun Bahaddarhat,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801615124407,Security Harun Nagod,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801766178575,Security Hasan Borguna,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801829731936,Security Hasem Noakhali,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801863995130,Security Ibrahim Noyabazar,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801772260377,Security Joynal Alishah,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801680981757,Security Kalam Chorpara,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801879592486,Security Khorshed,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801755639132,Client Alamgir KDS,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,name starts with 'client'
+8801643424561,Security Manik Barua,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801307443208,Security Mazharul 2,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801881411072,Security Monir Charuta,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801605795704,Security Nasir MK Hasan,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801867364203,Security Nurul Huda,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801897840300,Security Nurul Huda 2,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801736794893,Security Ohin,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801865031133,Security Osman HS,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801891563440,Security Osman HS Nagod,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801585450453,Security Probir,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801310404502,Security Ritu Chakma,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801786550469,Security Ronju,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801891917837,Security Salim Farazi,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801875796724,Security Shafi R. Gate,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801894974863,Security Shafiul SA Eng.,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801612639171,Security Shahidullah ISTL,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801613537013,Security Shahidullah SA Eng,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801971081933,Security Shahjalal Alonker,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801882212869,Security Shamsu Rauzan,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801788829124,Security Shohag HS,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801819461769,Security Supervisor Maria,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801961988440,Security Swajib Fakir,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801979849210,Security Yasin Car Wash,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801884446920,Security Yasin Halishahar,tier1,name_prefix,env_prefix_match,high,preserve_and_needs_review,,keep_reason=name_prefix
+8801874567286,Abrar💜 Arafat,tier1,identity_role,active_escort,high,preserve_and_allow_manual_only,,2 active escort program(s); last=2026-06-09
+8801715318620,Masum Rana,tier1,identity_role,active_escort,high,preserve_and_allow_manual_only,,1 active escort program(s); last=2026-05-22
+8801670535255,Md Nurul Huda Hridoy,tier1,identity_role,active_escort,high,preserve_and_allow_manual_only,,27 active escort program(s); last=2026-06-09
+8801824914477,KBS,tier1,identity_role,active_escort,high,preserve_and_allow_manual_only,,1 active escort program(s); last=2026-05-21
+8801764468277,Mahi Alom 🌹🌹🌹,tier1,identity_role,active_escort,high,preserve_and_allow_manual_only,,1 active escort program(s); last=2026-06-09
+8801630989962,Nilly Mals,tier1,identity_role,active_escort,high,preserve_and_allow_manual_only,,1 active escort program(s); last=2026-05-25
+8801864612074,Tohin,tier1,identity_role,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801786178090,ANIS,tier1,identity_role,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801874798751,bappisaifulislam03,tier1,identity_role,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801676510555,PaveL... 🙄,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,2026-04-26 07:23:50,payment found: fpe_cash_transactions
+8801893037242,.,tier1,identity_role,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801722161104,Masum Billah,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801869766710,😇 Shakib Ahamed😇,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801724352709,masterjihad709,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,payment found: fpe_cash_transactions
+8801332783898,H,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801837419554,johirmastermd,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801706597371,Rabbi Kazi,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801620045217,Easha,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801309912481,Wadur Rahman Ratul,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801924879125,Ripon Hosen,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801818117703,mdselim75973,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801976750976,Amitav Biswas,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801310542862,Rs Rabby Chowdhury,tier1,active_escort,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801975980734,mehedi hassan mh3244,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801867243248,sultansultanhossa,tier1,identity_role,has_payment,high,preserve_and_allow_manual_only,2026-04-26 07:23:50,payment found: fpe_cash_transactions
+8801857265493,Ghat Chorpara Sabbir,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801778494677,Lebu Sheikh Security,tier1,active_escort,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801700696258,Nure Yasin Sami,tier1,active_escort,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801958122311,Asf Surveillance Force,tier1,identity_role,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801943832087,Day Labor Farouque N.,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801575506876,Khu Ku,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801831076156,Dhruba Barua,tier1,active_escort,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801708314716,Chorpara Raju Majhe,tier1,identity_role,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801857759742,Amdad Internet Office,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801332423438,Al-Amin,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801957926661,Nazmul Home,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,payment found: fpe_cash_transactions
+8801791110590,sujanborua89,tier1,identity_role,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801782610995,ms1319871,tier1,identity_role,has_payment,high,preserve_and_allow_manual_only,2026-04-26 07:23:50,"payment found: fpe_cash_transactions, fpe_employees"
+8801831760406,S M MONJUR⚓,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,payment found: fpe_cash_transactions
+8801311200508,Nazmul Hasan Shohel,tier1,identity_role,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801858475272,Ahmed Rakib,tier1,identity_role,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801625212361,Md Raihan Uddin,tier1,identity_role,has_payment,high,preserve_and_allow_manual_only,2026-04-26 07:23:50,"payment found: fpe_cash_transactions, fpe_employees"
+8801616870701,eshabarua61,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801610244952,Tohidul Islam,tier1,identity_role,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801609546302,Md Limon Khan,tier1,active_escort,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801829984145,Zakir Hossain Mainuddin,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801893281420,ashraful1281tr19,tier1,active_escort,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801755702384,nmd559180,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,payment found: fpe_cash_transactions
+8801979910491,Md Younus H Dalim,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801837693496,S M AL MAMUN,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,payment found: fpe_cash_transactions
+8801920304886,Mahtab hossain,tier1,identity_role,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801937485417,sakibhasanbdjes,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,payment found: fpe_cash_transactions
+8801625485569,💫Rakib💫,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,payment found: fpe_cash_transactions
+8801891617480,Ad.tipu,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801709179937,Mainuddin Munsi,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801985583405,H.M.Habib Kan,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,payment found: fpe_cash_transactions
+8801856591431,MD ABID RAFSAN,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,payment found: fpe_cash_transactions
+8801893762320,Bahauddin,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801318463076,mdmiraj21062005,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,payment found: fpe_cash_transactions
+8801883158655,ainolctg,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801607517561,Minhajur Rahman,tier1,active_escort,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801707560945,md rasel master,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,payment found: fpe_cash_transactions
+8801891680561,ajoydasparntor,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801979981505,SADIN SK,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801812368088,sofi Ul Alom,tier1,active_escort,has_payment,high,preserve_and_allow_manual_only,,payment found: fpe_cash_transactions
+8801745575315,Sheakh  Mahfuz,tier1,active_escort,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801890160301,MOHAMMAD FAISAL,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801767215709,Md: Nowshad Islam,tier1,identity_role,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801871796723,Samir Mojumder,tier1,identity_role,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801892176279,TaSiF.....S💝,tier1,active_escort,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801818989409,Hasan Travels Towhidul,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801818112560,S. A. Day Labour Abser,tier1,has_payment,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801722469135,Masum Bkash Mongla,tier1,active_escort,has_payment,high,preserve_and_allow_manual_only,,"payment found: fpe_cash_transactions, fpe_employees"
+8801972694969,mdzakir01725494969,tier1,identity_role,identity_role,high,preserve_and_allow_manual_only,2026-04-30 12:13:33,fazle_contact_roles role=supervisor
+8801772274173,My Number,tier1,identity_role,identity_role,high,preserve_and_allow_manual_only,2026-04-30 10:47:24,fazle_contact_roles role=family
+8801844836824,Mamun Vai Bkash Nagod,tier1,identity_role,identity_role,high,preserve_and_allow_manual_only,2026-04-30 09:40:04,fazle_contact_roles role=accountant
+8801848144841,Sajeda,tier1,identity_role,identity_role,high,preserve_and_allow_manual_only,,fazle_contact_roles role=family
+8801826532066,Karib Ahmed MAX,tier1,identity_role,identity_role,high,preserve_and_allow_manual_only,,fazle_contact_roles role=vip_client
+8801995206164,Samsuddin Ahmed Max SV,tier1,identity_role,identity_role,high,preserve_and_allow_manual_only,,fazle_contact_roles role=repeat_client
+8801757622300,KH NAHID HASAN,tier1,identity_role,identity_role,high,preserve_and_allow_manual_only,,fazle_contact_roles role=client_escort_buyer
+8801814504737,মায়া সংঘ ❤️,tier1,identity_role,unclear_relation_needs_review,medium,preserve_and_needs_review,,interaction_count=8
+8801322805911,Anik Grameenphone Corporate,tier1,identity_role,unclear_relation_needs_review,medium,preserve_and_needs_review,2026-05-09 04:36:07,interaction_count=34; human draft evidence at 2026-05-09
+8801750107303,Roŋƴ Fʌɩsʌɭ,tier1,identity_role,unclear_relation_needs_review,medium,preserve_and_needs_review,2026-04-26 07:23:50,interaction_count=10; human draft evidence at 2026-04-26
+8801404446103,Banglalink Area Manager,tier1,identity_role,unclear_relation_needs_review,medium,preserve_and_needs_review,,interaction_count=21
+8801779415282,somir sutradhar,tier1,identity_role,unclear_relation_needs_review,medium,preserve_and_needs_review,,interaction_count=12
+8801818516678,Nilufar Sultana,tier1,identity_role,unclear_relation_needs_review,medium,preserve_and_needs_review,,interaction_count=8
+8801846299708,Soniya,tier1,identity_role,unclear_relation_needs_review,medium,preserve_and_needs_review,2026-05-09 04:36:07,human draft evidence at 2026-05-09
+8801911224342,mdhero67120,tier1,identity_role,unclear_relation_needs_review,medium,preserve_and_needs_review,2026-05-09 04:36:07,interaction_count=19; human draft evidence at 2026-05-09
+8801607105023,Rakim,tier1,identity_role,unclear_relation_needs_review,medium,preserve_and_needs_review,2026-05-09 04:36:07,interaction_count=14; human draft evidence at 2026-05-09
+8801805675218,Shoydul,none,delete_candidate,unclear_relation_needs_review,medium,preserve_and_needs_review,,interaction_count=25
+8801857940519,hasan,tier1,identity_role,unclear_relation_needs_review,medium,preserve_and_needs_review,,interaction_count=16
+8801994935070,komolshil5070,none,delete_candidate,unclear_relation_needs_review,medium,preserve_and_needs_review,,interaction_count=61; outbound_n=22
+8801985131522,Hi,tier1,identity_role,low_evidence_unknown,low,safe_delete_candidate,,"interaction_count=2, no payment/role/escort/message history"
+8801626232674,oliullah,tier1,identity_role,low_evidence_unknown,low,safe_delete_candidate,,"interaction_count=1, no payment/role/escort/message history"
+8801729018441,masterharun11,tier1,identity_role,low_evidence_unknown,low,safe_delete_candidate,,"interaction_count=1, no payment/role/escort/message history"
+8801715369864,Riaz Ahmed,tier1,identity_role,low_evidence_unknown,low,safe_delete_candidate,,"interaction_count=2, no payment/role/escort/message history"
+8801558501127,Rimi Naim Gunners School,tier1,identity_role,low_evidence_unknown,low,safe_delete_candidate,,"interaction_count=4, no payment/role/escort/message history"
+8801575645815,Nayem Maria SV,tier1,identity_role,low_evidence_unknown,low,safe_delete_candidate,,"interaction_count=1, no payment/role/escort/message history"
+8801849738673,RahimA,tier1,identity_role,low_evidence_unknown,low,safe_delete_candidate,,"interaction_count=1, no payment/role/escort/message history"
+8801729558536,Design service,tier1,identity_role,low_evidence_unknown,low,safe_delete_candidate,,"interaction_count=3, no payment/role/escort/message history"

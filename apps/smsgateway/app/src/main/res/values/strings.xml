@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">SMS Gateway</string>
+    <string name="title_settings">Gateway Settings</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_clear_logs">Clear Logs</string>
+
+    <!-- Status -->
+    <string name="gateway_active">Gateway Active</string>
+    <string name="gateway_inactive">Gateway Inactive</string>
+    <string name="gateway_not_configured">Gateway Not Configured</string>
+    <string name="listening_for_sms">Listening for SMS (ID:)</string>
+
+    <!-- Logs -->
+    <string name="activity_logs_header">Activity Logs (Last 100)</string>
+    <string name="empty_logs_message">No SMS activity yet.\nWaiting for incoming messages…</string>
+
+    <!-- Settings -->
+    <string name="settings_saved">Settings Saved</string>
+    <string name="url_and_secret_required">URL and Secret are required</string>
+    <string name="testing">Testing…</string>
+    <string name="test_connection">Test Connection</string>
+    <string name="save_settings">Save Settings</string>
+    <string name="enable_forwarding">Enable SMS Forwarding</string>
+    <string name="backend_url_required">Backend URL is required</string>
+    <string name="url_invalid_scheme">URL must start with http:// or https://</string>
+    <string name="secret_required">Gateway secret is required</string>
+    <string name="connection_successful">Connection Successful!</string>
+    <string name="connection_failed">Failed: %s</string>
+
+    <!-- Permissions -->
+    <string name="permissions_required_title">Permissions Required</string>
+    <string name="permissions_required_message">SMS Gateway requires SMS and Phone permissions to function. Please grant them in settings.</string>
+    <string name="battery_opt_title">Battery Optimization</string>
+    <string name="battery_opt_message">For reliable SMS forwarding, please disable battery optimization for this app.</string>
+
+    <!-- Accessibility -->
+    <string name="status_icon_description">Gateway status indicator</string>
+    <string name="settings_fab_description">Open settings</string>
+    <string name="log_sender_format">From: %1$s</string>
+    <string name="log_api_response_format">API: %1$s</string>
+    <string name="log_sms_status_format">SMS: %1$s</string>
+</resources>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Al-Aqsa Security Service</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --navy:#0d1b2a; --navy3:#1a2e4a; --gold:#e8a020; --gold2:#f5b830; --text:#1e293b; --muted:#64748b; --gray:#e4e9f0; --off-white:#f8fafc; --white:#fff; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: var(--text); line-height: 1.7; background: var(--off-white); }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { background: var(--navy); padding: 18px 32px; display: flex; align-items: center; justify-content: space-between; }
+    header .logo { display: flex; align-items: center; gap: 10px; color: #fff; font-size: 1.1rem; font-weight: 800; }
+    header .logo em { color: var(--gold); font-style: normal; }
+    header a.back { color: rgba(255,255,255,.7); font-size: .88rem; }
+    header a.back:hover { color: var(--gold); text-decoration: none; }
+    .hero-sm { background: linear-gradient(135deg, var(--navy), var(--navy3)); color: #fff; padding: 52px 28px; text-align: center; }
+    .hero-sm h1 { font-size: 2rem; font-weight: 900; margin-bottom: 8px; }
+    .hero-sm p  { color: rgba(255,255,255,.7); font-size: 1rem; }
+    .wrap { max-width: 1000px; margin: 0 auto; padding: 52px 28px 80px; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 52px; }
+    .contact-side h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: 10px; }
+    .contact-side > p { color: var(--muted); font-size: .93rem; margin-bottom: 32px; }
+    .ci { display: flex; gap: 14px; margin-bottom: 20px; align-items: flex-start; }
+    .ci-ic { width: 42px; height: 42px; min-width: 42px; background: var(--navy); color: var(--gold); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
+    .ci-tx strong { display: block; font-size: .75rem; text-transform: uppercase; letter-spacing: .5px; color: var(--muted); margin-bottom: 3px; }
+    .ci-tx a, .ci-tx span { font-size: .93rem; color: var(--text); }
+    .ci-tx a:hover { color: var(--gold); text-decoration: none; }
+    .hours-table { width: 100%; border-collapse: collapse; margin-top: 28px; }
+    .hours-table th { background: var(--navy); color: var(--white); padding: 10px 14px; text-align: left; font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; }
+    .hours-table td { padding: 10px 14px; border-bottom: 1px solid var(--gray); font-size: .9rem; color: var(--muted); }
+    .hours-table tr:last-child td { border: none; }
+    .contact-form { background: var(--white); border-radius: 16px; padding: 36px; box-shadow: 0 4px 24px rgba(0,0,0,.1); }
+    .contact-form h2 { font-size: 1.2rem; font-weight: 800; margin-bottom: 22px; }
+    .f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .f-grp { margin-bottom: 14px; }
+    .f-grp label { display: block; font-size: .78rem; font-weight: 700; letter-spacing: .3px; color: var(--muted); margin-bottom: 5px; }
+    .f-grp input, .f-grp select, .f-grp textarea { width: 100%; padding: 11px 13px; border: 1.5px solid var(--gray); border-radius: 8px; font-size: .93rem; background: var(--off-white); font-family: inherit; transition: border-color .2s; color: var(--text); }
+    .f-grp input:focus, .f-grp select:focus, .f-grp textarea:focus { outline: none; border-color: var(--gold); background: var(--white); }
+    .f-grp textarea { height: 115px; resize: vertical; }
+    .f-submit { width: 100%; padding: 13px; background: var(--navy); color: var(--white); border: none; border-radius: 8px; font-size: .98rem; font-weight: 700; cursor: pointer; font-family: inherit; transition: background .2s; }
+    .f-submit:hover { background: var(--navy3); }
+    .f-note { font-size: .78rem; color: var(--muted); text-align: center; margin-top: 10px; }
+    @media (max-width: 700px) {
+      .contact-grid { grid-template-columns: 1fr; }
+      .f-row { grid-template-columns: 1fr; }
+    }
+    footer-note { display: block; margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--gray); color: var(--muted); font-size: .8rem; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <svg width="30" height="30" viewBox="0 0 60 70" fill="none"><path d="M30 2L56 13V38C56 52 44 63 30 68C16 63 4 52 4 38V13L30 2Z" fill="#e8a020"/><path d="M30 10L50 19V38C50 49 41 58 30 63C19 58 10 49 10 38V19L30 10Z" fill="#0d1b2a"/><path d="M22 35L27 40L38 29" stroke="#e8a020" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Al-<em>Aqsa</em> Security
+  </div>
+  <a href="/" class="back">← Back to Home</a>
+</header>
+
+<div class="hero-sm">
+  <h1>Contact Al-Aqsa Security</h1>
+  <p>Get in touch for inquiries, quotes, and partnerships — we respond within 24 hours.</p>
+</div>
+
+<div class="wrap">
+  <div class="contact-grid">
+    <div class="contact-side">
+      <h2>Get in Touch</h2>
+      <p>For service inquiries, quotes, or general questions about our security solutions across Bangladesh.</p>
+      <div class="ci">
+        <div class="ci-ic">📞</div>
+        <div class="ci-tx">
+          <strong>Phone</strong>
+          <a href="tel:+8801958122300">+88 01958 122300</a><br>
+          <a href="tel:+8801958122301">+88 01958 122301</a><br>
+          <a href="tel:+8801958122302">+88 01958 122302</a>
+        </div>
+      </div>
+      <div class="ci">
+        <div class="ci-ic">✉️</div>
+        <div class="ci-tx">
+          <strong>Email</strong>
+          <a href="mailto:admin@al-aqsasecurity.com">admin@al-aqsasecurity.com</a>
+        </div>
+      </div>
+      <div class="ci">
+        <div class="ci-ic">📍</div>
+        <div class="ci-tx">
+          <strong>Head Office</strong>
+          <span>Chittagong, Bangladesh</span>
+        </div>
+      </div>
+      <table class="hours-table">
+        <thead><tr><th>Day</th><th>Hours</th></tr></thead>
+        <tbody>
+          <tr><td>Saturday – Thursday</td><td>9:00 AM – 6:00 PM</td></tr>
+          <tr><td>Friday</td><td>10:00 AM – 2:00 PM</td></tr>
+          <tr><td>Emergency Line</td><td>24 / 7</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form id="contact-form" novalidate>
+        <div class="f-row">
+          <div class="f-grp"><label for="c-name">Full Name *</label><input type="text" id="c-name" name="name" placeholder="Your full name" required></div>
+          <div class="f-grp"><label for="c-phone">Phone *</label><input type="tel" id="c-phone" name="phone" placeholder="+88 01xxx xxxxxx" required></div>
+        </div>
+        <div class="f-grp"><label for="c-email">Email Address</label><input type="email" id="c-email" name="email" placeholder="your@email.com"></div>
+        <div class="f-grp">
+          <label for="c-subject">Subject *</label>
+          <select id="c-subject" name="subject" required>
+            <option value="">Select subject…</option>
+            <option>Service Inquiry / Quote Request</option>
+            <option>Existing Contract</option>
+            <option>Career / Employment</option>
+            <option>Partnership</option>
+            <option>Complaint</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="f-grp"><label for="c-msg">Message *</label><textarea id="c-msg" name="message" placeholder="How can we help you?" required></textarea></div>
+        <button type="submit" class="f-submit">Send Message →</button>
+        <p class="f-note">We respond within 24 hours. Your information is kept confidential.</p>
+      </form>
+    </div>
+  </div>
+  <footer-note>© 2014–2026 Al-Aqsa Security &amp; Logistics Services Ltd. &nbsp;|&nbsp; <a href="/">Home</a> &nbsp;|&nbsp; <a href="/legal/privacy">Privacy Policy</a> &nbsp;|&nbsp; <a href="/legal/terms">Terms of Service</a></footer-note>
+</div>
+<script>
+  document.getElementById('contact-form').addEventListener('submit', e => {
+    e.preventDefault();
+    const btn = e.target.querySelector('.f-submit');
+    btn.textContent = '✓ Message Sent — We will respond within 24 hours';
+    btn.style.background = '#1a7a4a';
+    btn.disabled = true;
+    e.target.querySelectorAll('input,select,textarea').forEach(f => f.disabled = true);
+  });
+</script>
+</body>
+</html>

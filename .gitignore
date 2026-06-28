@@ -1,0 +1,97 @@
+# Dependencies
+**/node_modules/
+**/.venv/
+**/venv/
+**/__pycache__/
+**/*.pyc
+**/.pytest_cache/
+**/.Python
+**/pip-wheel-metadata/
+**/*.egg-info/
+
+# Environment & Secrets (CRITICAL)
+.env
+.env.local
+.env.production
+.env.*.local
+!.env.example
+*.pem
+*.key
+*.crt
+secrets/
+secure-env-backup/
+credentials.json
+token.json
+
+# Logs
+logs/
+*.log
+log/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pm2/logs/
+.pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+!schema.sql
+postgres_data/
+redis_data/
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.vscode-server/
+.vscode-server-insiders/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git remnants (prevent nested repos)
+**/.git/
+.gitmodules
+
+# Build artifacts
+dist/
+build/
+target/
+*.tar.gz
+*.zip
+*.rar
+
+# Large binaries (use Git LFS if needed)
+*.pth
+*.bin
+*.safetensors
+*.gguf
+*.onnx
+models/*.bin
+models/*.gguf
+
+# Temporary
+tmp/
+temp/
+*.tmp
+.cache/
+
+# WhatsApp session data (sensitive)
+session/
+auth_info_baileys/
+*.session.sql
+apps/smsgateway/oracleJdk-26/
+*.jfr
+*.json
+*.bak
+*firebase-adminsdk*
+*firebase-service-account*
+*firebase-adminsdk*
