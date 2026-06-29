@@ -65,6 +65,38 @@ super-duper-pancake/
 - Database data in Docker volumes (not in repo)
 - Firebase/Twilio credentials removed from commit history
 
+
+## 🏦 Financial Architecture (C1B — Canonical Transaction Engine)
+
+As of 2026-06-29, the system uses a **single canonical financial transaction table**:
+
+```
+WhatsApp → Parser → Employee Resolve → create_transaction() → fpe_cash_transactions → Ledger → Audit → Dashboard / Payroll / Reports
+```
+
+### Canonical Tables
+
+| Table | Role |
+|-------|------|
+| `fpe_cash_transactions` | **Only canonical cash transaction store** — all new writes go here |
+| `wbom_cash_transactions` | **Legacy read-only archive** — no new writes permitted |
+| `fpe_employee_ledger\ | Employee balance ledger — updated only by `create_transaction()` |
+| `fpe_accounting_audit_logs` | Immutable audit trail for all financial operations |
+| `fpe_employees` | Canonical employee registry (WBOM employees linked via `wbom_employee_id`) |
+
+### Key Rules (Financial Architecture Freeze v2)
+
+1. `create_transaction()` in `apps/core/modules/fazle_payroll_engine/accounting.py` is the **only canonical financial writer**
+2. No developer may add a write path to `wbom_cash_transactions`
+3. All new financial features must use the FPE pipeline
+4. The employee ledger is updated **only** by `create_transaction()` via `_upsert_ledger()`
+5. All financial reads must query `fpe_cash_transactions`
+
+### C1B Certification Documents
+
+- [`apps/core/audits/C1B-FINAL-OWNER-REPORT.md`](apps/core/audits/C1B-FINAL-OWNER-REPORT.md) — Phase-by-phase implementation report
+- [`apps/core/audits/C1B-RELEASE-GATE-CERTIFICATION.md`](apps/core/audits/C1B-RELEASE-GATE-CERTIFICATION.md) — 5-gate production certification
+
 ## 🔄 Migration
 
 This repository was created on 2026-06-28 by consolidating 7 separate application repositories into a unified monorepo structure.

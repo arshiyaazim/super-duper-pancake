@@ -258,7 +258,7 @@ async def get_employee(emp_id: int):
 
     counts = await fetch_one(
         """SELECT
-               (SELECT COUNT(*) FROM wbom_cash_transactions  WHERE employee_id=$1) AS txn_count,
+               (SELECT COUNT(*) FROM fpe_cash_transactions   WHERE employee_id=$1 AND transaction_status='final') AS txn_count,
                (SELECT COUNT(*) FROM wbom_escort_programs    WHERE escort_employee_id=$1) AS escort_count,
                (SELECT COUNT(*) FROM wbom_attendance         WHERE employee_id=$1) AS attendance_count,
                (SELECT COUNT(*) FROM wbom_salary_records     WHERE employee_id=$1) AS salary_record_count

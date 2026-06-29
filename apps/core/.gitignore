@@ -1,0 +1,81 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# Environment variables (NEVER commit secrets)
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+
+# Database files
+*.sqlite3
+*.db
+*.dump
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Testing
+.pytest_cache/
+.coverage
+coverage/
+htmlcov/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (frontend)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Compiled
+*.pyc
+*.class
+
+# Temporary
+*.tmp
+*.bak
+*.orig
+*.bak.*
+
+# Reports (private contact/employee data)
+reports/
+
+# Local infra / GitHub Models integration
+github-models/
+
+# Internal audit / planning documents
+audit-*.md
+consolidation-plan*.md
+RECRUITMENT_BOT_COORDINATION.md
+
+# Backup files
+backups/
+cleanup-log*.txt
+cleanup-post-state.json
